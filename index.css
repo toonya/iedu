@@ -367,7 +367,7 @@ li{position:relative;background-position:center;background-repeat:no-repeat;back
 .slink{left:50%;bottom:10%;width:980px;margin-left:-470px;position:absolute;color:white;font-size:18px;text-decoration:none;text-shadow:0px 1px 3px black;-webkit-text-shadow:0px 1px 3px black;-moz-text-shadow:0px 1px 3px black;-ms-text-shadow:0px 1px 3px black}.IN_main .slides .slink
 b{font-size:42px;display:block;font-weight:normal}.IN_main .slides .slink
 i{font-style:normal;font-size:24px}.In-topic{background:#fff;padding:50px
-0 60px}.Topic-inner{width:1100px;margin:0
+0 60px}.Topic-inner{width:100%;margin:0
 auto}.Topic-inner
 .choice_title.txt2{background-position:center -50px}.topicContent{padding:50px
 0;overflow:hidden;width:1100px}.Content-left{width:715px;float:left;display:inline}.Content-left a,.Content-right
