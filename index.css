@@ -126,9 +126,10 @@ body{padding:0;margin:0;color:#333;font-size:12px;font-family:"Microsoft YaHei",
 .Lon{outline:none}
 .Lcurp{cursor:pointer}
 .Lcfx{zoom:1}
-.Lcfx:before,.Lcfx:after{content:"";display:table}.Lcfx:after{clear:both}.Lmlra{margin-left:auto;margin-right:auto}body{background:#eee;overflow-x:hidden}.wp{width:1100px;margin:0
-auto}
-.icon{background-image:url("images/bg_icon1.png");background-repeat:no-repeat}.topbar{height:46px;background:#e5e5e5;border-top:6px #9e764e solid;position:relative;z-index:101}.userlink{padding-top:20px;font-size:12px;font-family:'microsoft yahei'}.userlink a,
+.Lcfx:before,.Lcfx:after{content:"";display:table}.Lcfx:after{clear:both}.Lmlra{margin-left:auto;margin-right:auto}body{background:#eee;overflow-x:hidden}
+.wp{width:1100px;margin:0 auto}
+.icon{background-image:url("images/bg_icon1.png");background-repeat:no-repeat}
+.topbar{width:100%;height:46px;background:#e5e5e5;border-top:6px #9e764e solid;position:relative;z-index:101}.userlink{padding-top:20px;font-size:12px;font-family:'microsoft yahei'}.userlink a,
 .userlink span, .userlink .rssarea{float:left;color:#959595}
 .userlink span{padding:0 8px}
 .userlink .dy-icon{width:12px;height:12px;float:left;background-position:-4px -304px;margin-top:3px;margin-right:5px}
@@ -366,8 +367,9 @@ p{padding-top:6px;line-height:24px;font-size:13px;color:#434343;font-family:'mic
 li{position:relative;background-position:center;background-repeat:no-repeat;background-size:cover}.IN_main .slides
 .slink{left:50%;bottom:10%;width:980px;margin-left:-470px;position:absolute;color:white;font-size:18px;text-decoration:none;text-shadow:0px 1px 3px black;-webkit-text-shadow:0px 1px 3px black;-moz-text-shadow:0px 1px 3px black;-ms-text-shadow:0px 1px 3px black}.IN_main .slides .slink
 b{font-size:42px;display:block;font-weight:normal}.IN_main .slides .slink
-i{font-style:normal;font-size:24px}.In-topic{background:#fff;padding:50px
-0 60px}.Topic-inner{width:100%;margin:0
+i{font-style:normal;font-size:24px}
+.In-topic{width:100%;background:#fff;padding:50px 0 60px}
+.Topic-inner{width:1100px;margin:0
 auto}.Topic-inner
 .choice_title.txt2{background-position:center -50px}.topicContent{padding:50px
 0;overflow:hidden;width:1100px}.Content-left{width:715px;float:left;display:inline}.Content-left a,.Content-right
