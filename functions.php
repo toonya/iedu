@@ -14,6 +14,14 @@ function wblegal_theme_setup() {
 add_action( 'after_setup_theme', 'wblegal_theme_setup' );
 
 
+function coolwp_remove_open_sans_from_wp_core() {
+    wp_deregister_style( 'open-sans' );
+    wp_register_style( 'open-sans', false );
+    wp_enqueue_style('open-sans','');
+}
+add_action( 'init', 'coolwp_remove_open_sans_from_wp_core' );
+add_action( 'admin_enqueue_scripts', 'coolwp_remove_open_sans_from_wp_core' );
+
 // ----------------------------------------
 // ! some support.
 // ----------------------------------------
@@ -201,4 +209,3 @@ if(!function_exists('get_banner')) {
 		return [$banner_control, $banner_item];
 	}
 }
-?>
