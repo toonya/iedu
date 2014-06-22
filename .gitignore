@@ -221,8 +221,6 @@ config.codekit
 
 # grunt
 node_modules/
-package.json
-Gruntfile.js
 bower.json
 .tmp/
 bower_components/
