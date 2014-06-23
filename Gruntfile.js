@@ -6,10 +6,11 @@ module.exports = function(grunt) {
         less: {
             development: {
                 options: {
-                    paths: ["less"]
+                    paths: ["less","inc/css"]
                 },
                 files: {
-                    "style.css": "less/style.less"
+                    "style.css": "less/style.less",
+                    "inc/css/admin.css": "inc/css/admin.less"
                 }
             }
         },
@@ -18,9 +19,15 @@ module.exports = function(grunt) {
                 // Task-specific options go here.
                 browsers: ['last 3 version', 'ie 8', 'ie 9']
             },
-            no_dest: {
+            normal: {
                 // Target-specific file lists and/or options go here.
                 src: 'style.css'
+            },
+            admin: {
+                expand: true,
+                flatten: true,
+                src: 'inc/css/*.css', // -> src/css/file1.css, src/css/file2.css
+                dest: 'inc/css/' // -> dest/css/file1.css, dest/css/file2.css
             },
         },
         watch: {
@@ -28,7 +35,7 @@ module.exports = function(grunt) {
                 livereload: 1337,
             },
             less: {
-                files: ['less/*.less'],
+                files: ['less/*.less','inc/css/*.less'],
                 tasks: ['less','autoprefixer']
             },
             html: {

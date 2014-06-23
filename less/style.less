@@ -11,35 +11,6 @@ Tags:
 @import "basic.less";
 @import "decoration.less";
 
-// ----------------------------------------
-// ! values
-// ----------------------------------------
-
-@h-topbar: 6px;
-@h-topbar2:46px;
-@h-nav: 100px;
-@h-banner: 540px;
-
-@fs-phone: 16px;
-@fs-sm: 12px; //topbar footer
-@fs-normal: 13px;
-@fs-nav: 14px;
-
-@fs-banner-t: 42px; //title
-@fs-banner-d: 24px; //describe
-
-@c-brown: #A37549;
-
-@c-l-gray: #E5E5E5;	//topbar2
-@c-ll-gray: #EEEEEE; //nav
-@c-d-gray: #626262; //footer
-
-@c-golden: #D4AA6D;
-
-@c-black:#000; // title
-@c-l-black:#333; // describe
-@c-ll-black:#959595; // mute
-
 
 body {
 	font-family: "Microsoft YaHei","Heiti SC","Heiti TC","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -79,82 +50,42 @@ body {
 	}
 }
 
-nav.main {
-	height: @h-nav;
-	background: @c-ll-gray;
+.banner .item {
+	height: 411px;
+	overflow: hidden;;
+}
+
+.banner .carousel-caption{
+	a {
+		color: #fff;
+	}
+
+	h3 {
+		font-size: @fs-banner-t;
+		text-align: left;
+	}	
+
+	p {
+		font-size: @fs-banner-d;
+		text-align: left;
+	}
+}
+
+// ----------------------------------------
+// ! section strong
+// ----------------------------------------
+.strong-type {
+	padding-top: 24px;
+
+	h3 {
+		color: @c-golden;
+		font-size: 18px;
+	}
+
+	.item {
+		width: 33.33%;
+		float: left;
+	}
 }
 
 
-nav.main .container-fluid {
-	position: relative;
-	width: 100%;
-	height: @h-nav;
-	
-	.navbar-header {
-		position: absolute;
-		top: 50%;
-		left: 0;
-
-		transform: translateY(-50%);
-
-		a {
-			height: auto;;
-			padding: 0;
-			margin: 0;
-		}
-	}
-
-	ul.navbar-nav>li {
-		&::before {
-			position: absolute;
-			content: " ";
-			background: #DEDEDE;
-			width: 2px;
-			height: 60%;
-			top: 20%;
-			left: 0;
-		}
-
-		&:first-child::before {
-			background: none;
-		}
-
-		padding: 15px 30px;
-		position: relative;
-
-		&>a {
-			background: none;
-			box-shadow: none;
-			padding: 0;
-
-			&:hover {
-				background: none;
-
-				color: @c-golden;
-			}
-		}
-	}
-
-	.collapse {
-		position: absolute;
-		left: 300px;
-		top: 18px;
-		right: 0;
-
-		ul, form {
-			position: relative;
-		}
-
-		ul {
-			margin-top: 16px;
-		}
-
-		form {
-			margin-top: 20px;
-
-			input {
-				width: 250px;
-			}
-		}
-	}
-}

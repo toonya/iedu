@@ -16,95 +16,58 @@
         <?php wp_head()?>
     </head>
     <body>
-        <header>
-            <div class="topbar"></div>
-            <div class="topbar2">
-                <div class="container text-right">
-                    <span class="phone icon-before"><a href="tel:400-9217-966"><span class="glyphicon glyphicon-earphone"></span>400-9217-966</a></span>
-                    <span class="pd-lr-xs"> | </span>
-                    <span class="help icon-before"><a href="">? 帮助</a></span>
-                </div>
-            </div>
-            <nav class="navbar simple-flat" role="navigation">
-                <div class="container">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="<?php echo bloginfo('url' ); ?>">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/logo-lg.jpg" alt="">
-                            </a>
-                        </div>
-                    
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">One more separated link</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <form class="navbar-form navbar-right" role="search">
-                                <div class="form-group">
-                                    <input type="text" class="form-control border-non radius-0" placeholder="Search">
-                                </div><button type="submit" class="btn btn-black btn-flat radius-0"><span class="glyphicon glyphicon-search"></span></button>
-                            </form>
-                        </div><!-- /.navbar-collapse -->
-                    </div>
-                </div><!-- /.container-fluid -->
-            </nav>
-            <div class="banner">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                      <?php
-                        $banner_html = get_banner();
-                        echo $banner_html[0];
-                      ?>
-                  </ol>
-            
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner">
-                      <?php echo $banner_html[1];?>
-                  </div>
-                </div>
-            </div>
-        </header>
         <div class="page">
             <div class="mobile-nav-mask mask-close"></div>
+            
             <header>
-                <div class="container">
-                    <div class="logo col-xs-6">
-                        <a href="">
-                            <img class="img-responsive" src="" alt="logo">
-                        </a>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                        <?php
-    $phone_number = get_option('phone-number');
-if( $phone_number && !empty($phone_number) ):?>
-                        <a class="tel" href="tel:<?php echo get_option('phone-number')?>">
-
-                            <img class="hidden-xs" src="<?php echo get_template_directory_uri()?>/img/asset/tel.png" class="inline img-responsive" alt="tel">
-                            <span class="hidden-xs"><?php echo get_option('phone-number')?></span>
-
-                        </a>
-                        <?php endif; ?>
-                        <a href="" class="mobile-nav-trigger visible-xs"><span class="glyphicon glyphicon-align-justify"></span></a>
+                <div class="topbar"></div>
+                <div class="topbar2">
+                    <div class="container text-right">
+                        <span class="phone icon-before"><a href="tel:400-9217-966"><span class="glyphicon glyphicon-earphone"></span>400-9217-966</a></span>
+                        <span class="pd-lr-xs"> | </span>
+                        <span class="help icon-before"><a href="">? 帮助</a></span>
                     </div>
                 </div>
-            </header>
+                <nav class="navbar simple-flat" role="navigation">
+                    <div class="container">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="<?php echo bloginfo('url' ); ?>">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-lg.jpg" alt="">
+                                </a>
+                            </div>
+                        
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="navbar-form navbar-right" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control border-non radius-0" placeholder="Search">
+                                    </div><button type="submit" class="btn btn-black btn-flat radius-0"><span class="glyphicon glyphicon-search"></span></button>
+                                </form>
+                            </div><!-- /.navbar-collapse -->
+                        </div>
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </header> <!-- /. header -->
 
-            <nav class="main hidden-xs">
+            <!-- <nav class="main hidden-xs">
                 <div class="container">
                     <?php
 $head_navigation = array(
@@ -129,4 +92,4 @@ $head_navigation = array(
 wp_nav_menu( $head_navigation );
                     ?>
                 </div>
-            </nav>
+            </nav> -->

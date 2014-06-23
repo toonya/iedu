@@ -9,6 +9,9 @@ function wblegal_theme_setup() {
 		)
 	);
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form' ) );
+
+    set_post_thumbnail_size( 672, 372, true );
+	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
 }
 
 add_action( 'after_setup_theme', 'wblegal_theme_setup' );
@@ -31,7 +34,7 @@ require_once('inc/browser-check.php');
 if(belowIE(9))
 	browser_alert();
 require_once('inc/bootstrap-nav.php');
-require_once('inc/remove-origin.php');
+//require_once('inc/remove-origin.php');
 
 require_once('inc/change-login-area.php');
 
@@ -194,10 +197,20 @@ if(!function_exists('get_banner')) {
 		$banner_control    = '';
 		if(!empty($banner_list)){
 			foreach( $banner_list as $key => $item ) {
-				$banner_item .= sprintf( '<div class="item %s"><img class="img-responsive" src="%s" alt="%s"></div>',
+				$banner_item .= sprintf( '<div class="item %s">
+											<img class="img-responsive" src="%s" alt="%s">
+											<div class="carousel-caption"><a href="%s">
+												<h3>%s</h3>
+												<p>%s</p>
+											</a></div>
+										  </div>',
+
 		            ( $key == 0 ) ? 'active' : '',
 		            $item['imgurl'],
-		            $item['title']
+		            $item['title'],
+		            $item['url'],
+		            $item['title'],
+		            $item['describe']
 				);
 				$banner_control .= sprintf( '<li data-target="#carousel-example-generic" data-slide-to="%s" %s> </li> ',
 		            $key,
