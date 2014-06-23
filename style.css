@@ -7,3 +7,189 @@ Author:
 Author URI: 
 Tags: 
 */
+.pd-lr-xs {
+  padding: 0 6px;
+}
+.btn-flat.btn-black {
+  background: #000;
+  color: #fff;
+}
+.radius-0 {
+  border-radius: 0;
+}
+.border-non {
+  border: none;
+}
+nav.simple-flat {
+  height: 100px;
+  background: #eeeeee;
+}
+nav.simple-flat .container-fluid {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+nav.simple-flat .container-fluid .navbar-header {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+nav.simple-flat .container-fluid .navbar-header a {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li {
+  padding: 15px 30px;
+  position: relative;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li::before {
+  position: absolute;
+  content: " ";
+  background: #DEDEDE;
+  width: 2px;
+  height: 30px;
+  top: 10px;
+  left: 0;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li:first-child::before {
+  background: none;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li > a {
+  background: none;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  color: #626262;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li > a:hover {
+  background: none;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #d4aa6d;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li.open > a {
+  color: #d4aa6d;
+  background-color: transparent;
+  background: none;
+}
+nav.simple-flat .container-fluid .collapse {
+  position: absolute;
+  left: 300px;
+  top: 18px;
+  right: 0;
+}
+nav.simple-flat .container-fluid .collapse ul,
+nav.simple-flat .container-fluid .collapse form {
+  position: relative;
+}
+nav.simple-flat .container-fluid .collapse ul ul,
+nav.simple-flat .container-fluid .collapse form ul {
+  position: absolute;
+}
+nav.simple-flat .container-fluid .collapse ul {
+  margin-top: 16px;
+}
+nav.simple-flat .container-fluid .collapse form {
+  margin-top: 20px;
+}
+nav.simple-flat .container-fluid .collapse form input {
+  width: 250px;
+}
+body {
+  font-family: "Microsoft YaHei", "Heiti SC", "Heiti TC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.topbar {
+  height: 6px;
+  width: 100%;
+  background: #a37549;
+}
+.topbar2 {
+  height: 46px;
+  line-height: 46px;
+  background: #e5e5e5;
+}
+.topbar2 a {
+  color: #959595;
+}
+.topbar2 span {
+  color: #C0C0C0;
+}
+.topbar2 .phone {
+  font-size: 16px;
+}
+.topbar2 .phone span {
+  padding-right: 3px;
+  font-size: 12.8px;
+}
+.topbar2 .help {
+  font-size: 12px;
+}
+nav.main {
+  height: 100px;
+  background: #eeeeee;
+}
+nav.main .container-fluid {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+nav.main .container-fluid .navbar-header {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+nav.main .container-fluid .navbar-header a {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+nav.main .container-fluid ul.navbar-nav > li {
+  padding: 15px 30px;
+  position: relative;
+}
+nav.main .container-fluid ul.navbar-nav > li::before {
+  position: absolute;
+  content: " ";
+  background: #DEDEDE;
+  width: 2px;
+  height: 60%;
+  top: 20%;
+  left: 0;
+}
+nav.main .container-fluid ul.navbar-nav > li:first-child::before {
+  background: none;
+}
+nav.main .container-fluid ul.navbar-nav > li > a {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+nav.main .container-fluid ul.navbar-nav > li > a:hover {
+  background: none;
+  color: #d4aa6d;
+}
+nav.main .container-fluid .collapse {
+  position: absolute;
+  left: 300px;
+  top: 18px;
+  right: 0;
+}
+nav.main .container-fluid .collapse ul,
+nav.main .container-fluid .collapse form {
+  position: relative;
+}
+nav.main .container-fluid .collapse ul {
+  margin-top: 16px;
+}
+nav.main .container-fluid .collapse form {
+  margin-top: 20px;
+}
+nav.main .container-fluid .collapse form input {
+  width: 250px;
+}

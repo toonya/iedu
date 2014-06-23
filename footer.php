@@ -1,7 +1,7 @@
 			<footer>
 				<div class="container">
 					<div class="text-right copyright">
-						<img src="<?php echo get_template_directory_uri()?>/img/asset/Alipay.png" alt="Alipay" width="64" height="22">
+						<img src="" alt="Alipay" width="64" height="22">
 						<span>© WB-Legal-Asia.com 版权所有 © 2014-2015 京ICP备12015529号</span>
 					</div>
 					<div class="clearfix"></div>
