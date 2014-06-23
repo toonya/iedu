@@ -41,6 +41,7 @@
 		        <h3>超值</h3>
 		        <p>人均价格及附加服务使得别墅比高端酒店性价比更高。</p>
 		    </div>
+		    <div class="clearfix"></div>
 		</div>
 	</div>
 </section>
