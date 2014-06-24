@@ -8,6 +8,9 @@ function iedu_theme_setup() {
 		  'header-menu' => __( '页头' )
 		)
 	);
+
+	add_theme_support( 'post-thumbnails' );
+
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form' ) );
 
     set_post_thumbnail_size( 672, 372, true );
@@ -34,6 +37,12 @@ require_once('inc/browser-check.php');
 if(belowIE(9))
 	browser_alert();
 require_once('inc/bootstrap-nav.php');
+require_once('inc/post-type-school.php');
+require_once('inc/post-type-certification.php');
+require_once('inc/post-type-ed.php');
+require_once('inc/post-type-camp.php');
+require_once('inc/post-type-visit.php');
+require_once('inc/post-type-hotel.php');
 //require_once('inc/remove-origin.php');
 
 require_once('inc/change-login-area.php');
