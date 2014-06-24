@@ -30,9 +30,59 @@ class Bootsrap_basic extends Walker {
 
 }
 
+// ========================================
+// ! notice 1. === -> ==
+// ========================================
+
+
+// ----------------------------------------
+// ! This is a basic bootstrap navigation.
+// *
+// * <li><a href="">首页</a></li>
+// ----------------------------------------
+class bootstrap_dropdown extends Walker {
+
+    // Tell Walker where to inherit it's parent and id values
+    var $db_fields = array(
+        'parent' => 'menu_item_parent',
+        'id'     => 'db_id'
+    );
+
+    /**
+     * At the start of each element, output a <li> and <a> tag structure.
+     *
+     * Note: Menu objects include url and title properties, so we will use those.
+     */
+
+    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+        // echo $item->object_id . ' ' . get_the_ID() . '<br />';
+
+        $output .= sprintf( "\n<li%s><a href='%s'>%s</a>",
+            ( ($item->object_id == get_the_ID()) || ( $item->title == '首页' && is_front_page() ) ) ? ' class="active"' : '',
+            $item->url,
+            $item->title
+        );
+    }
+
+    function end_el( &$output, $item, $depth = 0, $args = array() ) {
+        $output .= "</li>\n";
+    }
+
+    function start_lvl( &$output, $depth = 0, $args = array() ) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "\n$indent<ul class=\"sub-menu dropdown-menu\">\n";
+    }
+
+    function end_lvl( &$output, $depth = 0, $args = array() ) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "$indent</ul>\n";
+    }
+}
+
+
 // ----------------------------------------
 // ! this is a special navigation type.
-// * hover with another language.
+// * hover with another language. WBlegal
 // ----------------------------------------
 
 class Bootsrap_two_langs extends Walker {
@@ -72,4 +122,6 @@ class Bootsrap_two_langs extends Walker {
 			);
         }
     }
+
+
 }

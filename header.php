@@ -40,7 +40,29 @@
                         
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav">
+                                <?php
+                                $head_navigation = array(
+                                    'theme_location'  => 'header-menu',
+                                    'menu'            => '',
+                                    'container'       => false,
+                                    'container_class' => '',
+                                    'container_id'    => '',
+                                    'menu_class'      => 'nav navbar-nav',
+                                    'menu_id'         => '',
+                                    'echo'            => true,
+                                    'fallback_cb'     => false,
+                                    'before'          => '',
+                                    'after'           => '',
+                                    'link_before'     => '',
+                                    'link_after'      => '',
+                                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                    'depth'           => 0,
+                                    'walker'          => new bootstrap_dropdown()
+                                );
+
+                                wp_nav_menu( $head_navigation );
+                                ?>
+                                <!-- <ul class="nav navbar-nav">
                                     <li class="active"><a href="#">Link</a></li>
                                     <li><a href="#">Link</a></li>
                                     <li class="dropdown">
@@ -55,7 +77,7 @@
                                             <li><a href="#">One more separated link</a></li>
                                         </ul>
                                     </li>
-                                </ul>
+                                </ul> -->
                                 <form class="navbar-form navbar-right" role="search">
                                     <div class="form-group">
                                         <input type="text" class="form-control border-non radius-0" placeholder="Search">

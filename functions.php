@@ -2,7 +2,7 @@
 // ----------------------------------------
 // ! init
 // ----------------------------------------
-function wblegal_theme_setup() {
+function iedu_theme_setup() {
 	register_nav_menus(
 		array(
 		  'header-menu' => __( '页头' )
@@ -14,7 +14,7 @@ function wblegal_theme_setup() {
 	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
 }
 
-add_action( 'after_setup_theme', 'wblegal_theme_setup' );
+add_action( 'after_setup_theme', 'iedu_theme_setup' );
 
 
 function coolwp_remove_open_sans_from_wp_core() {
