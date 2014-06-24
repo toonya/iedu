@@ -62,25 +62,10 @@
 
                                 wp_nav_menu( $head_navigation );
                                 ?>
-                                <!-- <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">One more separated link</a></li>
-                                        </ul>
-                                    </li>
-                                </ul> -->
+                                
                                 <form class="navbar-form navbar-right" role="search">
                                     <div class="form-group">
-                                        <input type="text" class="form-control border-non radius-0" placeholder="Search">
+                                        <input type="text" class="form-control border-non radius-0" placeholder="你想学什么?">
                                     </div><button type="submit" class="btn btn-black btn-flat radius-0"><span class="glyphicon glyphicon-search"></span></button>
                                 </form>
                             </div><!-- /.navbar-collapse -->
@@ -88,30 +73,3 @@
                     </div><!-- /.container-fluid -->
                 </nav>
             </header> <!-- /. header -->
-
-            <!-- <nav class="main hidden-xs">
-                <div class="container">
-                    <?php
-$head_navigation = array(
-    'theme_location'  => 'header-menu',
-    'menu'            => '',
-    'container'       => false,
-    'container_class' => '',
-    'container_id'    => '',
-    'menu_class'      => 'nav nav-pills',
-    'menu_id'         => '',
-    'echo'            => true,
-    'fallback_cb'     => false,
-    'before'          => '',
-    'after'           => '',
-    'link_before'     => '<span>',
-    'link_after'      => '</span>',
-    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-    'depth'           => 0,
-    'walker'          => new Bootsrap_two_langs()
-);
-
-wp_nav_menu( $head_navigation );
-                    ?>
-                </div>
-            </nav> -->

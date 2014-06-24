@@ -412,6 +412,7 @@ nav.simple-flat .container-fluid .collapse ul {
 }
 nav.simple-flat .container-fluid .collapse form {
   margin-top: 20px;
+  padding: 0;
 }
 nav.simple-flat .container-fluid .collapse form input {
   width: 250px;
