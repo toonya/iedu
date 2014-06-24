@@ -57,11 +57,24 @@ class bootstrap_dropdown extends Walker {
     function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
         // echo $item->object_id . ' ' . get_the_ID() . '<br />';
 
-        $output .= sprintf( "\n<li%s><a href='%s'>%s</a>",
-            ( ($item->object_id == get_the_ID()) || ( $item->title == '首页' && is_front_page() ) ) ? ' class="active"' : '',
-            $item->url,
-            $item->title
-        );
+        $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+
+        if( ! in_array("menu-item-has-children", $classes ) ) {
+            $output .= sprintf( "\n<li%s><a href='%s'>%s</a>",
+                ( ($item->object_id == get_the_ID()) || ( $item->title == '首页' && is_front_page() ) ) ? ' class="active"' : '',
+                $item->url,
+                $item->title
+            );
+        }
+
+        else {
+            $output .= sprintf( "\n<li%s><a href='%s' class='dropdown-toggle' data-toggle='dropdown'>%s <b class='caret'></b></a>",
+                ( ($item->object_id == get_the_ID()) || ( $item->title == '首页' && is_front_page() ) ) ? ' class="active dropdown"' : ' class="dropdown"',
+                $item->url,
+                $item->title
+            );
+        }
+        
     }
 
     function end_el( &$output, $item, $depth = 0, $args = array() ) {
