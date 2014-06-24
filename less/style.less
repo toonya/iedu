@@ -128,16 +128,33 @@ section.strong, section.preferential, section.hotel {
 // ----------------------------------------
 
 section.slideshow {
-	padding-bottom: 105px;
+	padding-bottom: 50px;
 
 	.carousel-inner {
-		height: 221px;
-		overflow: hidden;
+		//min-height: 221px;
+		//overflow: hidden;
 	}
 
 	.item {
 		a {
 			display: block;
+
+			h4 {
+				font-size: 16px;
+				line-height: 30px;
+				margin-top: 5px;
+				color: #000;
+			}
+
+			>div {
+				font-size: 14px;
+				line-height: 20px;
+				color: #626262;
+
+				.tag {
+					color: #cfa972;
+				}
+			}
 		}
 	}
 
@@ -206,7 +223,8 @@ section.topic {
 footer {
 	color: @c-ll-black;
 	font-size: 12px;
-	line-height: 24px;
+	line-height: 20px;
+	background: #DCDCDC;
 
 	a {
 		font-size: 12px;

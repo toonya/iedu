@@ -509,14 +509,24 @@ section.hotel {
   border-right: none;
 }
 section.slideshow {
-  padding-bottom: 105px;
-}
-section.slideshow .carousel-inner {
-  height: 221px;
-  overflow: hidden;
+  padding-bottom: 50px;
 }
 section.slideshow .item a {
   display: block;
+}
+section.slideshow .item a h4 {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 5px;
+  color: #000;
+}
+section.slideshow .item a > div {
+  font-size: 14px;
+  line-height: 20px;
+  color: #626262;
+}
+section.slideshow .item a > div .tag {
+  color: #cfa972;
 }
 section.slideshow .carousel-control.left,
 section.slideshow .carousel-control.right {
@@ -570,7 +580,8 @@ section.topic {
 footer {
   color: #959595;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 20px;
+  background: #DCDCDC;
 }
 footer a {
   font-size: 12px;

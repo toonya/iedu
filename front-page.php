@@ -64,7 +64,14 @@
 		  <div class="carousel-inner">
 		      <div class="item active">
 		      	<div class="row">
-		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0.jpg" alt=""></a></div>
+		      		<div class="col-sm-4"><a href="">
+		      			<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0.jpg" alt="">
+		      			<h4>标题</h4>
+		      			<div>
+		      				<div class="pull-right tag">海景</div>
+		      				<p class="describe">描述</p>
+		      			</div>
+		      		</a></div>
 		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(1).jpg" alt=""></a></div>
 		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(2).jpg" alt=""></a></div>
 		      	</div>
