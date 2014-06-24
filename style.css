@@ -547,6 +547,26 @@ section.topic {
   background: #fff;
   padding-bottom: 105px;
 }
+.topic .type1,
+.topic .type2,
+.topic .type3 {
+  overflow: hidden;
+}
+.topic .type1 .img-responsive,
+.topic .type2 .img-responsive,
+.topic .type3 .img-responsive {
+  width: 100%;
+  max-width: auto;
+}
+.topic .type1 {
+  height: 220px;
+}
+.topic .type2 {
+  height: 415px;
+}
+.topic .type3 {
+  height: 665px;
+}
 footer {
   color: #959595;
 }

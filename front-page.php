@@ -87,20 +87,20 @@
 			<h1>游学主题</h1>
 		</div>
 		<div class="row">
-			<div class="col-sm-7">
+			<div class="col-sm-8">
 				<div class="row">
 					<div class="col-sm-6">
-						<a class="img-resp-block" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182129GhMImN.jpg"></a>
+						<a class="img-resp-block type1" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182129GhMImN.jpg"></a>
 					</div>
 					<div class="col-sm-6">
-						<a class="img-resp-block" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182153VCdYqR.jpg" class="img-responsive"></a>
+						<a class="img-resp-block type1" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182153VCdYqR.jpg" class="img-responsive"></a>
 					</div>
 				</div>
 				<div class="row-block"></div>
-				<a class="img-resp-block" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182212tqyzXA.jpg"></a>
+				<a class="img-resp-block type2" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182212tqyzXA.jpg"></a>
 			</div>
-			<div class="col-sm-5">
-				<a class="img-resp-block" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182239kWdisj.jpg"></a>
+			<div class="col-sm-4">
+				<a class="img-resp-block type3" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182239kWdisj.jpg"></a>
 			</div>
 		</div>
 	</div>
