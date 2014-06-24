@@ -72,19 +72,34 @@ body {
 	}
 }
 
+
+// ----------------------------------------
+// ! section
+// ----------------------------------------
+section h1 {
+	line-height: 50px;
+	font-size: 30px;
+}
+
+.section-header {
+	height: 140px;
+	padding: 50px 0 40px;
+	position: relative;
+	text-align: center;
+}
 // ----------------------------------------
 // ! section strong
 // ----------------------------------------
-section.strong {
+section.strong, section.preferential {
 	background-color: #EEEEEE;
 }
 .strong-type {
 	padding-top: 24px;
 	border-bottom: 1px #d2d2d2 solid;
-	margin-bottom: 12px;
+	padding-bottom: 24px;
 
 	h3 {
-		color: #D4AA6D;
+		color: @c-golden;
 		font-size: 20px;
 		margin: 6px 0 12px;
 	}
@@ -107,4 +122,56 @@ section.strong {
 	}
 }
 
+// ----------------------------------------
+// ! section preferential
+// ----------------------------------------
+
+.preferential {
+	padding-bottom: 105px;
+
+	.carousel-inner {
+		height: 221px;
+		overflow: hidden;
+	}
+
+	.item {
+		a {
+			display: block;
+		}
+	}
+
+	.carousel-control {
+		&.left, &.right {
+			background-color: transparent;
+			background: none;
+		}
+	}
+
+	.bg-icon-gray-left, .bg-icon-gray-right {
+		background: url(images/bg-icon.png) no-repeat;
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
+		top: 52.5%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
+
+	.bg-icon-gray-left {
+		background-position: 0 -100px;
+	}
+	.bg-icon-gray-right {
+		background-position: 0 -150px;
+	}
+}
+
+// ----------------------------------------
+// ! section topic
+// ----------------------------------------
+section.topic {
+	background: #fff;
+	padding-bottom: 105px;
+}
 
