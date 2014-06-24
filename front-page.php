@@ -46,7 +46,7 @@
 	</div>
 </section>
 
-<section class="preferential">
+<section class="preferential slideshow">
 	<div class="container">
 		<div id="carousel-preferential" class="carousel slide" data-ride="carousel" data-interval="">
 		  
@@ -102,6 +102,41 @@
 			<div class="col-sm-5">
 				<a class="img-resp-block" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182239kWdisj.jpg"></a>
 			</div>
+		</div>
+	</div>
+</section>
+
+<section class="hotel slideshow">
+	<div class="container">
+		<div id="carousel-hotel" class="carousel slide" data-ride="carousel" data-interval="">
+		  
+		  <div class="section-header text-center">
+		  	<!-- Controls -->
+		  	<a class="left carousel-control" href="#carousel-hotel" data-slide="prev">
+		  	    <span class="bg-icon-gray-left"></span>
+		  	</a>
+		  	<a class="right carousel-control" href="#carousel-hotel" data-slide="next">
+		  	    <span class="bg-icon-gray-right"></span>
+		  	</a>
+		  	<h1>清迈住宿</h1>
+		  </div>
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		      <div class="item active">
+		      	<div class="row">
+		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0.jpg" alt=""></a></div>
+		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(1).jpg" alt=""></a></div>
+		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(2).jpg" alt=""></a></div>
+		      	</div>
+		      </div>
+		      <div class="item">
+		      	<div class="row">
+		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0.jpg" alt=""></a></div>
+		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(1).jpg" alt=""></a></div>
+		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(2).jpg" alt=""></a></div>
+		      	</div>
+		      </div>
+		  </div>
 		</div>
 	</div>
 </section>
