@@ -569,6 +569,11 @@ section.topic {
 }
 footer {
   color: #959595;
+  font-size: 12px;
+  line-height: 24px;
+}
+footer a {
+  font-size: 12px;
 }
 footer .row {
   padding-top: 50px;
@@ -587,7 +592,7 @@ footer a {
   color: inherit;
 }
 footer h3 {
-  padding-bottom: 12px;
+  padding-bottom: 18px;
 }
 footer .copyright {
   padding: 23px 0 18px;
