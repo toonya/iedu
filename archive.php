@@ -30,6 +30,8 @@
 
 						$location = ( isset($meta['location']) ) ? $meta['location'][0]:'';
 						$edu_sys = ( isset($meta['edu_sys']) ) ? $meta['edu_sys'][0]:'';
+						$course_intro = ( isset($meta['course_intro']) ) ? $meta['course_intro'][0]:'';
+						$fee = ( isset($meta['fee']) ) ? $meta['fee'][0]:'';
 					?>
 					<div class="archive-item-list">
 						<div class="item">
@@ -38,9 +40,27 @@
 							</div> <!-- /.left -->
 							<div class="right">
 								<h3 class="page-title"><?php the_title();?> </h3>
-								<div class="well">
-									<div class="location"><?php echo $location; ?></div>
-									<div class="edu_sys"><?php echo $edu_sys; ?></div>
+
+								<?php if( !empty($location) || !empty($edu_sys) ): ?>
+									<div class="well">
+										<div class=""><?php echo $location; ?></div>
+										<div class=""><?php echo $edu_sys; ?></div>
+									</div>
+								<?php endif; ?>
+
+								<div class="intro"><?php echo $course_intro; ?></div>
+
+								<div class="bottom">
+									<div class="row">
+										<div class="col-sm-6">
+											<?php if( !empty($fee) ): ?>
+												<strong><?php echo $fee; ?></strong>/人
+											<?php endif; ?>
+										</div>
+										<div class="col-sm-6 text-right">
+											<a href="<?php the_permalink(); ?>" class="detail">查看详情 <span class="glyphicon glyphicon-chevron-right"></span></a>
+										</div>
+									</div>
 								</div>
 							</div> <!-- /.right -->
 						</div>
