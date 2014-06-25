@@ -43,6 +43,8 @@ require_once('inc/post-type-ed.php');
 require_once('inc/post-type-camp.php');
 require_once('inc/post-type-visit.php');
 require_once('inc/post-type-hotel.php');
+
+//require_once('inc/post-metabox.php');
 //require_once('inc/remove-origin.php');
 
 require_once('inc/change-login-area.php');
@@ -51,6 +53,22 @@ if(is_admin()){
 	require_once('inc/protection-code.php');
 	require_once('inc/slideshow-management.php');
 }
+
+function loadAdminMedia() {
+
+	$screen = get_current_screen();
+
+	if ( in_array( $screen->id, array( 'iedu_school', 'iedu_ed', 'iedu_visit', 'iedu_camp', 'iedu_certification', 'iedu_hotel' ) ) ) {
+		wp_enqueue_style( 'admin-style', get_template_directory_uri() . '/inc/css/admin.css' );
+		wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
+		wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', array('jquery'), '1.0.0', true );
+		wp_enqueue_script( 'admin-javascript', get_template_directory_uri() . '/inc/js/admin.js', array('jquery'), '1.0.0', true );
+
+		wp_enqueue_media(); //call the media management.	
+	}
+}
+
+add_action( 'admin_enqueue_scripts', 'loadAdminMedia' );
 
 
 // ----------------------------------------
@@ -95,105 +113,6 @@ function load_bootstrap_select() {
 }
 
 add_action( 'wp_enqueue_scripts', 'load_bootstrap_select' );
-
-
-
-
-// ----------------------------------------
-// ! add second title metabox.
-// ----------------------------------------
-function add_second_title() {
-
-	$screens = array( 'page' );
-
-	foreach ( $screens as $screen ) {
-
-		add_meta_box(
-			'second_title',
-			'输入英文标题',
-			'second_title_meta_box_callback',
-			$screen,
-			'normal',
-			'high'
-		);
-	}
-}
-add_action( 'add_meta_boxes', 'add_second_title' );
-
-/**
- * Prints the box content.
- *
- * @param WP_Post $post The object for the current post/page.
- */
-function second_title_meta_box_callback( $post ) {
-
-	// Add an nonce field so we can check for it later.
-	wp_nonce_field( 'second_title_meta_box', 'second_title_meta_box_nonce' );
-
-	/*
-	 * Use get_post_meta() to retrieve an existing value
-	 * from the database and use the value for the form.
-	 */
-	$value = get_post_meta( $post->ID, 'second_title', true );
-
-	echo '<input type="text" id="second_title" name="second_title" value="' . esc_attr( $value ) . '" />';
-}
-
-/**
- * When the post is saved, saves our custom data.
- *
- * @param int $post_id The ID of the post being saved.
- */
-function second_title_save_meta_box_data( $post_id ) {
-
-	/*
-	 * We need to verify this came from our screen and with proper authorization,
-	 * because the save_post action can be triggered at other times.
-	 */
-
-	// Check if our nonce is set.
-	if ( ! isset( $_POST['second_title_meta_box_nonce'] ) ) {
-		return;
-	}
-
-	// Verify that the nonce is valid.
-	if ( ! wp_verify_nonce( $_POST['second_title_meta_box_nonce'], 'second_title_meta_box' ) ) {
-		return;
-	}
-
-	// If this is an autosave, our form has not been submitted, so we don't want to do anything.
-	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
-		return;
-	}
-
-	// Check the user's permissions.
-	if ( isset( $_POST['post_type'] ) && 'page' == $_POST['post_type'] ) {
-
-		if ( ! current_user_can( 'edit_page', $post_id ) ) {
-			return;
-		}
-
-	} else {
-
-		if ( ! current_user_can( 'edit_post', $post_id ) ) {
-			return;
-		}
-	}
-
-	/* OK, its safe for us to save the data now. */
-
-	// Make sure that it is set.
-	if ( ! isset( $_POST['second_title'] ) ) {
-		return;
-	}
-
-	// Sanitize user input.
-	$my_data = sanitize_text_field( $_POST['second_title'] );
-
-	// Update the meta field in the database.
-	update_post_meta( $post_id, 'second_title', $my_data );
-}
-add_action( 'save_post', 'second_title_save_meta_box_data' );
 
 
 // ----------------------------------------

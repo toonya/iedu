@@ -41,6 +41,9 @@
 #wpwrap {
   background: #fff;
 }
+[role="form"] {
+  margin: 36px 0 0;
+}
 /* Small devices (tablets, 480px and up) */
 /* @media (min-width: 480px) { } */
 /* Small devices (tablets, 768px and up) */
