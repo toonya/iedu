@@ -84,60 +84,60 @@ function add_certification_metaboxs() {
 }
 
 // Field Array
-$certification_prefix = 'certification_';
+//$certification_prefix = 'certification_';
 $certification_meta_fields = array(
   array(
     'label' => '地址',
     'desc'  => '',
-    'id'  => $certification_prefix.'location',
+    'id'  => 'location',
     'type'  => 'text'
   ),
   array(
     'label' => '教学系统',
     'desc'  => '',
-    'id'  => $certification_prefix.'edu_sys',
+    'id'  => 'edu_sys',
     'type'  => 'text'
   ),
   array(
     'label' => '课程介绍',
     'desc'  => '',
-    'id'  => $certification_prefix.'course_intro',
+    'id'  => 'course_intro',
     'type'  => 'textarea'
   ),
   array(
     'label' => '学费',
     'desc'  => '',
-    'id'  => $certification_prefix.'fee',
+    'id'  => 'fee',
     'type'  => 'text'
   ),
   array(
     'label' => '教学&详情',
     'desc'  => '',
-    'id'  => $certification_prefix.'edu_info',
+    'id'  => 'edu_info',
     'type'  => 'textarea'
   ),
   array(
     'label' => '入学&要求',
     'desc'  => '',
-    'id'  => $certification_prefix.'requirement',
+    'id'  => 'requirement',
     'type'  => 'textarea'
   ),
   array(
     'label' => '费用&条款',
     'desc'  => '',
-    'id'  => $certification_prefix.'fee_agreement',
+    'id'  => 'fee_agreement',
     'type'  => 'textarea'
   ),
   array(
     'label' => '服务流程',
     'desc'  => '',
-    'id'  => $certification_prefix.'service_process',
+    'id'  => 'service_process',
     'type'  => 'textarea'
   ),
   array(
     'label' => '申请表格',
     'desc'  => '',
-    'id'  => $certification_prefix.'apply_form',
+    'id'  => 'apply_form',
     'type'  => 'textarea'
   ),
 );

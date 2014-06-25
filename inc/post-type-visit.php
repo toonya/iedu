@@ -85,60 +85,60 @@ function add_visit_metaboxs() {
 }
 
 // Field Array
-$visit_prefix = 'visit_';
+//$visit_prefix = 'visit_';
 $visit_meta_fields = array(
   array(
     'label' => '地址',
     'desc'  => '',
-    'id'  => $visit_prefix.'location',
+    'id'  => 'location',
     'type'  => 'text'
   ),
   array(
     'label' => '教学系统',
     'desc'  => '',
-    'id'  => $visit_prefix.'edu_sys',
+    'id'  => 'edu_sys',
     'type'  => 'text'
   ),
   array(
     'label' => '课程介绍',
     'desc'  => '',
-    'id'  => $visit_prefix.'course_intro',
+    'id'  => 'course_intro',
     'type'  => 'textarea'
   ),
   array(
     'label' => '学费',
     'desc'  => '',
-    'id'  => $visit_prefix.'fee',
+    'id'  => 'fee',
     'type'  => 'text'
   ),
   array(
     'label' => '教学&详情',
     'desc'  => '',
-    'id'  => $visit_prefix.'edu_info',
+    'id'  => 'edu_info',
     'type'  => 'textarea'
   ),
   array(
     'label' => '入学&要求',
     'desc'  => '',
-    'id'  => $visit_prefix.'requirement',
+    'id'  => 'requirement',
     'type'  => 'textarea'
   ),
   array(
     'label' => '费用&条款',
     'desc'  => '',
-    'id'  => $visit_prefix.'fee_agreement',
+    'id'  => 'fee_agreement',
     'type'  => 'textarea'
   ),
   array(
     'label' => '服务流程',
     'desc'  => '',
-    'id'  => $visit_prefix.'service_process',
+    'id'  => 'service_process',
     'type'  => 'textarea'
   ),
   array(
     'label' => '申请表格',
     'desc'  => '',
-    'id'  => $visit_prefix.'apply_form',
+    'id'  => 'apply_form',
     'type'  => 'textarea'
   ),
 );

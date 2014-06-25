@@ -86,60 +86,60 @@ function add_camp_metaboxs() {
 }
 
 // Field Array
-$camp_prefix = 'camp_';
+//$camp_prefix = 'camp_';
 $camp_meta_fields = array(
   array(
     'label' => '地址',
     'desc'  => '',
-    'id'  => $camp_prefix.'location',
+    'id'  => 'location',
     'type'  => 'text'
   ),
   array(
     'label' => '教学系统',
     'desc'  => '',
-    'id'  => $camp_prefix.'edu_sys',
+    'id'  => 'edu_sys',
     'type'  => 'text'
   ),
   array(
     'label' => '课程介绍',
     'desc'  => '',
-    'id'  => $camp_prefix.'course_intro',
+    'id'  => 'course_intro',
     'type'  => 'textarea'
   ),
   array(
     'label' => '学费',
     'desc'  => '',
-    'id'  => $camp_prefix.'fee',
+    'id'  => 'fee',
     'type'  => 'text'
   ),
   array(
     'label' => '教学&详情',
     'desc'  => '',
-    'id'  => $camp_prefix.'edu_info',
+    'id'  => 'edu_info',
     'type'  => 'textarea'
   ),
   array(
     'label' => '入学&要求',
     'desc'  => '',
-    'id'  => $camp_prefix.'requirement',
+    'id'  => 'requirement',
     'type'  => 'textarea'
   ),
   array(
     'label' => '费用&条款',
     'desc'  => '',
-    'id'  => $camp_prefix.'fee_agreement',
+    'id'  => 'fee_agreement',
     'type'  => 'textarea'
   ),
   array(
     'label' => '服务流程',
     'desc'  => '',
-    'id'  => $camp_prefix.'service_process',
+    'id'  => 'service_process',
     'type'  => 'textarea'
   ),
   array(
     'label' => '申请表格',
     'desc'  => '',
-    'id'  => $camp_prefix.'apply_form',
+    'id'  => 'apply_form',
     'type'  => 'textarea'
   ),
 );
