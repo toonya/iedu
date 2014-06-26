@@ -68,7 +68,7 @@
 			  </a>
 			</div> <!-- /. carousel -->
 
-			<div class="white-block"></div>
+			<div class="white-block-12"></div>
 			<nav class="in-page-nav">
 				<ul class="nav nav-pills nav-justified">
 				  <li><a href="#main-content">学校介绍</a></li>
@@ -95,7 +95,7 @@
 			<?php foreach ($content_list as $key => $value) {
 					if( ! empty($meta[$key]) ){ ?>
 						<section id="<?php echo $key; ?>">
-							<h2>$value</h2>
+							<h2><?php echo $value ?></h2>
 							<div class="section-content">
 								<?php echo esc_html($meta[$key]); ?>
 							</div>

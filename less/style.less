@@ -353,7 +353,8 @@ footer {
 // ----------------------------------------
 .custom-single {
 	padding: 24px 0;
-
+	
+	// single page header area
 	h1 {
 		font-size: 20px;
 		line-height: 34px;
@@ -369,7 +370,8 @@ footer {
 			font-size: 30px;
 		}
 	}
-
+	
+	// adjust caraousel
 	.carousel-indicators {
 		bottom: -10px;
 	}
@@ -377,8 +379,53 @@ footer {
 	.carousel-control {
 		width: 14%;
 	}
+	
+	// section area
+	section {
+		h2 {
+			color: #D4A96D;
+			font-size: 20px;
+			line-height: 72px;
+		}
+
+		.section-content {
+			padding: 18px;
+			background: #fff;
+			border: 1px solid #cfcfcf;
+		}
+	}
+
+	// single page navigation
+	.in-page-nav {
+		ul {
+			margin: 0;
+			
+			li {
+				padding-right: 6px;
+			}
+
+			>li:last-child {
+				padding-right:0;
+			}
+
+			a {
+				background: #E8E8E8;
+				border: #DDDDDD solid 1px;
+				color: #000;
+				font-size: 16px;
+
+				&:hover {
+					background: #D4A96D;
+					color: #fff;
+				}
+			}
+		}
+	}
 }
 
+// ----------------------------------------
+// !  showcase style of single page
+// ----------------------------------------
 .post-showcase {
 	.item {
 		height: 400px;

@@ -703,6 +703,35 @@ footer .copyright p {
 .custom-single .carousel-control {
   width: 14%;
 }
+.custom-single section h2 {
+  color: #D4A96D;
+  font-size: 20px;
+  line-height: 72px;
+}
+.custom-single section .section-content {
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #cfcfcf;
+}
+.custom-single .in-page-nav ul {
+  margin: 0;
+}
+.custom-single .in-page-nav ul li {
+  padding-right: 6px;
+}
+.custom-single .in-page-nav ul > li:last-child {
+  padding-right: 0;
+}
+.custom-single .in-page-nav ul a {
+  background: #E8E8E8;
+  border: #DDDDDD solid 1px;
+  color: #000;
+  font-size: 16px;
+}
+.custom-single .in-page-nav ul a:hover {
+  background: #D4A96D;
+  color: #fff;
+}
 .post-showcase .item {
   height: 400px;
   overflow: hidden;
