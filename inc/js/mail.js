@@ -32,6 +32,8 @@
 		// extend the mail options with form data
 		data = $.extend({}, data);
 
+		console.log(data);
+
 		// begin mailing
 		$('body').addClass('mailing');
 
@@ -52,20 +54,17 @@
 				if(mail.state) {
 					$('form')[0].reset();
 
-					$('.mailinfo .fail, .mailinfo .sending').addClass('hide');
-					$('.mailinfo .success').removeClass('hide');
+					alert('发送成功');
 				}
 
 				//fail
 				else {
-					$('.mailinfo .success, .mailinfo .sending').addClass('hide');
-					$('.mailinfo .fail').removeClass('hide');
+					alert('发送失败，请稍候再试，或联系管理员。');
 				}
 
 			}
 		}).fail(function(){
-			$('.mailinfo .success, .mailinfo .sending').addClass('hide');
-			$('.mailinfo .fail').removeClass('hide');
+			alert('发送失败，请稍候再试，或联系管理员。')
 		});
 
 	});

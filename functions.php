@@ -77,7 +77,6 @@ add_action( 'admin_enqueue_scripts', 'loadAdminMedia' );
 // ----------------------------------------
 require_once('inc/mail-request.php');
 
-
 // ----------------------------------------
 // ! add menu management
 // ----------------------------------------
@@ -94,7 +93,7 @@ function admin_menu_page(){
 function page_remove_parent_meta_boxes() {
     remove_meta_box('pageparentdiv', 'page', 'side');
 }
-add_action( 'admin_menu', 'page_remove_parent_meta_boxes' );
+//add_action( 'admin_menu', 'page_remove_parent_meta_boxes' );
 
 
 // ----------------------------------------

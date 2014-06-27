@@ -19,13 +19,13 @@ function load_mail_ajax() {
 
 	global $post;
 
-	if ( !empty($post) && in_array( $post->post_name, array( 'ask', 'contact' ) ) )
+	if ( !empty($post) && (in_array( $post->post_name, array( 'ask', 'contact' ) )) || (is_page_template('page-contact.php' )) )
 	{
 	    $ajax_mail_nonce = wp_create_nonce("ajax-mail-nonce");
 
 		wp_enqueue_script( 'ajax_mail', get_template_directory_uri() . '/inc/js/mail.js', array('jquery'), '1.0.0', true );
 	    wp_localize_script( 'ajax_mail', 'mail_options',
-			array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'ajax_mail_type'=>$post->post_name , 'action'=>'ajax_mail_handle' , 'security'=>$ajax_mail_nonce ));
+			array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'ajax_mail_type'=>'contact' , 'action'=>'ajax_mail_handle' , 'security'=>$ajax_mail_nonce ));
 	}
 }
 
@@ -111,8 +111,8 @@ function ajax_mail_handle() {
 				}
 
 
-				$mail = wp_mail($reciver, $subject, $message , "From: WB Legal Asia <wblegal@toonya.me>" . "\r\n" , $file);
-
+				$mail = wp_mail($reciver, $subject, $message , "From: International Education <iedu@toonya.me>" . "\r\n" , $file);
+				wp_send_json($mail);
 				if($file != '') {
 					unlink($file);
 				}
@@ -137,7 +137,7 @@ function ajax_mail_handle() {
 		    	break;
 
 		    default :
-		    	$results = false;
+		    	$results = 'Please set a type.';
 		    	break;
 	    }
     }
