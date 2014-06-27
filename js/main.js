@@ -138,4 +138,18 @@
 		$('.mobile-nav-mask').css('display','none');
 	}
 
+
+	// ----------------------------------------
+	// ! single page
+	// ----------------------------------------
+	
+	$('body').scrollspy({ target: '.in-page-nav' });
+
+	var affix_top = $('.in-page-nav').offset().top;
+	$('.in-page-nav').affix({
+	    offset: {
+	      top: affix_top,
+	    }
+	  })
+
 })(jQuery)

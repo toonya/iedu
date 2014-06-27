@@ -713,6 +713,10 @@ footer .copyright p {
   background: #fff;
   border: 1px solid #cfcfcf;
 }
+.custom-single .in-page-nav.affix {
+  left: 0;
+  top: 0;
+}
 .custom-single .in-page-nav ul {
   margin: 0;
 }
@@ -729,6 +733,10 @@ footer .copyright p {
   font-size: 16px;
 }
 .custom-single .in-page-nav ul a:hover {
+  background: #D4A96D;
+  color: #fff;
+}
+.custom-single .in-page-nav ul li.active a {
   background: #D4A96D;
   color: #fff;
 }
