@@ -69,7 +69,7 @@
 			</div> <!-- /. carousel -->
 
 			<div class="white-block-12"></div>
-			<nav class="in-page-nav" data-spy="affix">
+			<nav class="in-page-nav">
 				<ul class="nav nav-pills nav-justified">
 				  <li><a href="#main-content">学校介绍</a></li>
 				  <?php  
