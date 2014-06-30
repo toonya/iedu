@@ -23,7 +23,7 @@
 		<?php  
 			$meta = get_post_meta( get_the_ID() );
 
-			$meta_name = array('location', 'exam_info', 'teacher_info', 'fee', 'teacher_teaching', 'fee_agreement', 'service_process', 'apply_form');
+			$meta_name = array('location', 'time', 'language', 'fee', 'host', 'topic', 'requirement', 'number', 'deadline', 'fee_agreement', 'service_process', 'apply_form', 'topic_background');
 
 			foreach ($meta_name as $name) {
 				$meta[$name] = ( isset($meta[$name]) ) ? $meta[$name][0] : '' ;
@@ -92,11 +92,11 @@
 				<div class="white-block-12"></div>
 				<nav class="in-page-nav">
 					<ul class="nav nav-pills nav-justified">
-					  <li><a href="#main-content">培训简介</a></li>
+					  <li><a href="#main-content">活动简介</a></li>
 					  <?php  
 					  		$content_list = array(
-								'teacher_teaching'=>'师资&教学', 
-								'fee_agreement' => '费用&条款', 
+								'topic_background'=>'主题&背景', 
+								'fee_agreement' => '价格&条款',
 								'service_process' => '服务流程',
 								'apply_form' => '申请表格' ); 
 					  		foreach ($content_list as $key => $value) {
@@ -132,9 +132,12 @@
 					  <div class="panel-body">
 					    <div class="sidebar-items">
 					    	<?php   $sidebar_list = array(
-					    				'teacher_info' => '师资',
-					    				'fee' => '价格'
-					    			);
+					    	    		'time' => '时间',
+					    	    		'topic' => '主题',
+					    	    		'host' => '主办方',
+					    	    		'number' => '参加人数',
+					    	    		'deadline' => '截止日期',
+					    			 					    	);
 					    
 					    			foreach ( $sidebar_list as $key => $value ) {
 					    				echo '<div class="item">
