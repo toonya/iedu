@@ -816,3 +816,17 @@ nav.simple-flat .container-fluid .collapse form {
 nav.simple-flat .container-fluid .collapse form input {
   width: 250px;
 }
+.sidebar .sidebar-items .item {
+  padding: 0 24px;
+  line-height: 42px;
+  font-size: 14px;
+}
+.sidebar .sidebar-items .item:nth-child(2n+1) {
+  background: #fff;
+}
+.sidebar .sidebar-items .item:nth-child(2n) {
+  background: #F4F4F5;
+}
+.sidebar .panel-body {
+  padding: 0;
+}

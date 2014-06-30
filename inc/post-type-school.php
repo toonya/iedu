@@ -124,6 +124,24 @@ $school_meta_fields = array(
     'type'  => 'text'
   ),
   array(
+    'label' => '学生人数',
+    'desc'  => '',
+    'id'  => 'student_num',
+    'type'  => 'text'
+  ),
+  array(
+    'label' => '教师人数',
+    'desc'  => '',
+    'id'  => 'teacher_num',
+    'type'  => 'text'
+  ),
+  array(
+    'label' => '教学年级',
+    'desc'  => '',
+    'id'  => 'grade_area',
+    'type'  => 'text'
+  ),
+  array(
     'label' => '教学&详情',
     'desc'  => '',
     'id'  => 'edu_info',
