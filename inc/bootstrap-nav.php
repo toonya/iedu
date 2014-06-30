@@ -60,21 +60,20 @@ class bootstrap_dropdown extends Walker {
         $classes = empty( $item->classes ) ? array() : (array) $item->classes;
 
         if( ! in_array("menu-item-has-children", $classes ) ) {
-            $output .= sprintf( "\n<li%s><a href='%s'>%s</a>",
-                ( ($item->object_id == get_the_ID()) || ( $item->title == '首页' && is_front_page() ) ) ? ' class="active"' : '',
+            $output .= sprintf( "\n<li><a class=\"%s\" href='%s'>%s</a>",
+                implode( ' ', $classes ),
                 $item->url,
                 $item->title
             );
         }
 
         else {
-            $output .= sprintf( "\n<li%s><a href='%s' class='dropdown-toggle' data-toggle='dropdown'>%s <b class='caret'></b></a>",
-                ( ($item->object_id == get_the_ID()) || ( $item->title == '首页' && is_front_page() ) ) ? ' class="active dropdown"' : ' class="dropdown"',
+            $output .= sprintf( "\n<li class=\"dropdown\"><a href='%s' class=\"%s\" class='dropdown-toggle' data-toggle='dropdown'>%s <b class='caret'></b></a>",
                 $item->url,
+                implode( ' ', $classes ),
                 $item->title
             );
         }
-        
     }
 
     function end_el( &$output, $item, $depth = 0, $args = array() ) {
@@ -83,12 +82,12 @@ class bootstrap_dropdown extends Walker {
 
     function start_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat("\t", $depth);
-        $output .= "\n$indent<ul class=\"sub-menu dropdown-menu\">\n";
+        $output .= "\n$indent<div class=\"dropdown-menu sub-menu\"><div class=\"container\"><ul>\n";
     }
 
     function end_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat("\t", $depth);
-        $output .= "$indent</ul>\n";
+        $output .= "$indent</ul></div></div>\n";
     }
 }
 

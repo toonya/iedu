@@ -408,10 +408,6 @@ nav.simple-flat .container-fluid .collapse ul,
 nav.simple-flat .container-fluid .collapse form {
   position: relative;
 }
-nav.simple-flat .container-fluid .collapse ul ul,
-nav.simple-flat .container-fluid .collapse form ul {
-  position: absolute;
-}
 nav.simple-flat .container-fluid .collapse ul {
   margin-top: 16px;
 }

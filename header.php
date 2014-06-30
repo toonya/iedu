@@ -36,7 +36,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/logo-lg.jpg" alt="">
                                 </a>
                             </div>
-                        
+                    
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <?php

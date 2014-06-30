@@ -153,4 +153,16 @@
 	// 	}
 	// })
 
+	// ----------------------------------------
+	// ! header dropdown
+	// ----------------------------------------
+	$('.sub-menu.dropdown-menu')
+	.width(function(){
+		return $('body').width();
+	})
+	.css('left', function(){
+		return '-'+$(this).closest('li.dropdown').offset().left+'px';
+	})
+
+
 })(jQuery)
