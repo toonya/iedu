@@ -68,7 +68,7 @@ class bootstrap_dropdown extends Walker {
         }
 
         else {
-            $output .= sprintf( "\n<li class=\"dropdown\"><a href='%s' class=\"%s\" class='dropdown-toggle' data-toggle='dropdown'>%s <b class='caret'></b></a>",
+            $output .= sprintf( "\n<li class=\"dropdown\"><a href='%s' class=\"%s dropdown-toggle\" data-toggle='dropdown' data-hover=\"dropdown\">%s <b class='caret'></b></a>",
                 $item->url,
                 implode( ' ', $classes ),
                 $item->title

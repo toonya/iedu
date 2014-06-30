@@ -531,3 +531,103 @@ footer {
 		border: none;
 	}
 }
+
+
+// ----------------------------------------
+// ! flat  logo nav search format  nav
+//   group
+// ----------------------------------------
+@height-flat-navigation: 100px;
+@c-golden: #D4AA6D;
+nav.simple-flat {
+  height: @height-flat-navigation;
+  background: @c-ll-gray;
+  margin-bottom: 0;
+}
+
+
+nav.simple-flat .container-fluid {
+  position: relative;
+  width: 100%;
+  height: @height-flat-navigation;
+  
+  .navbar-header {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%);
+
+    a {
+      height: auto;;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  ul.navbar-nav>li {
+    &::before {
+      position: absolute;
+      content: " ";
+      background: #DEDEDE;
+      width: 2px;
+      height: 30px;
+      top: 10px;
+      left: 0;
+    }
+
+    &:first-child::before {
+      background: none;
+    }
+
+    padding: 15px 24px;
+    position: relative;
+
+    &>a {
+      background: none;
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0;
+      display: block;
+      height: 50px;
+      color: @c-d-gray;
+      font-size: 14px;
+
+      &:hover {
+        background: none;
+        background-color: rgba(0,0,0,0) !important;
+
+        color: @c-golden;
+      }
+    }
+    &.open>a {
+      color: @c-golden;
+      background-color: transparent;
+      background: none;
+    }
+  }
+
+  .collapse {
+    position: absolute;
+    left: 300px;
+    top: 18px;
+    right: 0;
+
+    ul, form {
+      position: relative;
+    }
+
+    ul {
+      margin-top: 16px;
+    }
+
+    form {
+      margin-top: 20px;
+      padding: 0;
+
+      input {
+        width: 250px;
+      }
+    }
+  }
+}

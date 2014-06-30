@@ -341,83 +341,6 @@ a:hover {
 .white-block-12 {
   height: 12px;
 }
-nav.simple-flat {
-  height: 100px;
-  background: #eeeeee;
-  margin-bottom: 0;
-}
-nav.simple-flat .container-fluid {
-  position: relative;
-  width: 100%;
-  height: 100px;
-}
-nav.simple-flat .container-fluid .navbar-header {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-nav.simple-flat .container-fluid .navbar-header a {
-  height: auto;
-  padding: 0;
-  margin: 0;
-}
-nav.simple-flat .container-fluid ul.navbar-nav > li {
-  padding: 15px 24px;
-  position: relative;
-}
-nav.simple-flat .container-fluid ul.navbar-nav > li::before {
-  position: absolute;
-  content: " ";
-  background: #DEDEDE;
-  width: 2px;
-  height: 30px;
-  top: 10px;
-  left: 0;
-}
-nav.simple-flat .container-fluid ul.navbar-nav > li:first-child::before {
-  background: none;
-}
-nav.simple-flat .container-fluid ul.navbar-nav > li > a {
-  background: none;
-  background-color: transparent;
-  box-shadow: none;
-  padding: 0;
-  color: #626262;
-  font-size: 14px;
-}
-nav.simple-flat .container-fluid ul.navbar-nav > li > a:hover {
-  background: none;
-  background-color: rgba(0, 0, 0, 0) !important;
-  color: #d4aa6d;
-}
-nav.simple-flat .container-fluid ul.navbar-nav > li.open > a {
-  color: #d4aa6d;
-  background-color: transparent;
-  background: none;
-}
-nav.simple-flat .container-fluid .collapse {
-  position: absolute;
-  left: 300px;
-  top: 18px;
-  right: 0;
-}
-nav.simple-flat .container-fluid .collapse ul,
-nav.simple-flat .container-fluid .collapse form {
-  position: relative;
-}
-nav.simple-flat .container-fluid .collapse ul {
-  margin-top: 16px;
-}
-nav.simple-flat .container-fluid .collapse form {
-  margin-top: 20px;
-  padding: 0;
-}
-nav.simple-flat .container-fluid .collapse form input {
-  width: 250px;
-}
 .img-resp-block {
   display: block;
   width: 100%;
@@ -813,4 +736,83 @@ footer .copyright p {
 }
 .dropdown-menu.sub-menu ul li:last-of-type {
   border: none;
+}
+nav.simple-flat {
+  height: 100px;
+  background: #eeeeee;
+  margin-bottom: 0;
+}
+nav.simple-flat .container-fluid {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+nav.simple-flat .container-fluid .navbar-header {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+nav.simple-flat .container-fluid .navbar-header a {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li {
+  padding: 15px 24px;
+  position: relative;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li::before {
+  position: absolute;
+  content: " ";
+  background: #DEDEDE;
+  width: 2px;
+  height: 30px;
+  top: 10px;
+  left: 0;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li:first-child::before {
+  background: none;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li > a {
+  background: none;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  display: block;
+  height: 50px;
+  color: #626262;
+  font-size: 14px;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li > a:hover {
+  background: none;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #d4aa6d;
+}
+nav.simple-flat .container-fluid ul.navbar-nav > li.open > a {
+  color: #d4aa6d;
+  background-color: transparent;
+  background: none;
+}
+nav.simple-flat .container-fluid .collapse {
+  position: absolute;
+  left: 300px;
+  top: 18px;
+  right: 0;
+}
+nav.simple-flat .container-fluid .collapse ul,
+nav.simple-flat .container-fluid .collapse form {
+  position: relative;
+}
+nav.simple-flat .container-fluid .collapse ul {
+  margin-top: 16px;
+}
+nav.simple-flat .container-fluid .collapse form {
+  margin-top: 20px;
+  padding: 0;
+}
+nav.simple-flat .container-fluid .collapse form input {
+  width: 250px;
 }
