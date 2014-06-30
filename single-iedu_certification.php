@@ -23,7 +23,7 @@
 		<?php  
 			$meta = get_post_meta( get_the_ID() );
 
-			$meta_name = array('location', 'edu_sys', 'course_intro', 'fee', 'edu_info', 'requirement', 'fee_agreement', 'service_process', 'apply_form', 'student_num', 'teacher_num', 'grade_area');
+			$meta_name = array('location', 'exam_info', 'teacher_info', 'fee', 'teacher_teaching', 'fee_agreement', 'service_process', 'apply_form');
 
 			foreach ($meta_name as $name) {
 				$meta[$name] = ( isset($meta[$name]) ) ? $meta[$name][0] : '' ;
@@ -92,12 +92,11 @@
 				<div class="white-block-12"></div>
 				<nav class="in-page-nav">
 					<ul class="nav nav-pills nav-justified">
-					  <li><a href="#main-content">学校介绍</a></li>
+					  <li><a href="#main-content">培训简介</a></li>
 					  <?php  
 					  		$content_list = array(
-								'edu_info'=>'教学&详情', 
-								'requirement' => '入学&要求', 
-								'fee_agreement' => '费用&条款',
+								'teacher_teaching'=>'师资&教学', 
+								'fee_agreement' => '费用&条款', 
 								'service_process' => '服务流程',
 								'apply_form' => '申请表格' ); 
 					  		foreach ($content_list as $key => $value) {
@@ -133,11 +132,8 @@
 					  <div class="panel-body">
 					    <div class="sidebar-items">
 					    	<?php   $sidebar_list = array(
-					    	    		'edu_sys' => '教学系统',
-					    	    		'student_num' => '学生人数',
-					    	    		'teacher_num' => '老师人数',
-					    	    		'grade_area' => '教学年级'
-					    			 					    	);
+					    				'teacher_info' => '师资介绍',
+					    			);
 					    
 					    			foreach ( $sidebar_list as $key => $value ) {
 					    				echo '<div class="item">

@@ -48,21 +48,6 @@ function iedu_certification() {
 if(!post_type_exists('iedu_certification'))
 	add_action( 'init', 'iedu_certification' );
 
-
-// ----------------------------------------
-// ! load single post template
-// ----------------------------------------
-
-function get_certification_template($single_template) {
-     global $post;
-
-     if ($post->post_type == 'iedu_certification') {
-          $single_template = get_template_directory() . '/single-templates/iedu_certification.php';
-     }
-     return $single_template;
-}
-add_filter( 'single_template', 'get_certification_template' );
-
 // ----------------------------------------
 // ! add second title metabox.
 // ----------------------------------------
@@ -80,6 +65,15 @@ function add_certification_metaboxs() {
       'normal',
       'core'
     );
+
+    add_meta_box(
+        'showcase'
+        ,'相片集'
+        ,'render_certification_showcase'
+        , $screen
+        ,'normal'
+        ,'core'
+      );
   }
 }
 
@@ -87,39 +81,33 @@ function add_certification_metaboxs() {
 //$certification_prefix = 'certification_';
 $certification_meta_fields = array(
   array(
-    'label' => '地址',
+    'label' => '考试介绍',
     'desc'  => '',
-    'id'  => 'location',
+    'id'  => 'exam_info',
     'type'  => 'text'
   ),
   array(
-    'label' => '教学系统',
+    'label' => '师资介绍',
     'desc'  => '',
-    'id'  => 'edu_sys',
+    'id'  => 'teacher_info',
     'type'  => 'text'
   ),
   array(
-    'label' => '课程介绍',
-    'desc'  => '',
-    'id'  => 'course_intro',
-    'type'  => 'textarea'
-  ),
-  array(
-    'label' => '学费',
+    'label' => '价格',
     'desc'  => '',
     'id'  => 'fee',
     'type'  => 'text'
   ),
   array(
-    'label' => '教学&详情',
+    'label' => '所在地',
     'desc'  => '',
-    'id'  => 'edu_info',
-    'type'  => 'textarea'
+    'id'  => 'location',
+    'type'  => 'text'
   ),
   array(
-    'label' => '入学&要求',
+    'label' => '师资&教学',
     'desc'  => '',
-    'id'  => 'requirement',
+    'id'  => 'teacher_teaching',
     'type'  => 'textarea'
   ),
   array(
@@ -181,6 +169,52 @@ function certification_meta_box_callback( $post ) {
   }
   echo '</div>';
 }
+
+
+// ----------------------------------------
+// ! render_showcase
+// ----------------------------------------
+function render_certification_showcase($post) {
+
+  wp_nonce_field( 'certification_showcase', 'certification_showcase_nonce' );
+
+  /*
+   * Use get_post_meta() to retrieve an existing value
+   * from the database and use the value for the form.
+   */
+  $value = get_post_meta( $post->ID, 'showcase', true );
+  ?>
+  <div class="row">
+    <div class="funtions col-xs-11">
+      <div class="btn-group btn-group-justified">
+        <a href="#" class="btn btn-default disable new">新增</a>
+        <a href="#" class="btn btn-default disable edit-close">编辑</a>
+      </div>
+      <div class="hidden item template">
+          <input type="hidden" id="showcase" name="" value="" />
+          <div class="edit-area hidden">
+            <button type="button" class="close">×</button>
+          </div>
+          <img src="" alt="" />
+      </div>
+
+      <div class="showcase"><!--
+        <?php if($value): foreach($value as $key=>$url){ ?>
+          --><div class="item">
+              <input type="hidden" id="showcase" name="showcase[<?php echo $key; ?>]" value="<?php echo esc_attr($url); ?>" />
+              <div class="edit-area hidden">
+                <button type="button" class="close">×</button>
+              </div>
+              <img src="<?php echo esc_attr($url); ?>" alt="" />
+          </div><!--
+        <?php } endif;?>
+      --></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <?php
+}
+
 
 /**
  * When the post is saved, saves our certification data.
@@ -244,6 +278,19 @@ function certification_save_meta_box_data( $post_id ) {
       delete_post_meta($post_id, $field['id'], $old);
     }
   } // enf foreach
+
+  if( !empty($_POST['showcase']) ) {
+    $mydata =  $_POST['showcase'] ;
+
+    // Update the meta field in the database.
+    update_post_meta( $post_id, 'showcase', $mydata );
+  }
+  else {
+    $mydata = '';
+
+    // Update the meta field in the database.
+    update_post_meta( $post_id, 'showcase', $mydata );
+  }
 
   // Sanitize user input.
   //$my_data = sanitize_text_field( $_POST['certification'] );
