@@ -156,13 +156,44 @@
 	// ----------------------------------------
 	// ! header dropdown
 	// ----------------------------------------
-	$('.sub-menu.dropdown-menu')
-	.width(function(){
-		return $('body').width();
-	})
-	.css('left', function(){
-		return '-'+$(this).closest('li.dropdown').offset().left+'px';
-	})
 
+	$.fn.renderDropdownList = function(options) {
+		return this.each(function(){
+			var data = $(this).data();
+			var options = $.extend({}, options, data);
+			options.$this = $(this);
+			new renderDropdownList(options);
+		})
+	}
+
+	var renderDropdownList = function(options){
+		this.init(options);
+	}
+
+	renderDropdownList.prototype = {
+		init: function(options) {
+			this.options = options;
+			this.bind();
+			this.render();
+		},
+		bind: function() {
+			$( window ).resize( $.proxy(function() {
+				this.render();
+			}, this) )
+		},
+		render: function() {
+
+			$('.sub-menu.dropdown-menu')
+			.width(function(){
+				return $('body').width();
+			})
+			.css('left', function(){
+				return '-'+$(this).closest('li.dropdown').offset().left+'px';
+			})
+		
+		}
+	}
+
+	$('.sub-menu.dropdown-menu').renderDropdownList();
 
 })(jQuery)

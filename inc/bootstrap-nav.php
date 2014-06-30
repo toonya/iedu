@@ -61,9 +61,9 @@ class bootstrap_dropdown extends Walker {
 
         if( ! in_array("menu-item-has-children", $classes ) ) {
             $output .= sprintf( "\n<li><a class=\"%s\" href='%s'>%s</a>",
-                implode( ' ', $classes ),
+                implode( ' ', $classes ).' '.$depth,
                 $item->url,
-                $item->title
+                ( $depth == 0 ) ? $item->title : '<h3>'.$item->title.'</h3>'
             );
         }
 
@@ -87,7 +87,7 @@ class bootstrap_dropdown extends Walker {
 
     function end_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat("\t", $depth);
-        $output .= "$indent</ul></div></div>\n";
+        $output .= "$indent<div class=\"clearfix\"></div></ul></div></div>\n";
     }
 }
 
