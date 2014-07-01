@@ -48,6 +48,8 @@ require_once('inc/post-type-hotel.php');
 //require_once('inc/remove-origin.php');
 
 require_once('inc/change-login-area.php');
+require_once('inc/change-login-area.php');
+require_once('inc/qn/qn-support.php');
 
 if(is_admin()){
 	require_once('inc/protection-code.php');

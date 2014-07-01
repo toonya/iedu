@@ -59,6 +59,28 @@ function add_setting_func() {
                        'add-setting',
                        'add_setting');
 
+    add_settings_field('OSS_ACCESS_ID',
+                       'OSS_ACCESS_ID',
+                       'oss_access_id',
+                       'add-setting',
+                       'add_setting');
+    add_settings_field('OSS_ACCESS_KEY',
+                       'OSS_ACCESS_KEY',
+                       'oss_access_key',
+                       'add-setting',
+                       'add_setting');
+    add_settings_field('OSS_ACCESS_BUCKET',
+                       'OSS_ACCESS_BUCKET',
+                       'oss_access_bucket',
+                       'add-setting',
+                       'add_setting');
+    add_settings_field('OSS_ACCESS_DOMAIN',
+                       'OSS_ACCESS_DOMAIN',
+                       'oss_access_domain',
+                       'add-setting',
+                       'add_setting');
+
+
 
     // Register our setting so that $_POST handling is done for us and
     // our callback function just has to echo the <input>
@@ -67,6 +89,11 @@ function add_setting_func() {
     register_setting('add-setting','phone-number');
     register_setting('add-setting','qr-code');
     register_setting('add-setting','qq-contact');
+
+    register_setting('add-setting','OSS_ACCESS_ID');
+    register_setting('add-setting','OSS_ACCESS_KEY');
+    register_setting('add-setting','OSS_ACCESS_BUCKET');
+    register_setting('add-setting','OSS_ACCESS_DOMAIN');
 
 }// eg_settings_api_init()
 
@@ -96,4 +123,19 @@ function qq_contact() {
   echo 'tencent://message/?uin=你的QQ号码&Site=qq&Menu=yes</p>';
   echo '<textarea name="qq-contact" value="" class="form-control" cols="50" rows="3">'.esc_attr(get_option('qq-contact')).'</textarea>';
 }
+
+
+function oss_access_id() {
+  echo '<input name="OSS_ACCESS_ID" type="text" class="form-control" value="'.esc_attr(get_option('OSS_ACCESS_ID')).'" />';
+}
+function oss_access_key() {
+  echo '<input name="OSS_ACCESS_KEY" type="text" class="form-control" value="'.esc_attr(get_option('OSS_ACCESS_KEY')).'" />';
+}
+function oss_access_bucket() {
+  echo '<input name="OSS_ACCESS_BUCKET" type="text" class="form-control" value="'.esc_attr(get_option('OSS_ACCESS_BUCKET')).'" />';
+}
+function oss_access_domain() {
+  echo '<input name="OSS_ACCESS_DOMAIN" type="text" class="form-control" value="'.esc_attr(get_option('OSS_ACCESS_DOMAIN')).'" />';
+}
+
 ?>
