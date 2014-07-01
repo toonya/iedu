@@ -880,6 +880,9 @@ nav.simple-flat .container-fluid .collapse form input {
 .sidebar-contact .phone {
   background-position: 0 -90px;
 }
+
+
+/*added by Mansy*/
 #contact {
   width: 70%;
   margin: 40px auto;
@@ -927,4 +930,9 @@ nav.simple-flat .container-fluid .collapse form input {
 }
 .breadcrumb li a {
   color: #d4aa6d;
+}
+.dropdown-menu.sub-menu {
+	top:64px !important;
+	padding:40px 0;
+	background:url(images/theme-navbg.png) repeat-x;
 }

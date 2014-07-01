@@ -104,7 +104,7 @@
 					</div>
 				</div>
 				<div class="row-block"></div>
-				<a class="img-resp-block type2" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182212tqyzXA.jpg"></a>
+				<a class="img-resp-block type2" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/h-e-certification.jpg"></a>
 			</div>
 			<div class="col-sm-4">
 				<a class="img-resp-block type3" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182239kWdisj.jpg"></a>
