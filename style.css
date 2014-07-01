@@ -874,9 +874,9 @@ nav.simple-flat .container-fluid .collapse form input {
 .sidebar-contact .item:hover .pop {
   display: block;
 }
-.sidebar-contact .item:nth-child(2) {
+.sidebar-contact .qq {
   background-position: -2px -45px;
 }
-.sidebar-contact .item:nth-child(3) {
+.sidebar-contact .phone {
   background-position: 0 -90px;
 }
