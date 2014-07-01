@@ -14,14 +14,14 @@ if ( have_posts() ) :
 <div class="primary" style="background:#fff">
 	<div class="container">
 		<div class="white-block"></div>
-		<div class="jumbotron">
+		<!-- <div class="jumbotron">
 		  <h1><?php the_title();?></h1>
 		  <p>描述</p>
-		  <!-- <p><a class="btn btn-primary btn-lg" role="button">更多信息</a></p> -->
-		</div>
+		  <!--<p><a class="btn btn-primary btn-lg" role="button">更多信息</a></p>-->
+		</div> -->
 		<form id="contact" class="simple" role="form">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-12">
 					<div class="form-group" data-required>
 						<label for="name" class="control-label">姓名 <span class="text-danger v-middle">*</span></label>
 						<div class="row">

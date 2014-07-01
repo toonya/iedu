@@ -833,3 +833,10 @@ nav.simple-flat .container-fluid .collapse form input {
 .sidebar .panel {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
+
+
+
+#contact {
+  width: 60%;
+  margin:0 auto;
+}
