@@ -23,8 +23,10 @@
                 <div class="topbar"></div>
                 <div class="topbar2">
                     <div class="container text-right">
-                        <span class="phone icon-before"><a href="tel:400-9217-966"><span class="glyphicon glyphicon-earphone"></span>400-9217-966</a></span>
-                        <span class="pd-lr-xs"> | </span>
+                        <?php if( get_option( 'phone-number' ) ):; ?>
+                            <span class="phone icon-before"><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><?php echo esc_html( get_option( 'phone-number' ) ); ?></a></span>
+                            <span class="pd-lr-xs"> | </span>
+                        <?php endif; ?>
                         <span class="help icon-before"><a href="">? 帮助</a></span>
                     </div>
                 </div>

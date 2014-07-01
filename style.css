@@ -542,12 +542,13 @@ footer .copyright p {
   background: #fff;
 }
 .current-navigation .breadcrumb {
+  padding:5px;
   background: none;
   margin-bottom: 0;
 }
 .custom-post-type {
   background: url(images/20140512165237HBUvCo.jpg) no-repeat;
-  padding-top: 326px;
+  padding-top: 80px;
 }
 .archive-item-list {
   color: #777;
@@ -670,10 +671,11 @@ footer .copyright p {
 }
 .dropdown-menu.sub-menu {
   padding:40px 0 !important;
-  background: -webkit-linear-gradient(270deg, #c8c8c8, rgba(245, 245, 245, 0.88) 8%, rgba(245, 245, 245, 0.88));
-  background: linear-gradient(180deg, #c8c8c8, rgba(245, 245, 245, 0.88) 8%, rgba(245, 245, 245, 0.88));
+  /*background: -webkit-linear-gradient(270deg, #c8c8c8, rgba(245, 245, 245, 0.88) 8%, rgba(245, 245, 245, 0.88));
+  background: linear-gradient(180deg, #c8c8c8, rgba(245, 245, 245, 0.88) 8%, rgba(245, 245, 245, 0.88));*/
+  background:url(images/theme-navbg.png) repeat-x;
   padding: 0;
-  top: 65px;
+  top: 64px;
 }
 .dropdown-menu.sub-menu ul {
   margin: 0 !important;
@@ -863,3 +865,5 @@ nav.simple-flat .container-fluid .collapse form input {
 #contact .icon1 { background-position: 0 -320px; }
 #contact .icon2 { background-position: 0 -400px; }
 #contact .icon3 { background-position: 0 -240px; }
+.archive-title { padding-bottom:50px; }
+.breadcrumb li a { color:#d4aa6d; }

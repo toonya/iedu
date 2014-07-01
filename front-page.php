@@ -97,7 +97,7 @@
 			<div class="col-sm-8">
 				<div class="row">
 					<div class="col-sm-6">
-						<a class="img-resp-block type1" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182129GhMImN.jpg"></a>
+						<a class="img-resp-block type1" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/h-ed.jpg"></a>
 					</div>
 					<div class="col-sm-6">
 						<a class="img-resp-block type1" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182153VCdYqR.jpg" class="img-responsive"></a>

@@ -19,7 +19,7 @@
 
 <div class="primary custom-post-type <?php echo get_post_type(); ?>">
 	<div class="container">
-    	<div class="archive-title"><img src="<?php echo get_template_directory_uri(); ?>/images/title-iedu-summer-camp.png"></div>
+    	<div class="archive-title"><img src="<?php echo get_template_directory_uri(); ?>/images/title_iedu_school.png"></div>
 		<div class="row">
 			<div class="col-sm-3">
 				<?php get_sidebar( 'archive' ); ?>
@@ -30,8 +30,8 @@
 						$meta = get_post_meta( get_the_ID() );
 
 						$location = ( isset($meta['location']) ) ? $meta['location'][0]:'';
-						$time = ( isset($meta['time']) ) ? $meta['time'][0]:'';
-						$language = ( isset($meta['language']) ) ? $meta['language'][0]:'';
+						$edu_sys = ( isset($meta['edu_sys']) ) ? $meta['edu_sys'][0]:'';
+						$course_intro = ( isset($meta['course_intro']) ) ? $meta['course_intro'][0]:'';
 						$fee = ( isset($meta['fee']) ) ? $meta['fee'][0]:'';
 					?>
 					<div class="archive-item-list">
@@ -42,20 +42,20 @@
 							<div class="right">
 								<h3 class="page-title"><?php the_title();?> </h3>
 
-								<?php if( !empty($location) || !empty($time) ): ?>
+								<?php if( !empty($location) || !empty($edu_sys) ): ?>
 									<div class="well">
 										<div class=""><?php echo $location; ?></div>
-										<div class=""><?php echo $time; ?></div>
+										<div class=""><?php echo $edu_sys; ?></div>
 									</div>
 								<?php endif; ?>
 
-								<div class="intro"><?php echo $language; ?></div>
+								<div class="intro"><?php echo $course_intro; ?></div>
 
 								<div class="bottom">
 									<div class="row">
 										<div class="col-sm-6">
 											<?php if( !empty($fee) ): ?>
-												<strong><?php echo $fee; ?></strong>
+												<strong><?php echo $fee; ?></strong>/人
 											<?php endif; ?>
 										</div>
 										<div class="col-sm-6 text-right">

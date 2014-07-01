@@ -48,12 +48,25 @@ function add_setting_func() {
                        'add-setting',
                        'add_setting');
 
+    add_settings_field('qr-code',
+                       '微信二维码图片地址（可上传到媒体中心后，复制链接）',
+                       'qr_code',
+                       'add-setting',
+                       'add_setting');
+    add_settings_field('qq-contact',
+                       'qq联系代码',
+                       'qq_contact',
+                       'add-setting',
+                       'add_setting');
+
 
     // Register our setting so that $_POST handling is done for us and
     // our callback function just has to echo the <input>
     register_setting('add-setting','states');
     register_setting('add-setting','mail-reciver');
     register_setting('add-setting','phone-number');
+    register_setting('add-setting','qr-code');
+    register_setting('add-setting','qq-contact');
 
 }// eg_settings_api_init()
 
@@ -61,13 +74,26 @@ add_action('admin_init', 'add_setting_func');
 
 function add_setting_section() {
 }
+
 function add_setting_stats() {
 	echo '<textarea name="51la" value="" class="form-control" cols="50" rows="3">'.esc_attr(get_option('states')).'</textarea>';
 }
+
 function mail_reciver_stats() {
 	echo '<textarea name="mail-reciver" value="" class="form-control" cols="50" rows="3">'.esc_attr(get_option('mail-reciver')).'</textarea>';
 }
+
 function phone_number() {
-	echo '<input name="phone-number" type="text" class="form-control" value="'.esc_attr(get_option('phone-number')).'" />';
+  echo '<input name="phone-number" type="text" class="form-control" value="'.esc_attr(get_option('phone-number')).'" />';
+}
+
+function qr_code() {
+  echo '<textarea name="qr-code" value="" class="form-control" cols="50" rows="3">'.esc_attr(get_option('qr-code')).'</textarea>';
+}
+
+function qq_contact() {
+  echo '<p>例如:<br/>';
+  echo 'tencent://message/?uin=你的QQ号码&Site=qq&Menu=yes</p>';
+  echo '<textarea name="qq-contact" value="" class="form-control" cols="50" rows="3">'.esc_attr(get_option('qq-contact')).'</textarea>';
 }
 ?>
