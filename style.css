@@ -833,10 +833,50 @@ nav.simple-flat .container-fluid .collapse form input {
 .sidebar .panel {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
-
-
-
-#contact {
-  width: 60%;
-  margin:0 auto;
+.sidebar-contact {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  font-size: 16px;
+  text-align: center;
+  color: #D4AA6D;
+  margin-left: 585px;
+  width: 45px;
+  border: 1px #d2d2d2 solid;
+  background: #fff;
+  border-bottom: none;
+  z-index: 100;
+}
+.sidebar-contact a {
+  color: inherit;
+}
+.sidebar-contact h3 {
+  line-height: 43px;
+}
+.sidebar-contact .item {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-bottom: 1px #d2d2d2 solid;
+  background: url(images/side-bar-icon.png) no-repeat;
+}
+.sidebar-contact .item .pop {
+  position: absolute;
+  top: -1px;
+  right: 45px;
+  border: 1px #d2d2d2 solid;
+  display: none;
+  background: #fff;
+  width: 160px;
+  min-height: 45px;
+  line-height: 43px;
+}
+.sidebar-contact .item:hover .pop {
+  display: block;
+}
+.sidebar-contact .item:nth-child(2) {
+  background-position: -2px -45px;
+}
+.sidebar-contact .item:nth-child(3) {
+  background-position: 0 -90px;
 }
