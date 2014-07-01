@@ -23,7 +23,7 @@
 		<div class="item phone">
 			<a href="#"></a>
 			<div class="pop">
-				<a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></a>
+				<a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><?php echo esc_html( get_option( 'phone-number' ) ); ?></a>
 			</div>
 		</div>
 		<?php endif; ?>
