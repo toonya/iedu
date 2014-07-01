@@ -88,10 +88,12 @@ function phone_number() {
 }
 
 function qr_code() {
-	echo '<input name="qr-code" type="text" class="form-control" value="'.esc_attr(get_option('qr-code')).'" />';
+  echo '<textarea name="qr-code" value="" class="form-control" cols="50" rows="3">'.esc_attr(get_option('qr-code')).'</textarea>';
 }
 
 function qq_contact() {
+  echo '<p>例如:<br/>';
+  echo 'tencent://message/?uin=你的QQ号码&Site=qq&Menu=yes</p>';
   echo '<textarea name="qq-contact" value="" class="form-control" cols="50" rows="3">'.esc_attr(get_option('qq-contact')).'</textarea>';
 }
 ?>
