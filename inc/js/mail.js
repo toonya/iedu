@@ -32,9 +32,6 @@
 		// extend the mail options with form data
 		data = $.extend({}, data);
 
-		console.log(data);
-		console.log(mail_options);
-
 		// begin mailing
 		$('body').addClass('mailing');
 
@@ -61,11 +58,15 @@
 				//fail
 				else {
 					alert('发送失败，请稍候再试，或联系管理员。');
+					console.log(data);
+					console.log(mail_options);
 				}
 
 			}
 		}).fail(function(){
-			alert('无法连接服务器。')
+			alert('无法连接服务器。');
+			console.log(data);
+			console.log(mail_options);
 		});
 
 	});
