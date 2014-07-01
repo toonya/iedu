@@ -33,6 +33,7 @@
 		data = $.extend({}, data);
 
 		console.log(data);
+		console.log(mail_options);
 
 		// begin mailing
 		$('body').addClass('mailing');
