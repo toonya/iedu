@@ -45,6 +45,9 @@
 [role="form"] {
   margin: 36px 0 0;
 }
+[role="form"].side-form {
+  margin: 12px 0 0;
+}
 .showcase {
   padding: 15px;
 }

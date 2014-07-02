@@ -82,14 +82,6 @@ function add_ed_metaboxs() {
       'core'
     );
 
-    add_meta_box(
-        'showcase'
-        ,'相片集'
-        ,'render_ed_showcase'
-        , $screen
-        ,'normal'
-        ,'core'
-      );
   }
 }
 
@@ -210,50 +202,6 @@ function ed_meta_box_callback( $post ) {
   echo '</div>';
 }
 
-// ----------------------------------------
-// ! render_showcase
-// ----------------------------------------
-function render_ed_showcase($post) {
-
-  wp_nonce_field( 'ed_showcase', 'ed_showcase_nonce' );
-
-  /*
-   * Use get_post_meta() to retrieve an existing value
-   * from the database and use the value for the form.
-   */
-  $value = get_post_meta( $post->ID, 'showcase', true );
-  ?>
-  <div class="row">
-    <div class="funtions col-xs-11">
-      <div class="btn-group btn-group-justified">
-        <a href="#" class="btn btn-default disable new">新增</a>
-        <a href="#" class="btn btn-default disable edit-close">编辑</a>
-      </div>
-      <div class="hidden item template">
-          <input type="hidden" id="showcase" name="" value="" />
-          <div class="edit-area hidden">
-            <button type="button" class="close">×</button>
-          </div>
-          <img src="" alt="" />
-      </div>
-
-      <div class="showcase"><!--
-        <?php if($value): foreach($value as $key=>$url){ ?>
-          --><div class="item">
-              <input type="hidden" id="showcase" name="showcase[<?php echo $key; ?>]" value="<?php echo esc_attr($url); ?>" />
-              <div class="edit-area hidden">
-                <button type="button" class="close">×</button>
-              </div>
-              <img src="<?php echo esc_attr($url); ?>" alt="" />
-          </div><!--
-        <?php } endif;?>
-      --></div>
-    </div>
-    <div class="clear"></div>
-  </div>
-  <?php
-}
-
 /**
  * When the post is saved, saves our ed data.
  *
@@ -316,19 +264,6 @@ function ed_save_meta_box_data( $post_id ) {
       delete_post_meta($post_id, $field['id'], $old);
     }
   } // enf foreach
-
-  if( !empty($_POST['showcase']) ) {
-    $mydata =  $_POST['showcase'] ;
-
-    // Update the meta field in the database.
-    update_post_meta( $post_id, 'showcase', $mydata );
-  }
-  else {
-    $mydata = '';
-
-    // Update the meta field in the database.
-    update_post_meta( $post_id, 'showcase', $mydata );
-  }
 
   // Sanitize user input.
   //$my_data = sanitize_text_field( $_POST['ed'] );

@@ -48,28 +48,17 @@ require_once('inc/post-type-hotel.php');
 require_once('inc/remove-origin.php');
 
 require_once('inc/change-login-area.php');
+//require_once('inc/qn/qn-support.php');
+
+// metabox
+require_once('inc/metabox/get_custom_metabox_html.php');
+require_once('inc/metabox/showcase.php');
+require_once('inc/metabox/discount.php');
 
 if(is_admin()){
 	require_once('inc/protection-code.php');
 	require_once('inc/slideshow-management.php');
 }
-
-function loadAdminMedia() {
-
-	$screen = get_current_screen();
-
-	if ( in_array( $screen->id, array( 'iedu_school', 'iedu_ed', 'iedu_visit', 'iedu_camp', 'iedu_certification', 'iedu_hotel' ) ) ) {
-		wp_enqueue_style( 'admin-style', get_template_directory_uri() . '/inc/css/admin.css' );
-		wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
-		wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', array('jquery'), '1.0.0', true );
-		wp_enqueue_script( 'admin-javascript', get_template_directory_uri() . '/inc/js/admin.js', array('jquery'), '1.0.0', true );
-		wp_enqueue_script( 'admin-showcase', get_template_directory_uri() . '/inc/js/showcase.js', array('jquery'), '1.0.0', true );
-
-		wp_enqueue_media(); //call the media management.	
-	}
-}
-
-add_action( 'admin_enqueue_scripts', 'loadAdminMedia' );
 
 
 // ----------------------------------------

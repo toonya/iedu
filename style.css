@@ -341,6 +341,15 @@ a:hover {
 .white-block-12 {
   height: 12px;
 }
+.count-down {
+  position: relative;
+}
+.count-down::before {
+  position: absolute;
+  left: -20px;
+  font-family: 'Glyphicons Halflings';
+  content: '\e023';
+}
 .img-resp-block {
   display: block;
   width: 100%;
@@ -880,8 +889,6 @@ nav.simple-flat .container-fluid .collapse form input {
 .sidebar-contact .phone {
   background-position: 0 -90px;
 }
-
-
 /*added by Mansy*/
 #contact {
   width: 70%;
@@ -932,9 +939,9 @@ nav.simple-flat .container-fluid .collapse form input {
   color: #d4aa6d;
 }
 .dropdown-menu.sub-menu {
-	top:64px !important;
-	padding:40px 0;
-	background:url(images/theme-navbg.png) repeat-x;
+  top: 64px !important;
+  padding: 40px 0;
+  background: url(images/theme-navbg.png) repeat-x;
 }
 .banner .item {
   height: 500px !important;
