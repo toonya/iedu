@@ -44,8 +44,8 @@
 
 								<?php if( !empty($location) || !empty($num_of_people) ): ?>
 									<div class="well">
-										<div class=""><?php echo $location; ?></div>
-										<div class=""><?php echo $num_of_people; ?></div>
+										<div class="">目的地：<?php echo $location; ?></div>
+										<div class="">参团人数：<?php echo $num_of_people; ?></div>
 									</div>
 								<?php endif; ?>
 
@@ -55,10 +55,10 @@
 									<div class="row">
 										<div class="col-sm-6">
 											<?php if( !empty($fee) ): ?>
-												<strong><?php echo $fee; ?></strong>
+												<strong><?php echo $fee; ?></strong>/人
 											<?php endif; ?>
 										</div>
-										<div class="col-sm-6 text-right">
+										<div class="col-sm-6 text-right btn-view-detail">
 											<a href="<?php the_permalink(); ?>" class="detail">查看详情 <span class="glyphicon glyphicon-chevron-right"></span></a>
 										</div>
 									</div>

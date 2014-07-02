@@ -43,8 +43,8 @@
 								<h3 class="page-title"><?php the_title();?> </h3>
 
 								<?php if( !empty($exam_info) || !empty($teacher_info) ): ?>
-									<div class="well">
-										<div class=""><?php echo $exam_info; ?></div>
+                                		<div class=""><?php echo $exam_info; ?></div>
+									<div class="well">			
 										<div class=""><?php echo $teacher_info; ?></div>
 									</div>
 								<?php endif; ?>
@@ -58,7 +58,7 @@
 												<strong><?php echo $service_process; ?></strong>
 											<?php endif; ?>
 										</div>
-										<div class="col-sm-6 text-right">
+										<div class="col-sm-6 text-right btn-view-detail">
 											<a href="<?php the_permalink(); ?>" class="detail">查看详情 <span class="glyphicon glyphicon-chevron-right"></span></a>
 										</div>
 									</div>

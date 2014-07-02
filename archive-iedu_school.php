@@ -58,7 +58,7 @@
 												<strong><?php echo $fee; ?></strong>/人
 											<?php endif; ?>
 										</div>
-										<div class="col-sm-6 text-right">
+										<div class="col-sm-6 text-right btn-view-detail">
 											<a href="<?php the_permalink(); ?>" class="detail">查看详情 <span class="glyphicon glyphicon-chevron-right"></span></a>
 										</div>
 									</div>

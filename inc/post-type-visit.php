@@ -98,7 +98,7 @@ function add_visit_metaboxs() {
 //$visit_prefix = 'visit_';
 $visit_meta_fields = array(
   array(
-      'label' => '地址',
+      'label' => '所在地',
       'desc'  => '',
       'id'  => 'location',
       'type'  => 'text'

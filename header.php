@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?php echo bloginfo('name' ); ?></title>
+        <title><?php wp_title(); ?></title>
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/favicon.ico">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
             
             <header>
                 <div class="topbar"></div>
-                <div class="topbar2">
+                <!--<div class="topbar2">
                     <div class="container text-right">
                         <?php if( get_option( 'phone-number' ) ):; ?>
                             <span class="phone icon-before"><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><?php echo esc_html( get_option( 'phone-number' ) ); ?></a></span>
@@ -29,7 +29,7 @@
                         <?php endif; ?>
                         <span class="help icon-before"><a href="">? 帮助</a></span>
                     </div>
-                </div>
+                </div>-->
                 <nav class="navbar simple-flat" role="navigation">
                     <div class="container">
                         <div class="container-fluid">

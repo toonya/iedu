@@ -44,21 +44,21 @@
 
 								<?php if( !empty($location) || !empty($time) ): ?>
 									<div class="well">
-										<div class=""><?php echo $location; ?></div>
-										<div class=""><?php echo $time; ?></div>
+                                    	<div class="intro">语言：<?php echo $language; ?></div>
+										<div class="">所在地：<?php echo $location; ?></div>
+										<div class="">开营时间：<?php echo $time; ?></div>                              
 									</div>
 								<?php endif; ?>
 
-								<div class="intro"><?php echo $language; ?></div>
-
+								
 								<div class="bottom">
 									<div class="row">
 										<div class="col-sm-6">
 											<?php if( !empty($fee) ): ?>
-												<strong><?php echo $fee; ?></strong>
+												<strong><?php echo $fee; ?></strong>/人
 											<?php endif; ?>
 										</div>
-										<div class="col-sm-6 text-right">
+										<div class="col-sm-6 text-right btn-view-detail">
 											<a href="<?php the_permalink(); ?>" class="detail">查看详情 <span class="glyphicon glyphicon-chevron-right"></span></a>
 										</div>
 									</div>

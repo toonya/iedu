@@ -140,8 +140,10 @@
 					    				echo '<div class="item">
 					    						<div class="row">
 					    							<div class="col-sm-6">' .$value. ' :</div>
-					    							<div class="text-right col-sm-6">
-					    								<strong>' .$meta[$key]. '</strong>
+												</div>
+												<div class="row">
+					    							<div class="col-sm-12" style="padding:0 0 15px 10px; line-height:24px !important">
+					    								<p>' .$meta[$key]. '</p>
 					    							</div>
 					    						</div>
 					    					  </div>';

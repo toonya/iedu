@@ -48,8 +48,8 @@ if ( have_posts() ) :
 					</div>
 				</div>
                 <div class="col-md-3" style="border-left:1px solid #f1f1f1;">
-                	<div class="contact-item"><i class="icon icon1"></i><i>400-9217-966</i></div>
-                    <div class="contact-item"><i class="icon icon2"></i><i>admin@lukaslla.com</i></div>
+                	<div class="contact-item"><i class="icon icon1"></i><i><?php echo esc_html( get_option( 'phone-number' ) ); ?></i></div>
+                    <div class="contact-item"><i class="icon icon2"></i><i>admin@lukasila.com</i></div>
                     <div class="contact-item"><i class="icon icon3"></i><i>泰国，清迈，某某区某某路某号，某大厦</i></div>
                 </div>
 			</div>

@@ -98,7 +98,7 @@ function add_camp_metaboxs() {
 //$camp_prefix = 'camp_';
 $camp_meta_fields = array(
   array(
-      'label' => '地址',
+      'label' => '所在地',
       'desc'  => '',
       'id'  => 'location',
       'type'  => 'text'
