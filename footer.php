@@ -18,7 +18,7 @@
 									<h3>关于我们</h3>
 									<ul>
 										<li><a href="">&gt;&nbsp; <span class="pd-l-xs">服务团队</span></a></li>
-										<li><a href="">&gt;&nbsp; <span class="pd-l-xs">国际教育</span></a></li>
+										<li><a href="?post_type=iedu_school">&gt;&nbsp; <span class="pd-l-xs">国际教育</span></a></li>
 									</ul>
 								</div>
 								<div class="col-md-7">
@@ -38,7 +38,9 @@
 							<div class="row">
 								<div class="col-md-3"></div>
 								<div class="col-md-9">
-									<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/qrcode.png" alt="">
+									<?php if( get_option( 'qr-code' ) ):; ?>
+									<img class="img-responsive" src="<?php echo esc_attr( get_option( 'qr-code' ) ); ?>" alt="">
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
