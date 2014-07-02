@@ -5,7 +5,7 @@
       <!-- Indicators -->
       <ol class="carousel-indicators">
           <?php
-            $banner_html = get_banner();
+            $banner_html = get_banner('cover');
             //echo $banner_html[0];
           ?>
       </ol>

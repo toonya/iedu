@@ -108,31 +108,56 @@ add_action( 'wp_enqueue_scripts', 'load_bootstrap_select' );
 // ! slideshow function support
 // ----------------------------------------
 if(!function_exists('get_banner')) {
-	function get_banner() {
+	function get_banner($bg_type) {
 		$banner_list       = get_option('bannerlist');
 		$banner_item       = '';
 		$banner_control    = '';
 		if(!empty($banner_list)){
 			foreach( $banner_list as $key => $item ) {
-				$banner_item .= sprintf( '<div class="item %s">
-											<img class="img-responsive" src="%s" alt="%s">
-											<div class="carousel-caption"><a href="%s">
-												<h3>%s</h3>
-												<p>%s</p>
-											</a></div>
-										  </div>',
+				switch ($bg_type) {
+					case 'cover':
+						$banner_item .= sprintf( '<div class="item %s">
+													<div class="img-container" style="background-image:url(%s)"></div>
+													<div class="carousel-caption"><a href="%s">
+														<h3>%s</h3>
+														<p>%s</p>
+													</a></div>
+												  </div>',
 
-		            ( $key == 0 ) ? 'active' : '',
-		            $item['imgurl'],
-		            $item['title'],
-		            $item['url'],
-		            $item['title'],
-		            $item['describe']
-				);
-				$banner_control .= sprintf( '<li data-target="#carousel-example-generic" data-slide-to="%s" %s> </li> ',
-		            $key,
-		            ( $key == 0 ) ? 'class="active"' : ''
-				);
+				            ( $key == 0 ) ? 'active' : '',
+				            $item['imgurl'],
+				            $item['url'],
+				            $item['title'],
+				            $item['describe']
+						);
+						$banner_control .= sprintf( '<li data-target="#carousel-example-generic" data-slide-to="%s" %s> </li> ',
+				            $key,
+				            ( $key == 0 ) ? 'class="active"' : ''
+						);
+						break;
+					
+					default:
+						$banner_item .= sprintf( '<div class="item %s">
+													<img class="img-responsive" src="%s" alt="%s">
+													<div class="carousel-caption"><a href="%s">
+														<h3>%s</h3>
+														<p>%s</p>
+													</a></div>
+												  </div>',
+
+				            ( $key == 0 ) ? 'active' : '',
+				            $item['imgurl'],
+				            $item['title'],
+				            $item['url'],
+				            $item['title'],
+				            $item['describe']
+						);
+						$banner_control .= sprintf( '<li data-target="#carousel-example-generic" data-slide-to="%s" %s> </li> ',
+				            $key,
+				            ( $key == 0 ) ? 'class="active"' : ''
+						);
+						break;
+				}
 			}
 		}
 

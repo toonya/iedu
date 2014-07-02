@@ -396,6 +396,11 @@ body {
   height: 411px;
   overflow: hidden;
 }
+.banner .item .img-container {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .banner .carousel-caption a {
   color: #fff;
 }
