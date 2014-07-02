@@ -947,10 +947,22 @@ nav.simple-flat .container-fluid .collapse form input {
   height: 500px !important;
 }
 .custom-post-type {
-	padding-top: 40px !important;
+  padding-top: 40px !important;
 }
-.archive-item-list .left img { width:100%; }
-.archive-item-list .left { text-align:center; }
-.breadcrumb { padding:4px !important; }
-.btn-view-detail a { background:#ec940f; color:white; padding:3px 15px; }
-section.hotel .item a h4 { text-align:center; }
+.archive-item-list .left img {
+  width: 100%;
+}
+.archive-item-list .left {
+  text-align: center;
+}
+.breadcrumb {
+  padding: 4px !important;
+}
+.btn-view-detail a {
+  background: #ec940f;
+  color: white;
+  padding: 3px 15px;
+}
+section.hotel .item a h4 {
+  text-align: center;
+}
