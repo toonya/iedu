@@ -362,6 +362,10 @@ body {
   font-family: "Microsoft YaHei", "Heiti SC", "Heiti TC", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
 }
+.page {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .topbar {
   height: 6px;
   width: 100%;
@@ -557,6 +561,7 @@ footer .copyright p {
 .custom-post-type {
   background: url(images/20140512165237HBUvCo.jpg) no-repeat;
   padding-top: 326px;
+  background-size: cover;
 }
 .archive-item-list {
   color: #777;
