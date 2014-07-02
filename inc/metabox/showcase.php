@@ -21,7 +21,7 @@ function add_metabox_showcase() {
 // ! call for style & javascript
 // ----------------------------------------
 
-function loadAdminMedia() {
+function load_showcase_media_support() {
 
 	$screen = get_current_screen();
 
@@ -36,7 +36,7 @@ function loadAdminMedia() {
 	}
 }
 
-add_action( 'admin_enqueue_scripts', 'loadAdminMedia' );
+add_action( 'admin_enqueue_scripts', 'load_showcase_media_support' );
 
 // ----------------------------------------
 // ! render showcase metabox
