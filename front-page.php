@@ -46,7 +46,47 @@
 	</div>
 </section>
 
-<section class="preferential slideshow">
+
+<?php
+
+// The Query
+$discount_args = array(
+	'post_type' => array('iedu_school', 'iedu_ed', 'iedu_visit', 'iedu_camp', 'iedu_certification', 'iedu_hotel'),
+	'meta_query' => array(
+		array(
+			'key' => 'is_discount',
+			'value' => '1'
+		)
+	)
+);
+$the_query = new WP_Query($discount_args);
+$if_empty = '';
+$discount_html = [];
+$html_temp = '';
+
+// The Loop
+if ( $the_query->have_posts() ) {
+	while ( $the_query->have_posts() ) {
+		$the_query->the_post();
+		
+		$html_temp = '<div class="col-sm-4"><a href="'.get_permalink().'">
+		      			<img class="img-responsive" src="'.wp_get_attachment_url( get_post_thumbnail_id() ).'" alt="'.get_the_title().'">
+		      			<h4>'.get_the_title().'</h4>
+		      			<div>
+		      				<div class="pull-right count-down" data-type="countDown" data-time="'.get_post_meta( get_the_ID(), 'discount_finish', true ).'"></div>
+		      			</div>
+		      		</a></div>';
+
+		$discount_html[] = $html_temp;
+	}
+} else {
+	$if_empty = 'hide';
+}
+
+/* Restore original Post Data */
+wp_reset_postdata();
+?>
+<section class="preferential <?php echo $if_empty; ?> slideshow">
 	<div class="container">
 		<div id="carousel-preferential" class="carousel slide" data-ride="carousel" data-interval="">
 		  
@@ -62,27 +102,34 @@
 		  </div>
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner">
-		      <div class="item active">
-		      	<div class="row">
-		      		<div class="col-sm-4"><a href="">
-		      			<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0.jpg" alt="">
-		      			<h4>标题</h4>
-		      			<div>
-		      				<div class="pull-right tag">海景</div>
-		      				<p class="describe">描述</p>
-		      			</div>
-		      		</a></div>
-		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(1).jpg" alt=""></a></div>
-		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(2).jpg" alt=""></a></div>
-		      	</div>
-		      </div>
-		      <div class="item">
-		      	<div class="row">
-		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0.jpg" alt=""></a></div>
-		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(1).jpg" alt=""></a></div>
-		      		<div class="col-sm-4"><a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(2).jpg" alt=""></a></div>
-		      	</div>
-		      </div>
+	      	<?php  $row_counter = 0;
+
+	      		foreach ($discount_html as $key => $value) {
+
+	      			$if_active = ($key==0)? ' active':'';
+	      			
+	      			switch ($row_counter) {
+	      				case 0:
+	      					echo '<div class="item'.$if_active.' "><div class="row">';
+	      					echo $value;
+	      					break;
+	      				case 1:
+	      					echo $value;
+	      					break;
+	      				case 2:
+	      					echo $value;
+	      					echo '</div></div>';
+	      					break;
+	      				
+	      				default:
+	      					break;
+	      			}
+
+	      			( $row_counter >= 2 )? $row_counter = 0 : $row_counter = $row_counter + 1;
+	      		}
+
+	      	?>
+
 		  </div>
 		</div>
 	</div>

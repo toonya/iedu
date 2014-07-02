@@ -4,7 +4,6 @@ function get_horizontal_metabox_html($post_id, $field) {
 	$value = get_post_meta( $post_id, $field['id'], true );
 	$html = '';
 
-	
 	switch ($field['type']) {
 		case 'text':
 		$html.= '<div class="form-group">';
@@ -20,7 +19,7 @@ function get_horizontal_metabox_html($post_id, $field) {
 
 		case 'checkbox':
 		$html.= '<div class="checkbox">';
-		$html .= '<label><input '.checked( $value, 1, false ).' id="'.$field['id'].'" name="'.$field['id'].'" value="1" type="checkbox"> '.$field['label'].'</label>';
+		$html .= '<label><input value=1 '.checked( $value, '1', false ).' id="'.$field['id'].'" name="'.$field['id'].'" type="checkbox"> '.$field['label'].'</label>';
 		break;
 
 		default:

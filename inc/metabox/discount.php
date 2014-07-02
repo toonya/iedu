@@ -121,10 +121,10 @@ function save_metabox_discount_data( $post_id ) {
   /* OK, its safe for us to save the data now. */
 
   foreach ($discount_meta_fields as $field) {
-    if($field['type'] == 'tax_select') continue;
+    //if($field['type'] == 'tax_select') continue;
 
     if( ! isset( $_POST[$field['id']] ) )
-      continue;
+      $_POST[$field['id']] = '';
 
     $old = get_post_meta($post_id, $field['id'], true);
     $new = $_POST[$field['id']];
