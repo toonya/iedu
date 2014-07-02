@@ -196,4 +196,16 @@
 
 	$('.sub-menu.dropdown-menu').renderDropdownList();
 
+
+	// ----------------------------------------
+	// ! count down
+	// ----------------------------------------
+	$('[data-type="countDown"]').each( function(i,e) {
+		var finish = $(this).data('time'),
+			countDown = moment().twix(finish, 'YYYYMMDD').count('days');
+		//console.log(finish);
+		//console.log(countDown);
+		$(this).text('倒计时 '+countDown+' 天');
+	})
+
 })(jQuery)
