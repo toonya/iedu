@@ -14,7 +14,7 @@
 			  	while ( $news_query->have_posts() ) {
 			  		$news_query->the_post();
 			  		
-			  		echo '<div class="news-item"><a href="'.get_permalink().'"><h3>'.get_the_title().'</h3></a>'.'<div class="time">'.get_the_date('m月d日').'</div></div>';
+			  		echo '<div class="news-item"><a href="'.get_permalink().'"><span><i class="fa-rss fa"></i><span class="pd-l-sm">'.get_the_title().'</span></span></a>'.'<span class="time pull-right pd-l-sm">--'.get_the_date('m月d日').'</span><div class="clearfix"></div></div>';
 			  	}
 			  } else {
 			  	

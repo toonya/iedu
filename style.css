@@ -322,6 +322,9 @@ a:hover {
 .pd-l-xs {
   padding-left: 6px;
 }
+.pd-l-sm {
+  padding-left: 12px;
+}
 a:hover {
   text-decoration: none;
 }
@@ -898,6 +901,9 @@ nav.simple-flat .container-fluid .collapse form input {
 }
 .sidebar-contact .phone {
   background-position: 0 -90px;
+}
+.news-item {
+  padding: 12px;
 }
 /*added by Mansy*/
 #contact {
