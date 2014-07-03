@@ -74,6 +74,7 @@ add_action( 'admin_menu', 'admin_menu_page' );
 function admin_menu_page(){
     add_menu_page( '导航菜单', '导航菜单', 'manage_options', 'nav-menus.php', '', '', 99 );
     add_menu_page( '邮箱配置', '邮箱配置', 'manage_options', 'options-general.php?page=wp-mail-smtp/wp_mail_smtp.php', '', '', 100 );
+    add_menu_page( '新闻', '新闻', 'manage_options', 'edit.php', '', '', 1 );
 }
 
 // ----------------------------------------

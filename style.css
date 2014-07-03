@@ -566,7 +566,7 @@ footer .copyright p {
 .custom-post-type {
   background: url(images/20140512165237HBUvCo.jpg) no-repeat;
   padding-top: 326px;
-  background-size: cover;
+  background-size: contain;
 }
 .archive-item-list {
   color: #777;

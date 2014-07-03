@@ -208,4 +208,43 @@
 		$(this).text('倒计时 '+countDown+' 天');
 	})
 
+	// ----------------------------------------
+	// ! adjust the archive page bg size
+	// ----------------------------------------
+
+	$.fn.bgSizeReset = function(options) {
+		return this.each(function(){
+			var data = $(this).data();
+			var options = $.extend({}, options, data);
+			options.$this = $(this);
+			new bgSizeReset(options);
+		})
+	}
+
+	var bgSizeReset = function(options){
+		this.init(options);
+	}
+
+	bgSizeReset.prototype = {
+		init: function(options) {
+			this.options = options;
+			this.bind();
+			this.render();
+		},
+		bind: function() {
+			$( window ).resize( $.proxy(function() {
+				this.render();
+			}, this) )
+		},
+		render: function() {
+
+			$('.custom-post-type').css('background-size', function(){
+				return ( ($(this).outerHeight()/$('body').outerWidth()) <= 1080/1920 ) ? 'cover' : 'contain'; 
+			})
+		
+		}
+	}
+
+	$('.custom-post-type').bgSizeReset();
+
 })(jQuery)
