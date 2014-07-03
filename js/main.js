@@ -247,4 +247,13 @@
 
 	$('.custom-post-type').bgSizeReset();
 
+	// ----------------------------------------
+	// ! mobile navigation
+	// ----------------------------------------
+	$(document).on('click', '[data-mobile-trigger]', function(e){
+		e.preventDefault();
+
+		$('.page').toggleClass('mobile-nav-open');
+	})
+
 })(jQuery)

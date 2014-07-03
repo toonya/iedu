@@ -782,6 +782,130 @@ nav.simple-flat .container-fluid {
 	}
 }
 
+// ----------------------------------------
+// ! mobile
+// ----------------------------------------
+.mobile-content {
+	padding-top: 15px;
+
+	.item {
+		box-shadow: 1px 1px 2px #aaa;
+		margin-bottom: 15px;
+
+		.count-down {
+			display: inline-block;
+		}
+
+		.img-container {
+			padding-top: 40%;
+			position: relative;
+			overflow: hidden;
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		a {
+			display: block;
+		}
+
+		h4 {
+			font-size: 16px;
+			color: #000;
+		}
+
+		.describe {
+			padding: 12px 24px;
+			background: #fff;
+		}
+	}
+}
+.mobile-header {
+	background: black;
+	height: 48px;
+	position: relative;
+
+	.logo {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+
+		transform: translate(-50%, -50%);
+		height: 36px;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	.mobile-nav-trigger{
+		color: #fff;
+		font-weight: 400;
+		display: block;
+		position: absolute;
+		font-size: 16px;
+
+		left: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+html {
+	height: 100%;
+}
+body.mobile {
+	height: 100%;
+
+	.page.mobile-nav-open {
+		transform: translateX(240px);
+	}
+	.page {
+		transition: transform .35s ease;
+		position: relative;
+		min-height: 100%;
+		background: #fafafa;
+	}
+}
+
+.mobile-nav {
+	position: absolute;
+	padding: 24px 0;
+	left: -240px;
+	width: 240px;
+	top: 0;
+	height: 100%;
+	background: #555;
+	box-shadow: inset -2px 0 2px #000;
+
+	a {
+		color: #fff;
+		padding: 12px 24px;
+		display: block;
+
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		//border-bottom: 1px solid #ccc;
+	}
+}
+
+.mobile-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+
+
 
 
 /*added by Mansy*/

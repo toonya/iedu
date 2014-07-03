@@ -5,7 +5,8 @@
 function iedu_theme_setup() {
 	register_nav_menus(
 		array(
-		  'header-menu' => __( '页头' )
+		  'header-menu' => __( '桌面版导航' ),
+		  'mobile-menu' => __( '移动端导航' ),
 		)
 	);
 

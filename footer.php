@@ -1,3 +1,4 @@
+			<?php if ( ! wp_is_mobile() ): ?>
 			<footer>
 				<div class="container">
 					<div class="row">
@@ -50,8 +51,15 @@
 					<p>Copyright © 2014 Sense Luxury 沪ICP备14011210号</p>
 				</div></div>
 			</footer>
-
 			<?php get_sidebar('contact'); ?>
+
+			<?php else: ?>
+
+			<div class="mobile-footer">
+				
+			</div>
+			
+			<?php endif; ?>
 
 		</div>
     	<script src="<?php echo get_template_directory_uri()?>/js/vendor/jquery-1.11.0.min.js"></script>

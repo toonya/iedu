@@ -15,10 +15,11 @@
 
         <?php wp_head()?>
     </head>
-    <body>
+    <body <?php if(wp_is_mobile()) echo 'class="mobile"' ?>>
         <div class="page">
             <div class="mobile-nav-mask mask-close"></div>
             
+            <?php if ( ! wp_is_mobile() ): ?>
             <header>
                 <div class="topbar"></div>
                 <!--<div class="topbar2">
@@ -75,3 +76,19 @@
                     </div><!-- /.container-fluid -->
                 </nav>
             </header> <!-- /. header -->
+
+
+            <?php else: ?>
+            <header class="mobile-header">
+                <a class="mobile-nav-trigger" href="#" data-mobile-trigger><span class="glyphicon glyphicon-th"></span></a>
+                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-lg.jpg" alt=""></div>
+            </header>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
+                    <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
+                    <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
+                </ul>
+            </nav>
+            <?php endif; ?>
+

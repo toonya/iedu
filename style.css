@@ -931,6 +931,109 @@ nav.simple-flat .container-fluid .collapse form input {
 .main-content .page-title {
   font-size: 24px;
 }
+.mobile-content {
+  padding-top: 15px;
+}
+.mobile-content .item {
+  box-shadow: 1px 1px 2px #aaa;
+  margin-bottom: 15px;
+}
+.mobile-content .item .count-down {
+  display: inline-block;
+}
+.mobile-content .item .img-container {
+  padding-top: 40%;
+  position: relative;
+  overflow: hidden;
+}
+.mobile-content .item .img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mobile-content .item a {
+  display: block;
+}
+.mobile-content .item h4 {
+  font-size: 16px;
+  color: #000;
+}
+.mobile-content .item .describe {
+  padding: 12px 24px;
+  background: #fff;
+}
+.mobile-header {
+  background: black;
+  height: 48px;
+  position: relative;
+}
+.mobile-header .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 36px;
+}
+.mobile-header .logo img {
+  height: 100%;
+}
+.mobile-header .mobile-nav-trigger {
+  color: #fff;
+  font-weight: 400;
+  display: block;
+  position: absolute;
+  font-size: 16px;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+html {
+  height: 100%;
+}
+body.mobile {
+  height: 100%;
+}
+body.mobile .page.mobile-nav-open {
+  -webkit-transform: translateX(240px);
+  -ms-transform: translateX(240px);
+  transform: translateX(240px);
+}
+body.mobile .page {
+  -webkit-transition: -webkit-transform .35s ease;
+  transition: transform .35s ease;
+  position: relative;
+  min-height: 100%;
+  background: #fafafa;
+}
+.mobile-nav {
+  position: absolute;
+  padding: 24px 0;
+  left: -240px;
+  width: 240px;
+  top: 0;
+  height: 100%;
+  background: #555;
+  box-shadow: inset -2px 0 2px #000000;
+}
+.mobile-nav a {
+  color: #fff;
+  padding: 12px 24px;
+  display: block;
+}
+.mobile-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mobile-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 /*added by Mansy*/
 #contact {
   width: 70%;
