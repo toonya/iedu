@@ -745,8 +745,25 @@ nav.simple-flat .container-fluid {
 // ----------------------------------------
 // ! news
 // ----------------------------------------
+.news-list {
+	padding-top: 12px;
+}
 .news-item {
-	padding: 12px;
+	padding: 0 12px 12px;
+
+	a {
+		color: #777;
+		transition: color .65s;
+
+		&:hover {
+			color: #000;
+			transition: none;
+		}
+	}
+
+	.time {
+		color: #aaa;
+	}
 }
 
 

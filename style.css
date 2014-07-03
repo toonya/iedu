@@ -902,8 +902,24 @@ nav.simple-flat .container-fluid .collapse form input {
 .sidebar-contact .phone {
   background-position: 0 -90px;
 }
+.news-list {
+  padding-top: 12px;
+}
 .news-item {
-  padding: 12px;
+  padding: 0 12px 12px;
+}
+.news-item a {
+  color: #777;
+  -webkit-transition: color .65s;
+  transition: color .65s;
+}
+.news-item a:hover {
+  color: #000;
+  -webkit-transition: none;
+  transition: none;
+}
+.news-item .time {
+  color: #aaa;
 }
 /*added by Mansy*/
 #contact {
