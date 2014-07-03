@@ -5,6 +5,8 @@
 		<ol class="breadcrumb">
 		  <li><a href="<?php bloginfo('url'); ?>">首页</a></li>
 		  <?php 
+		  	echo '<li class="active"><a href="' . get_permalink( get_page_by_title('新闻') ) . '">新闻</a></li>';
+
 		  	echo '<li class="active">'. get_the_title() .'</li>';
 		  ?>
 		</ol>
@@ -17,6 +19,7 @@
 		<div class="row">
 			<div class="col-sm-8">
 				<h1><?php the_title(); ?></h1>
+				<div class="text-right"><?php echo '--'.get_the_date('m月d日'); ?></div>
 			</div>
 			<div class="col-sm-3">
 				<?php get_template_part( 'content', 'share' ); ?>

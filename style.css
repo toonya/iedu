@@ -921,6 +921,16 @@ nav.simple-flat .container-fluid .collapse form input {
 .news-item .time {
   color: #aaa;
 }
+.custom-single.post {
+  min-height: 500px;
+}
+.main-content {
+  min-height: 500px;
+  padding: 36px 0;
+}
+.main-content .page-title {
+  font-size: 24px;
+}
 /*added by Mansy*/
 #contact {
   width: 70%;
