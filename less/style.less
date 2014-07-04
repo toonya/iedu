@@ -826,7 +826,10 @@ nav.simple-flat .container-fluid {
 .mobile-header {
 	background: black;
 	height: 48px;
-	position: relative;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
 
 	.logo {
 		position: absolute;
@@ -858,24 +861,50 @@ html {
 }
 body.mobile {
 	height: 100%;
+	width: 100%;
+	overflow: hidden;
+
+	.page {
+		//transition: left .35s ease;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #fafafa;
+		overflow: auto;
+		overflow: scroll;
+
+		.mobile-nav-mask {
+			//transition: .35s ease;
+			position: fixed;
+			z-index: 999;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.85);
+			display: none;
+		}
+	}
 
 	.page.mobile-nav-open {
-		transform: translateX(240px);
-	}
-	.page {
-		transition: transform .35s ease;
-		position: relative;
-		min-height: 100%;
-		background: #fafafa;
+		//left: 240px;
+
+		.mobile-nav-mask {
+			display: block;
+		}
+
+		.mobile-nav-mask {
+			//left: 240px;
+		}
 	}
 }
 
 .mobile-nav {
 	position: absolute;
 	padding: 24px 0;
-	left: -240px;
 	width: 240px;
 	top: 0;
+	bottom: 0;
 	height: 100%;
 	background: #555;
 	box-shadow: inset -2px 0 2px #000;
@@ -902,6 +931,24 @@ body.mobile {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	height: 48px;
+	background: rgba(0, 0, 0, .8);
+
+	.phone-call {
+		position: absolute;
+		left: 50%;
+		bottom: 3px;
+		transform: translateX(-50%);
+		display: block;
+		height: 72px;
+		width: 72px;
+		border-radius: 36px;
+		background: #FD9400;
+		color: #fff;
+		font-size: 36px;
+		line-height: 80px;
+		text-align: center;
+	}
 }
 
 

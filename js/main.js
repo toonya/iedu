@@ -254,6 +254,15 @@
 		e.preventDefault();
 
 		$('.page').toggleClass('mobile-nav-open');
+
+		TweenMax.to( $('.page'), .35, {left:'240px'} );
+		TweenMax.to( $('.mobile-nav-mask'), .35, {left:'240px'} );
+	})
+	.on('click', '.mobile-nav-mask', function(){
+		$('.page').removeClass('mobile-nav-open');
+
+		TweenMax.to( $('.page'), .35, {left:'0'} );
+		TweenMax.to( $('.mobile-nav-mask'), .35, {left:'0'} );
 	})
 
 })(jQuery)

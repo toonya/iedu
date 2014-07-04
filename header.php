@@ -16,6 +16,15 @@
         <?php wp_head()?>
     </head>
     <body <?php if(wp_is_mobile()) echo 'class="mobile"' ?>>
+        <?php if(wp_is_mobile()): ?>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
+                <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
+                <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
+            </ul>
+        </nav>
+    <?php endif; ?>
         <div class="page">
             <div class="mobile-nav-mask mask-close"></div>
             
@@ -83,12 +92,5 @@
                 <a class="mobile-nav-trigger" href="#" data-mobile-trigger><span class="glyphicon glyphicon-th"></span></a>
                 <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-lg.jpg" alt=""></div>
             </header>
-            <nav class="mobile-nav">
-                <ul>
-                    <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
-                    <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
-                    <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
-                </ul>
-            </nav>
             <?php endif; ?>
 

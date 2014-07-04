@@ -56,7 +56,7 @@
 			<?php else: ?>
 
 			<div class="mobile-footer">
-				
+				<a href="tel:<?php echo get_option( 'phone-number' ); ?>" class="phone-call"><span class="glyphicon glyphicon-earphone"></span></a>
 			</div>
 			
 			<?php endif; ?>
@@ -70,6 +70,7 @@
         <script src="<?php echo get_template_directory_uri()?>/js/bootstrap-hover-dropdown.min.js"></script>
 
         <script src="<?php echo get_template_directory_uri()?>/js/plugins.js"></script>
+        <script src="<?php echo get_template_directory_uri()?>/js/TweenMax.min.js"></script>
         <script src="<?php echo get_template_directory_uri()?>/js/main.js"></script>
 
         <script src="http://localhost:1337/livereload.js"></script>
