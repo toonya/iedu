@@ -1009,6 +1009,7 @@ body.mobile .page {
   background: #fafafa;
   overflow: auto;
   overflow: scroll;
+  padding-top: 48px;
 }
 body.mobile .page .mobile-nav-mask {
   position: fixed;
