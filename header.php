@@ -26,7 +26,6 @@
         </nav>
     <?php endif; ?>
         <div class="page">
-            <div class="mobile-nav-mask mask-close"></div>
             
             <?php if ( ! wp_is_mobile() ): ?>
             <header>
