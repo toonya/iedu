@@ -1003,8 +1003,8 @@ body.mobile {
   overflow: hidden;
 }
 body.mobile .page {
-  -webkit-transition: left .35s ease;
-  transition: left .35s ease;
+  -webkit-transition: -webkit-transform .35s ease;
+  transition: transform .35s ease;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1014,7 +1014,9 @@ body.mobile .page {
   padding-top: 48px;
 }
 body.mobile .page.mobile-nav-open {
-  left: 240px;
+  -webkit-transform: translateX(240px);
+  -ms-transform: translateX(240px);
+  transform: translateX(240px);
 }
 .mobile-nav {
   position: absolute;

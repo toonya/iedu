@@ -865,7 +865,7 @@ body.mobile {
 	overflow: hidden;
 
 	.page {
-		transition: left .35s ease;
+		transition: transform .35s ease;
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -876,7 +876,7 @@ body.mobile {
 	}
 
 	.page.mobile-nav-open {
-		left: 240px;
+		transform: translateX(240px);
 	}
 }
 
