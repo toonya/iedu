@@ -426,9 +426,21 @@ section h1 {
   text-align: center;
 }
 section.strong,
-section.preferential,
+section.discount,
 section.hotel {
   background-color: #EEEEEE;
+}
+section.discount .item a {
+  position: relative;
+}
+section.discount .item a::after {
+  position: absolute;
+  background: url(images/xsyh-icon.png) no-repeat;
+  top: 0;
+  left: 36px;
+  width: 63px;
+  height: 100px;
+  content: " ";
 }
 .strong-type {
   padding-top: 24px;

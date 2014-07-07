@@ -59,6 +59,7 @@ $discount_args = array(
 );
 $the_query = new WP_Query($discount_args);
 $if_empty = '';
+$if_one = '';
 $discount_html = [];
 $html_temp = '';
 
@@ -81,19 +82,22 @@ if ( $the_query->have_posts() ) {
 	$if_empty = 'hide';
 }
 
+if( !empty($discount_html) && (count($discount_html) < 3) )
+	$if_one = 'hide';
+
 /* Restore original Post Data */
 wp_reset_postdata();
 ?>
-<section class="preferential <?php echo $if_empty; ?> slideshow">
+<section class="discount <?php echo $if_empty; ?> slideshow">
 	<div class="container">
-		<div id="carousel-preferential" class="carousel slide" data-ride="carousel" data-interval="">
+		<div id="carousel-discount" class="carousel slide" data-ride="carousel" data-interval="">
 		  
 		  <div class="section-header text-center">
 		  	<!-- Controls -->
-		  	<a class="left carousel-control" href="#carousel-preferential" data-slide="prev">
+		  	<a class="left <?php echo $if_one; ?> carousel-control" href="#carousel-discount" data-slide="prev">
 		  	    <span class="bg-icon-gray-left"></span>
 		  	</a>
-		  	<a class="right carousel-control" href="#carousel-preferential" data-slide="next">
+		  	<a class="right <?php echo $if_one; ?> carousel-control" href="#carousel-discount" data-slide="next">
 		  	    <span class="bg-icon-gray-right"></span>
 		  	</a>
 		  	<h1>限时优惠</h1>

@@ -267,4 +267,35 @@
 		//TweenMax.to( $('.mobile-nav-mask'), .35, {left:'0'} );
 	})
 
+	// ----------------------------------------
+	// ! discount time calculate
+	// ----------------------------------------
+	$('[data-translate="time"]').each(function(i,e){
+		var time = $(e).data('time');
+
+		if ( time && moment(time,'YYYYMMDD',true).isValid()) {
+			time = moment( time, 'YYYYMMDD' ).format( 'YYYY年MM月DD日' );
+		}
+
+		else {
+			time = moment().format( 'YYYY年MM月DD日' );
+		}
+
+		$(e).text(time);
+	})
+
+	var time_group = $('[data-time-container]').find('[data-translate="time"]');
+
+	if( moment( $(time_group[1]).data('time') , 'YYYYMMDD').diff( moment( $(time_group[0]).data('time'), 'YYYYMMDD'))  < 0 ) {
+		var old = [];
+
+		time_group.each(function(i,e){
+			old[i] = $(e).clone();
+		});
+
+		$(time_group[0]).replaceWith(old[1]);
+		$(time_group[1]).replaceWith(old[0]);
+	}
+
+
 })(jQuery)

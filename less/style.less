@@ -101,9 +101,26 @@ section h1 {
 // ----------------------------------------
 // ! section strong
 // ----------------------------------------
-section.strong, section.preferential, section.hotel {
+section.strong, section.discount, section.hotel {
 	background-color: #EEEEEE;
 }
+
+section.discount {
+	.item a {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			background: url(images/xsyh-icon.png) no-repeat;
+			top: 0;
+			left: 36px;
+			width: 63px;
+			height: 100px;
+			content: " ";
+		}
+	}
+}
+
 .strong-type {
 	padding-top: 24px;
 	border-bottom: 1px #d2d2d2 solid;
@@ -134,7 +151,7 @@ section.strong, section.preferential, section.hotel {
 }
 
 // ----------------------------------------
-// ! section preferential
+// ! section discount
 // ----------------------------------------
 
 section.slideshow {
