@@ -121,22 +121,6 @@
 			$(this).trigger('refresh');
 		})
 
-	// mobile navigation
-	$('.mobile-nav-trigger').on('click', function(e) {
-		e.preventDefault();
-
-		$('.page').toggleClass('open-nav');
-		$('.mobile-nav-mask').toggleClass('mask-close');
-	})
-
-	$('.mobile-nav-mask').on('click', function() {
-		$('.mobile-nav-trigger').click();
-	})
-
-	function close_mast() {
-		$('.mobile-nav-mask').css('display', 'none');
-	}
-
 
 	// ----------------------------------------
 	// ! single page
@@ -253,17 +237,17 @@
 	$(document).on('click', '[data-mobile-trigger]', function(e){
 		e.preventDefault();
 
-		$('.page').toggleClass('mobile-nav-open');
+		$('body').toggleClass('mobile-nav-open');
 
 		//js version, not good on mobile
-		//TweenMax.to( $('.page'), .35, {left:'240px'} );
+		//TweenMax.to( $('body'), .35, {left:'240px'} );
 		//TweenMax.to( $('.mobile-nav-mask'), .35, {left:'240px'} );
 	})
 	.on('click', '.mobile-nav-mask', function(){
-		$('.page').removeClass('mobile-nav-open');
+		$('body').removeClass('mobile-nav-open');
 
 		//js version, not good on mobile
-		//TweenMax.to( $('.page'), .35, {left:'0'} );
+		//TweenMax.to( $('body'), .35, {left:'0'} );
 		//TweenMax.to( $('.mobile-nav-mask'), .35, {left:'0'} );
 	})
 

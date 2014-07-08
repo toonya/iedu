@@ -1012,20 +1012,23 @@ html {
 body.mobile {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 body.mobile .page {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+  background: #fafafa;
+  padding: 48px 0;
+}
+body.mobile .page,
+body.mobile .mobile-header,
+body.mobile .mobile-footer {
   -webkit-transition: -webkit-transform .35s ease;
   transition: transform .35s ease;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fafafa;
-  overflow: auto;
-  overflow: scroll;
-  padding-top: 48px;
 }
-body.mobile .page.mobile-nav-open {
+body.mobile.mobile-nav-open .page,
+body.mobile.mobile-nav-open .mobile-header,
+body.mobile.mobile-nav-open .mobile-footer {
   -webkit-transform: translateX(240px);
   -ms-transform: translateX(240px);
   transform: translateX(240px);

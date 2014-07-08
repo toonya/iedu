@@ -879,21 +879,23 @@ html {
 body.mobile {
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
 
 	.page {
-		transition: transform .35s ease;
-		position: absolute;
-		width: 100%;
+		position: relative;
 		height: 100%;
-		background: #fafafa;
-		overflow: auto;
 		overflow: scroll;
-		padding-top: 48px;
+		background: #fafafa;
+		padding: 48px 0;
 	}
 
-	.page.mobile-nav-open {
-		transform: translateX(240px);
+	.page, .mobile-header, .mobile-footer {
+		transition: transform .35s ease;
+	}
+
+	&.mobile-nav-open {
+		.page, .mobile-header, .mobile-footer {
+			transform: translateX(240px);
+		}
 	}
 }
 

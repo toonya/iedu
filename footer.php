@@ -52,16 +52,15 @@
 				</div></div>
 			</footer>
 			<?php get_sidebar('contact'); ?>
-
-			<?php else: ?>
-
-			<div class="mobile-footer">
-				<a href="tel:<?php echo get_option( 'phone-number' ); ?>" class="phone-call"><span class="glyphicon glyphicon-earphone"></span></a>
-			</div>
-			
 			<?php endif; ?>
-
 		</div>
+		<?php if ( wp_is_mobile() ):  ?>
+
+		<div class="mobile-footer">
+			<a href="tel:<?php echo get_option( 'phone-number' ); ?>" class="phone-call"><span class="glyphicon glyphicon-earphone"></span></a>
+		</div>
+		
+		<?php endif; ?>
     	<script src="<?php echo get_template_directory_uri()?>/js/vendor/jquery-1.11.0.min.js"></script>
     	
         <script src="<?php echo get_template_directory_uri()?>/js/vendor/bootstrap.min.js"></script>
