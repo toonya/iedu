@@ -2,13 +2,7 @@
 
 // The Query
 $discount_args = array(
-	'post_type' => array('iedu_school', 'iedu_ed', 'iedu_visit', 'iedu_camp', 'iedu_certification', 'iedu_hotel'),
-	'meta_query' => array(
-		array(
-			'key' => 'is_discount',
-			'value' => '1'
-		)
-	)
+	'post_type' => 'iedu_school',
 );
 $the_query = new WP_Query($discount_args);
 $if_empty = '';
