@@ -21,10 +21,10 @@ if ( $the_query->have_posts() ) {
 			      			</div>
 			      			<div class="describe">
 			      				<div class="row">
-			      					<div class="col-xs-8">
+			      					<div class="col-xs-6">
 			      						<h4>'.get_the_title().'</h4>
 			      					</div>
-			      					<div class="col-xs-4 text-right">
+			      					<div class="col-xs-6 text-right">
 										<div class="count-down" data-type="countDown" data-time="'.get_post_meta( get_the_ID(), 'discount_finish', true ).'"></div>
 			      					</div>
 			      				</div>
