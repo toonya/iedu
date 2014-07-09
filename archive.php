@@ -36,7 +36,7 @@
 					<div class="archive-item-list">
 						<div class="item">
 							<div class="left">
-								<?php echo get_the_post_thumbnail(get_the_ID(), 'large') ?>
+								<img style="height:100%;" class="img-responsive" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large')[0]; ?>" alt="">
 							</div> <!-- /.left -->
 							<div class="right">
 								<h3 class="page-title"><?php the_title();?> </h3>
