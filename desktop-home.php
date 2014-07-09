@@ -69,7 +69,9 @@ if ( $the_query->have_posts() ) {
 		$the_query->the_post();
 		
 		$html_temp = '<div class="col-sm-4"><a href="'.get_permalink().'">
-		      			<img class="img-responsive" src="'.wp_get_attachment_url( get_post_thumbnail_id() ).'" alt="'.get_the_title().'">
+		      			<div class="img-wrapper">
+			      			<img class="img-responsive" src="'.wp_get_attachment_url( get_post_thumbnail_id() ).'" alt="'.get_the_title().'">
+			      		</div>
 		      			<h4>'.get_the_title().'</h4>
 		      			<div>
 		      				<div class="pull-right count-down" data-type="countDown" data-time="'.get_post_meta( get_the_ID(), 'discount_finish', true ).'"></div>

@@ -165,6 +165,21 @@ section.slideshow {
 	.item {
 		a {
 			display: block;
+			position: relative;
+
+			.img-wrapper {
+				position: relative;
+				padding-top: 60%;
+				overflow: hidden;
+
+				img {
+					position: absolute;
+					display: block;
+					top: 0;
+					left: 0;
+					width: 100%;
+				}
+			}
 
 			h4 {
 				font-size: 16px;
