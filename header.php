@@ -18,11 +18,33 @@
     <body <?php if(wp_is_mobile()) echo 'class="mobile"' ?>>
         <?php if(wp_is_mobile()): ?>
             <nav class="mobile-nav">
-                <ul>
+                <ul class="hide">
                     <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
                     <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
                     <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
                 </ul>
+                <?php
+                $head_navigation = array(
+                    'theme_location'  => 'header-menu',
+                    'menu'            => '',
+                    'container'       => false,
+                    'container_class' => '',
+                    'container_id'    => '',
+                    'menu_class'      => 'nav navbar-nav',
+                    'menu_id'         => '',
+                    'echo'            => true,
+                    'fallback_cb'     => false,
+                    'before'          => '',
+                    'after'           => '',
+                    'link_before'     => '',
+                    'link_after'      => '',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth'           => 0,
+                    //'walker'          => new bootstrap_dropdown()
+                );
+
+                wp_nav_menu( $head_navigation );
+                ?>
             </nav>
             <header class="mobile-header">
                 <a class="mobile-nav-trigger" href="#" data-mobile-trigger><span class="glyphicon glyphicon-th"></span></a>

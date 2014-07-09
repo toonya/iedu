@@ -180,18 +180,6 @@
 
 	$('.sub-menu.dropdown-menu').renderDropdownList();
 
-
-	// ----------------------------------------
-	// ! count down
-	// ----------------------------------------
-	$('[data-type="countDown"]').each( function(i,e) {
-		var finish = $(this).data('time'),
-			countDown = moment().twix(finish, 'YYYYMMDD').count('days');
-		//console.log(finish);
-		//console.log(countDown);
-		$(this).text('倒计时 '+countDown+' 天');
-	})
-
 	// ----------------------------------------
 	// ! adjust the archive page bg size
 	// ----------------------------------------
@@ -249,6 +237,20 @@
 		//js version, not good on mobile
 		//TweenMax.to( $('body'), .35, {left:'0'} );
 		//TweenMax.to( $('.mobile-nav-mask'), .35, {left:'0'} );
+	})
+
+	// ----------------------------------------
+	// ! count down
+	// ----------------------------------------
+	$('[data-type="countDown"]').each( function(i,e) {
+		var finish = $(this).data('time'),
+			countDown = moment().twix(finish, 'YYYYMMDD').count('days');
+		//console.log(finish);
+		//console.log(countDown);
+		if( moment(finish,'YYYYMMDD',true).isValid() )
+			$(this).text('倒计时 '+countDown+' 天');
+		else
+			$(this).text('优惠活动进行中')
 	})
 
 	// ----------------------------------------
