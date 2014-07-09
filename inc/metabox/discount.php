@@ -69,7 +69,7 @@ function render_metabox_discount($post) {
    * Use get_post_meta() to retrieve an existing value
    * from the database and use the value for the form.
    */
-
+  echo '时间格式: yyyymmdd, 如20110802';
   echo '<div class="side-form" role="form">';
   foreach ($discount_meta_fields as $field) {
     echo get_horizontal_metabox_html($post->ID, $field);
