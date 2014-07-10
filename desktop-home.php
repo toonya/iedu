@@ -84,7 +84,7 @@ if ( $the_query->have_posts() ) {
 	$if_empty = 'hide';
 }
 
-if( !empty($discount_html) && (count($discount_html) < 3) )
+if( !empty($discount_html) && (count($discount_html) <= 3) )
 	$if_one = 'hide';
 
 /* Restore original Post Data */
