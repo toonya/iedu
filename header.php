@@ -100,7 +100,7 @@
                                 wp_nav_menu( $head_navigation );
                                 ?>
                                 
-                                <form class="navbar-form navbar-right" role="search">
+                                <form class="navbar-form visible-lg navbar-right" role="search">
                                     <div class="form-group">
                                         <input type="text" class="form-control border-non radius-0" placeholder="你想学什么?">
                                     </div><button type="submit" class="btn btn-black btn-flat radius-0"><span class="glyphicon glyphicon-search"></span></button>
