@@ -283,5 +283,39 @@
 		$(time_group[1]).replaceWith(old[0]);
 	}
 
+	// ----------------------------------------
+	// ! mark like
+	// ----------------------------------------
+	$(document).on('click', '[data-ride="mark-like"]', function(e){
+		e.preventDefault();
+
+		var id = $(this).data('id'),
+			name = 'single'+id,
+		    mark = $.cookie(name);
+
+		if( !mark ){
+			$.cookie(name,'like', { expires: 3650 });
+			$(this).addClass('like');
+		}
+
+		else {
+			$.removeCookie(name);
+			$(this).removeClass('like');
+		}
+	})
+
+	var init_like = function(e){
+		var target = $('[data-ride="mark-like"]'),
+			id = target.data('id'),
+			name = 'single'+id,
+		    mark = $.cookie(name);
+
+		if( mark && mark == 'like' ) {
+			target.addClass('like');
+		}
+	}
+
+	init_like();
+
 
 })(jQuery)
