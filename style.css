@@ -1125,6 +1125,17 @@ body.mobile.mobile-nav-open .mobile-footer {
   footer {
     text-align: center;
   }
+  .archive-item-list .right,
+  .archive-item-list .left {
+    width: 100%;
+    height: 50%;
+  }
+  .archive-item-list .right {
+    top: 50%;
+  }
+  .archive-item-list .item {
+    height: 480px;
+  }
 }
 /*added by Mansy*/
 #contact {
