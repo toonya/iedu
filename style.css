@@ -1121,6 +1121,11 @@ body.mobile.mobile-nav-open .mobile-footer {
 .share [data-ride="mark-like"].like {
   background: #c00 !important;
 }
+@media (max-width: 720px) {
+  footer {
+    text-align: center;
+  }
+}
 /*added by Mansy*/
 #contact {
   width: 70%;

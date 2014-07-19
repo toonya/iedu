@@ -1,4 +1,4 @@
-<div class="sidebar-contact">
+<div class="sidebar-contact hidden-sm hidden-xs">
 	<div class="item-list">
 		<?php if( get_option( 'qr-code' ) ):; ?>
 		<div class="item wx">

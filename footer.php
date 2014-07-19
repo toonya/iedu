@@ -2,27 +2,38 @@
 			<footer>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-xs-1 visible-xs"></div>
+						<div class="col-md-6 col-xs-10 col-sm-12">
 							<div class="row">
-								<div class="col-md-4">
+								<div class="col-xs-4 visible-xs"></div>
+								<div class="col-xs-4">
 									<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/logo-sm.png" alt="">
 								</div>
-								<div class="col-md-8">
+								<div class="col-xs-4 visible-xs"></div>
+								<div class="white-block col-xs-12 visible-xs"></div>
+								<div class="col-xs-12 col-sm-8">
 									<p>Sense Luxury是顶级奢华别墅度假的专家。我们推崇与众不同、奢华体验的度假方式。我们从全球范围精选了顶级度假目的地：岛屿、乡野别墅、沙漠露营等。每一处都能满足您对精致住宿体验的所有幻想！在这里旅行者总能找到全球各地最令人惊叹的奢华别墅。而我们也可以根据旅行者的要求提供最为专业的一站式服务。</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-xs-1 visible-xs"></div>
+						<div class="white-block col-xs-12 visible-xs visible-sm"></div>
+						<div class="col-xs-1 visible-xs"></div>
+						<div class="col-md-4 col-sm-8 col-xs-10">
 							<div class="row">
-								<div class="col-md-1"></div>
-								<div class="col-md-4">
+								<div class="col-md-lg hidden-sm hidden-xs"></div>
+								<div class="col-xs-3 visible-xs"></div>
+								<div class="col-md-4 col-lg-5 col-xs-6">
 									<h3>关于我们</h3>
 									<ul>
 										<li><a href="">&gt;&nbsp; <span class="pd-l-xs">服务团队</span></a></li>
 										<li><a href="?post_type=iedu_school">&gt;&nbsp; <span class="pd-l-xs">国际教育</span></a></li>
 									</ul>
 								</div>
-								<div class="col-md-7">
+								<div class="col-xs-3 visible-xs"></div>
+								<div class="white-block col-xs-12 visible-xs"></div>
+								<div class="col-xs-3 visible-xs"></div>
+								<div class="col-md-8 col-ls-7 col-xs-6">
 									<h3>联系我们</h3>
 									<div class="item">
 										<span class="glyphicon glyphicon-earphone"></span>
@@ -33,9 +44,14 @@
 										<span class="content"><span class="pd-l-xs">service@senseluxury.com</span></span>
 									</div>
 								</div>
+								<div class="col-xs-3 visible-xs"></div>
 							</div>
 						</div>
-						<div class="col-md-2">
+						<div class="col-xs-1 visible-xs"></div>
+						<div class="white-block col-xs-12 visible-xs"></div>
+						<div class="col-sm-2 visible-sm"></div>
+						<div class="col-xs-4 visible-xs"></div>
+						<div class="col-md-2 col-sm-2 col-xs-4">
 							<div class="row">
 								<div class="col-md-3"></div>
 								<div class="col-md-9">
