@@ -1121,6 +1121,11 @@ body.mobile.mobile-nav-open .mobile-footer {
 .share [data-ride="mark-like"].like {
   background: #c00 !important;
 }
+@media (max-width: 992px) {
+  .post-showcase .item {
+    height: 300px;
+  }
+}
 @media (max-width: 720px) {
   footer {
     text-align: center;
@@ -1135,6 +1140,17 @@ body.mobile.mobile-nav-open .mobile-footer {
   }
   .archive-item-list .item {
     height: 480px;
+  }
+  .post-showcase .item {
+    height: 240px;
+  }
+  .post-showcase .item .img-responsive {
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .post-showcase .item {
+    height: 200px;
   }
 }
 /*added by Mansy*/
