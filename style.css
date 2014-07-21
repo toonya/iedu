@@ -956,7 +956,7 @@ nav.simple-flat .container-fluid .collapse form input {
 .main-content .page-title {
   font-size: 24px;
 }
-.main-content p {
+#main-content p {
   text-indent: 2em;
 }
 .mobile-content {
