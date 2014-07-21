@@ -148,17 +148,17 @@ wp_reset_postdata();
 			<div class="col-sm-8">
 				<div class="row">
 					<div class="col-sm-6">
-						<a class="img-resp-block type1" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/h-ed.jpg"></a>
+						<a class="img-resp-block type1" href="<?php echo get_post_type_archive_link( 'iedu_ed' );?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/h-ed.jpg"></a>
 					</div>
 					<div class="col-sm-6">
-						<a class="img-resp-block type1" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182153VCdYqR.jpg" class="img-responsive"></a>
+						<a class="img-resp-block type1" href="<?php echo get_post_type_archive_link( 'iedu_visit' );?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182153VCdYqR.jpg" class="img-responsive"></a>
 					</div>
 				</div>
 				<div class="row-block"></div>
-				<a class="img-resp-block type2" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/h-e-certification.jpg"></a>
+				<a class="img-resp-block type2" href="<?php echo get_post_type_archive_link( 'iedu_certification' );?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/h-e-certification.jpg"></a>
 			</div>
 			<div class="col-sm-4">
-				<a class="img-resp-block type3" href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182239kWdisj.jpg"></a>
+				<a class="img-resp-block type3" href="<?php echo get_post_type_archive_link( 'iedu_camp' );?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/20140505182239kWdisj.jpg"></a>
 			</div>
 		</div>
 	</div>
