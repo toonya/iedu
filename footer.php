@@ -33,7 +33,7 @@
 								<div class="col-xs-3 visible-xs"></div>
 								<div class="white-block col-xs-12 visible-xs"></div>
 								<div class="col-xs-3 visible-xs"></div>
-								<div class="col-md-8 col-ls-7 col-xs-6">
+								<div class="col-md-8 col-lg-7 col-xs-6">
 									<h3>联系我们</h3>
 									<div class="item">
 										<span class="glyphicon glyphicon-earphone"></span>

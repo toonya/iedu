@@ -766,9 +766,6 @@ footer .copyright p {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.dropdown-menu.sub-menu li a[href*="certification"]::before {
-  content: "\f19d";
-}
 .dropdown-menu.sub-menu li a[href*="ed"]::before {
   content: "\f19c";
 }
@@ -780,6 +777,9 @@ footer .copyright p {
 }
 .dropdown-menu.sub-menu li a[href*="school"]::before {
   content: "\f0ac";
+}
+.dropdown-menu.sub-menu li a[href*="certification"]::before {
+  content: "\f19d";
 }
 .dropdown-menu.sub-menu ul li:last-of-type {
   border: none;

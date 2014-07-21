@@ -3,6 +3,48 @@
 // ----------------------------------------
 // ! hotel
 // ----------------------------------------
+
+if ( ! function_exists( 'hotel_tax' ) ) {
+ 
+    // register custom taxonomy
+    function hotel_tax() {
+ 
+        // again, labels for the admin panel
+        $labels = array(
+            'name'                       => _x( '住宿类型', '分类名称' ),
+            'singular_name'              => _x( 'FAQ Category', '分类名称' ),
+            'menu_name'                  => __( '住宿类型' ),
+            'all_items'                  => __( '所有分类' ),
+            'parent_item'                => __( '父级分类' ),
+            'parent_item_colon'          => __( '父级分类:' ),
+            'new_item_name'              => __( '新建分类' ),
+            'add_new_item'               => __( '新建分类' ),
+            'edit_item'                  => __( '编辑分类' ),
+            'update_item'                => __( '更新分类' ),
+            'separate_items_with_commas' => __( '用逗号分隔' ),
+            'search_items'               => __( '搜索分类' ),
+            'add_or_remove_items'        => __( '添加或者删除分类' ),
+            'choose_from_most_used'      => __( '选择常用分类项目' ),
+            'not_found'                  => __( '未发现分类' ),
+        );
+        $args = array(
+            // use the labels above
+            'labels'                     => $labels,
+            // taxonomy should be hierarchial so we can display it like a category section
+            'hierarchical'               => true,
+            // again, make the taxonomy public (like the post type)
+            'public'                     => true,
+        );
+        // the contents of the array below specifies which post types should the taxonomy be linked to
+        register_taxonomy( 'hotel_tax', array( 'iedu_hotel' ), $args );
+ 
+    }
+ 
+    // hook into the 'init' action
+    add_action( 'init', 'hotel_tax', 0 );
+ 
+}
+
 function iedu_hotel() {
   $default = array(
 		'name' => '清迈游学住宿',
@@ -38,6 +80,7 @@ function iedu_hotel() {
     'rewrite' => array( 'slug' => $default['slug'] ),
     'capability_type' => 'post',
     'has_archive' => true,
+    'taxonomies' => array( 'hotel_tax' ),
     'hierarchical' => false,
     'menu_position' => 70,
     'supports' => array( 'title', 'editor','thumbnail' )
