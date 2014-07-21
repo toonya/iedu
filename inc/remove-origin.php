@@ -38,7 +38,7 @@ function my_menu_pages() {
 		//'edit.php?post_type=page',
 		'tools.php',
 		'index.php',
-		'upload.php',
+		//'upload.php',
 		'post-new.php?post_type=page',
 		'edit-comments.php',
 		'themes.php',
