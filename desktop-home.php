@@ -207,9 +207,9 @@ wp_reset_postdata();
 
 		      <div class="item active">
 		      	<div class="row">
-		      		<div class="col-sm-4"><a href="<?php echo get_term_link('villa', 'hotel_tax');?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0.jpg" alt=""><h4>清迈别墅</h4></a></div>
-		      		<div class="col-sm-4"><a href="<?php echo get_term_link('apartment', 'hotel_tax');?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(1).jpg" alt=""><h4>清迈公寓</h4></a></div>
-		      		<div class="col-sm-4"><a href="<?php echo get_term_link('hotel', 'hotel_tax');?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(2).jpg" alt=""><h4>清迈酒店</h4></a></div>
+		      		<div class="col-sm-4"><a href="<?php echo get_term_link('villa', 'hotel_type');?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0.jpg" alt=""><h4>清迈别墅</h4></a></div>
+		      		<div class="col-sm-4"><a href="<?php echo get_term_link('apartment', 'hotel_type');?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(1).jpg" alt=""><h4>清迈公寓</h4></a></div>
+		      		<div class="col-sm-4"><a href="<?php echo get_term_link('hotel', 'hotel_type');?>"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/uploads/0(2).jpg" alt=""><h4>清迈酒店</h4></a></div>
 		      	</div>
 		      </div>
 		  </div>
