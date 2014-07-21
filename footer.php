@@ -37,12 +37,29 @@
 									<h3>联系我们</h3>
 									<div class="item">
 										<span class="glyphicon glyphicon-earphone"></span>
-										<span class="content"><span class="pd-l-xs">400-9217-966</span></span>
+										<span class="content"><span class="pd-l-xs">（66）088-113-1130</span></span>
 									</div>
 									<div class="item">
+										<span class="content"><span class="pd-l-xs" style="padding-left:16px;">（86）139 5800 1556</span></span>
+									</div>
+									<div class="item">
+										<span class="fa fa-qq"></span>
+										<span class="content"><span class="pd-l-xs">1990139999</span></span>
+									</div>
+									<div class="item">
+										<span class="content"><span class="pd-l-xs" style="padding-left:16px;">2561611309</span></span>
+									</div>
+									<div class="item">
+										<span class="content"><span class="pd-l-xs" style="padding-left:16px;">2847842178</span></span>
+									</div>
+									<div class="item">
+										<span class="fa fa-map-maker"></span>
+										<span class="content"><span class="pd-l-xs">泰国清迈古城边</span></span>
+									</div>
+									<!--<div class="item">
 										<span class="glyphicon glyphicon-envelope"></span>
 										<span class="content"><span class="pd-l-xs">service@senseluxury.com</span></span>
-									</div>
+									</div>-->
 								</div>
 								<div class="col-xs-3 visible-xs"></div>
 							</div>
