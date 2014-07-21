@@ -28,16 +28,16 @@
 	<div class="container">
 		<div class="strong-type">
 		    <div class="items">
-		        <h3><img src="<?php echo get_template_directory_uri(); ?>/images/title01.jpg" alt=""> 个性</h3>
-		        <p>更大、更私密空间， 能够满足您不同场景下的个性化需求。</p>
+		        <h3><img src="<?php echo get_template_directory_uri(); ?>/images/title01.jpg" alt=""> 定制</h3>
+		        <p>美、英 教育体制多重选择，提供个性化一对一的专业规划，以符合不同阶段的需求。</p>
 		    </div>
 		    <div class="items">
 		        <h3><img src="<?php echo get_template_directory_uri(); ?>/images/title03.jpg" alt=""> 品质</h3>
-		        <p>专人定期现场检查，保证无与伦比的住宿品质。</p>
+		        <p>具有丰富教学辅导经验的专家团队，为学生进入国际性大学为目的进行专业系统学业规划。</p>
 		    </div>
 		    <div class="items">
 		        <h3><img src="<?php echo get_template_directory_uri(); ?>/images/title02.jpg" alt=""> 超值</h3>
-		        <p>人均价格及附加服务使得别墅比高端酒店性价比更高。</p>
+		        <p>提供一系列学习外围生活环境指导，饮食、住宿、出行皆有专人安排，让学生国外求学无忧。</p>
 		    </div>
 		    <div class="clearfix"></div>
 		</div>
