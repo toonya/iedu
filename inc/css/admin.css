@@ -25,12 +25,12 @@
 }
 * {
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
+       box-sizing: content-box;
 }
 #banner-option *,
 .media-modal ul * {
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+       box-sizing: border-box;
 }
 .inputError {
   border-color: red !important;
