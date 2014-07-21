@@ -4,10 +4,10 @@
 // ! hotel
 // ----------------------------------------
 
-if ( ! function_exists( 'hotel_tax' ) ) {
+if ( ! function_exists( 'hotel_type' ) ) {
  
     // register custom taxonomy
-    function hotel_tax() {
+    function hotel_type() {
  
         // again, labels for the admin panel
         $labels = array(
@@ -36,12 +36,12 @@ if ( ! function_exists( 'hotel_tax' ) ) {
             'public'                     => true,
         );
         // the contents of the array below specifies which post types should the taxonomy be linked to
-        register_taxonomy( 'hotel_tax', array( 'iedu_hotel' ), $args );
+        register_taxonomy( 'hotel_type', array( 'iedu_hotel' ), $args );
  
     }
  
     // hook into the 'init' action
-    add_action( 'init', 'hotel_tax', 0 );
+    add_action( 'init', 'hotel_type', 0 );
  
 }
 
@@ -80,7 +80,7 @@ function iedu_hotel() {
     'rewrite' => array( 'slug' => $default['slug'] ),
     'capability_type' => 'post',
     'has_archive' => true,
-    'taxonomies' => array( 'hotel_tax' ),
+    'taxonomies' => array( 'hotel_type' ),
     'hierarchical' => false,
     'menu_position' => 70,
     'supports' => array( 'title', 'editor','thumbnail' )
