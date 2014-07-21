@@ -516,8 +516,8 @@ section.slideshow .bg-icon-gray-right {
   left: 50%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 section.slideshow .bg-icon-gray-left {
   background-position: 0 -100px;
@@ -763,8 +763,8 @@ footer .copyright p {
   left: 50%;
   top: 40%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .dropdown-menu.sub-menu li a[href*="ed"]::before {
   content: "\f19c";
@@ -799,8 +799,8 @@ nav.simple-flat .container-fluid .navbar-header {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 nav.simple-flat .container-fluid .navbar-header a {
   height: auto;
@@ -936,12 +936,12 @@ nav.simple-flat .container-fluid .collapse form input {
 .news-item a {
   color: #777;
   -webkit-transition: color .65s;
-  transition: color .65s;
+          transition: color .65s;
 }
 .news-item a:hover {
   color: #000;
   -webkit-transition: none;
-  transition: none;
+          transition: none;
 }
 .news-item .time {
   color: #aaa;
@@ -955,6 +955,9 @@ nav.simple-flat .container-fluid .collapse form input {
 }
 .main-content .page-title {
   font-size: 24px;
+}
+.main-content p {
+  text-indent: 2em;
 }
 .mobile-content {
   padding-top: 15px;
@@ -1001,8 +1004,8 @@ nav.simple-flat .container-fluid .collapse form input {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   height: 36px;
 }
 .mobile-header .logo img {
@@ -1017,8 +1020,8 @@ nav.simple-flat .container-fluid .collapse form input {
   left: 15px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 html {
   height: 100%;
@@ -1038,14 +1041,14 @@ body.mobile .page,
 body.mobile .mobile-header,
 body.mobile .mobile-footer {
   -webkit-transition: -webkit-transform .35s ease;
-  transition: transform .35s ease;
+          transition: transform .35s ease;
 }
 body.mobile.mobile-nav-open .page,
 body.mobile.mobile-nav-open .mobile-header,
 body.mobile.mobile-nav-open .mobile-footer {
   -webkit-transform: translateX(240px);
-  -ms-transform: translateX(240px);
-  transform: translateX(240px);
+      -ms-transform: translateX(240px);
+          transform: translateX(240px);
 }
 .mobile-nav {
   position: absolute;
@@ -1079,8 +1082,8 @@ body.mobile.mobile-nav-open .mobile-footer {
   left: 50%;
   bottom: 3px;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: block;
   height: 72px;
   width: 72px;

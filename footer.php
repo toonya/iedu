@@ -40,20 +40,20 @@
 										<span class="content"><span class="pd-l-xs">（66）088-113-1130</span></span>
 									</div>
 									<div class="item">
-										<span class="content"><span class="pd-l-xs" style="padding-left:16px;">（86）139 5800 1556</span></span>
+										<span class="content" style="padding-left:16px;"><span class="pd-l-xs">（86）139 5800 1556</span></span>
 									</div>
 									<div class="item">
 										<span class="fa fa-qq"></span>
 										<span class="content"><span class="pd-l-xs">1990139999</span></span>
 									</div>
 									<div class="item">
-										<span class="content"><span class="pd-l-xs" style="padding-left:16px;">2561611309</span></span>
+										<span class="content" style="padding-left:16px;"><span class="pd-l-xs">2561611309</span></span>
 									</div>
 									<div class="item">
-										<span class="content"><span class="pd-l-xs" style="padding-left:16px;">2847842178</span></span>
+										<span class="content" style="padding-left:16px;"><span class="pd-l-xs">2847842178</span></span>
 									</div>
 									<div class="item">
-										<span class="fa fa-map-maker"></span>
+										<span class="fa fa-map-marker" style="padding-left:4px;"></span>
 										<span class="content"><span class="pd-l-xs">泰国清迈古城边</span></span>
 									</div>
 									<!--<div class="item">
