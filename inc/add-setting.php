@@ -119,13 +119,13 @@ function qr_code() {
 }
 
 function qq_contact() {
-  echo '<p>例如:<br/>';
-  echo 'tencent://message/?uin=你的QQ号码&Site=qq&Menu=yes</p>';
+  echo '<p>多个qq号用空格分隔,例:123 456 789 </p>';
   echo '<textarea name="qq-contact" value="" class="form-control" cols="50" rows="3">'.esc_attr(get_option('qq-contact')).'</textarea>';
 }
 
 
 function oss_access_id() {
+  echo '以下区域为可选区域，用于提升网站访问速度。详情请咨询开发人员。<br />';
   echo '<input name="OSS_ACCESS_ID" type="text" class="form-control" value="'.esc_attr(get_option('OSS_ACCESS_ID')).'" />';
 }
 function oss_access_key() {

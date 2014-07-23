@@ -924,6 +924,9 @@ nav.simple-flat .container-fluid .collapse form input {
 .sidebar-contact .qq {
   background-position: -2px -45px;
 }
+.sidebar-contact .qq .pop a {
+  display: block;
+}
 .sidebar-contact .phone {
   background-position: 0 -90px;
 }

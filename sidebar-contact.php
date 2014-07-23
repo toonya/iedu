@@ -15,7 +15,17 @@
 		<div class="item qq">
 			<a href="#"></a>
 			<div class="pop">
-				<a href="<?php echo esc_attr( get_option( 'qq-contact' ) ); ?>">点击咨询</a>
+				<?php  
+				$qq_server = get_option( 'qq-contact' );
+				if( $qq_server ){
+					$qq_server = preg_split ("/\s+/", $qq_server);
+
+					foreach ($qq_server as $key => $value) {
+						echo '<a href="tencent://message/?uin='.esc_attr( $value ).'&Site=qq&Menu=yes">QQ客服'.($key+1).'</a>';
+					}
+				}
+
+				?>
 			</div>
 		</div>
 		<?php endif; ?>
