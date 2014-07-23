@@ -30,6 +30,15 @@ function add_setting_func() {
                          'add_setting_section',
                          'add-setting');
 
+
+    //original setting
+    add_settings_field('posts_per_page',
+                       'posts_per_page',
+                       'posts_per_page_render',
+                       'add-setting',
+                       'add_setting');
+
+
     // Add the field with the names and function to use for our new
     // settings, put it in our new section
     add_settings_field('states',
@@ -95,6 +104,9 @@ function add_setting_func() {
     register_setting('add-setting','OSS_ACCESS_BUCKET');
     register_setting('add-setting','OSS_ACCESS_DOMAIN');
 
+    // 添加原始的option
+    register_setting('add-setting','posts_per_page');
+
 }// eg_settings_api_init()
 
 add_action('admin_init', 'add_setting_func');
@@ -136,6 +148,11 @@ function oss_access_bucket() {
 }
 function oss_access_domain() {
   echo '<input name="OSS_ACCESS_DOMAIN" type="text" class="form-control" value="'.esc_attr(get_option('OSS_ACCESS_DOMAIN')).'" />';
+}
+
+function posts_per_page_render() {
+  echo '<p>卡片页显示的卡片数量，例如10表示每个卡片页显示10张卡片，多了会出现分页。</p>';
+  echo '<input name="posts_per_page" type="text" class="form-control" value="'.esc_attr(get_option('posts_per_page')).'" />';
 }
 
 ?>
