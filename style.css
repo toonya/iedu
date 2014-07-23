@@ -1141,12 +1141,16 @@ body.mobile.mobile-nav-open .mobile-footer {
   line-height: 32px;
   text-align: center;
 }
+.pagination-nav .page-numbers:hover {
+  background: #fafafa;
+}
 .pagination-nav .next,
 .pagination-nav .prev {
   width: 80px;
 }
 .pagination-nav .current {
-  background: #eee;
+  background: #f3f3f3;
+  color: #aaa;
 }
 @media (max-width: 992px) {
   .post-showcase .item {

@@ -152,6 +152,7 @@ function oss_access_domain() {
 
 function posts_per_page_render() {
   echo '<p>卡片页显示的卡片数量，例如10表示每个卡片页显示10张卡片，多了会出现分页。</p>';
+  echo '<p>注意，这里为通用设置，如需单独设置某些地方，请联开发人员。</p>';
   echo '<input name="posts_per_page" type="text" class="form-control" value="'.esc_attr(get_option('posts_per_page')).'" />';
 }
 
