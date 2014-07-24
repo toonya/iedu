@@ -23,7 +23,7 @@
 		<?php  
 			$meta = get_post_meta( get_the_ID() );
 
-			$meta_name = array('hotel_sight', 'hotel_theme', 'hotel_style', 'hotel_check-in-time', 'hotel_check-out-time', 'hotel_bathroom', 'hotel_bedroom', 'hotel_breakfast', 'hotel_facilities', 'hotel_price', 'hotel_location', 'hotel_peripheral', 'hotel_house_type');
+			$meta_name = array('hotel_fee', 'hotel_sight', 'hotel_theme', 'hotel_style', 'hotel_check-in-time', 'hotel_check-out-time', 'hotel_bathroom', 'hotel_bedroom', 'hotel_breakfast', 'hotel_facilities', 'hotel_price', 'hotel_location', 'hotel_peripheral', 'hotel_house_type');
 
 			foreach ($meta_name as $name) {
 				$meta[$name] = ( isset($meta[$name]) ) ? $meta[$name][0] : '' ;

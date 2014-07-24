@@ -147,12 +147,12 @@ $hotel_meta_fields = array(
   //   'id'  => 'course_intro',
   //   'type'  => 'textarea'
   // ),
-  // array(
-  //   'label' => '学费',
-  //   'desc'  => '',
-  //   'id'  => 'fee',
-  //   'type'  => 'text'
-  // ),
+  array(
+    'label' => '费用',
+    'desc'  => '',
+    'id'  => 'hotel_fee',
+    'type'  => 'text'
+  ),
   array(
     'label' => '景观',
     'desc'  => '',
