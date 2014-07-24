@@ -92,14 +92,14 @@
 				<div class="white-block-12"></div>
 				<nav class="in-page-nav">
 					<ul class="nav nav-pills nav-justified">
-					  <li><a href="#main-content">学校介绍</a></li>
+					  <li><a href="#main-content">综合简介</a></li>
 					  <?php  
 					  		$content_list = array(
-								'edu_info'=>'教学&详情', 
-								'requirement' => '入学&要求', 
-								'fee_agreement' => '费用&条款',
-								'service_process' => '服务流程',
-								'apply_form' => '申请表格' ); 
+								'edu_info'=>'设施&服务', 
+								'requirement' => '价格&条款', 
+								'fee_agreement' => '所在位置',
+								'service_process' => '周边配套',
+								'apply_form' => '服务流程' ); 
 					  		foreach ($content_list as $key => $value) {
 					  			echo '<li><a href="#'.$key.'">'.$value.'</a></li>';
 					  		}
