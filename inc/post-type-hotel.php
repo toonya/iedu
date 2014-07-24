@@ -129,58 +129,106 @@ function add_hotel_metaboxs() {
 // Field Array
 //$hotel_prefix = 'hotel_';
 $hotel_meta_fields = array(
+  // array(
+  //   'label' => '地址',
+  //   'desc'  => '',
+  //   'id'  => 'location',
+  //   'type'  => 'text'
+  // ),
+  // array(
+  //   'label' => '教学系统',
+  //   'desc'  => '',
+  //   'id'  => 'edu_sys',
+  //   'type'  => 'text'
+  // ),
+  // array(
+  //   'label' => '课程介绍',
+  //   'desc'  => '',
+  //   'id'  => 'course_intro',
+  //   'type'  => 'textarea'
+  // ),
+  // array(
+  //   'label' => '学费',
+  //   'desc'  => '',
+  //   'id'  => 'fee',
+  //   'type'  => 'text'
+  // ),
   array(
-    'label' => '地址',
+    'label' => '景观',
     'desc'  => '',
-    'id'  => 'location',
+    'id'  => 'hotel_sight',
     'type'  => 'text'
   ),
   array(
-    'label' => '教学系统',
+    'label' => '主题',
     'desc'  => '',
-    'id'  => 'edu_sys',
+    'id'  => 'hotel_theme',
     'type'  => 'text'
   ),
   array(
-    'label' => '课程介绍',
+    'label' => '风格',
     'desc'  => '',
-    'id'  => 'course_intro',
-    'type'  => 'textarea'
-  ),
-  array(
-    'label' => '学费',
-    'desc'  => '',
-    'id'  => 'fee',
+    'id'  => 'hotel_style',
     'type'  => 'text'
   ),
   array(
-    'label' => '教学&详情',
+    'label' => '入住时间',
     'desc'  => '',
-    'id'  => 'edu_info',
+    'id'  => 'hotel_check-in-time',
+    'type'  => 'text'
+  ),
+  array(
+    'label' => '退房时间',
+    'desc'  => '',
+    'id'  => 'hotel_check-out-time',
+    'type'  => 'text'
+  ),
+  array(
+    'label' => '浴室',
+    'desc'  => '',
+    'id'  => 'hotel_bathroom',
+    'type'  => 'text'
+  ),
+  array(
+    'label' => '卧室',
+    'desc'  => '',
+    'id'  => 'hotel_bedroom',
+    'type'  => 'text'
+  ),
+  array(
+    'label' => '早餐',
+    'desc'  => '',
+    'id'  => 'hotel_breakfast',
+    'type'  => 'text'
+  ),
+  array(
+    'label' => '设施&服务',
+    'desc'  => '',
+    'id'  => 'hotel_facilities',
     'type'  => 'textarea'
   ),
   array(
-    'label' => '入学&要求',
+    'label' => '价格&条款',
     'desc'  => '',
-    'id'  => 'requirement',
+    'id'  => 'hotel_price',
     'type'  => 'textarea'
   ),
   array(
-    'label' => '费用&条款',
+    'label' => '所在位置',
     'desc'  => '',
-    'id'  => 'fee_agreement',
+    'id'  => 'hotel_location',
     'type'  => 'textarea'
   ),
   array(
-    'label' => '服务流程',
+    'label' => '周边配套',
     'desc'  => '',
-    'id'  => 'service_process',
+    'id'  => 'hotel_peripheral',
     'type'  => 'textarea'
   ),
   array(
-    'label' => '申请表格',
+    'label' => '全部房型',
     'desc'  => '',
-    'id'  => 'apply_form',
+    'id'  => 'hotel_house_type',
     'type'  => 'textarea'
   ),
 );
