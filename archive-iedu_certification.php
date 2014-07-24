@@ -49,7 +49,7 @@
 									</div>
 								<?php endif; ?>
 
-								<div class="intro"><?php echo '<a href="'.$apply_form.'"><span style="top: 2px;" class="glyphicon glyphicon-download"></span> 下载</a>'; ?></div>
+								<div class="intro"><?php echo '<a href="'.$apply_form.'"><span style="top: 2px;" class="glyphicon glyphicon-download"></span> 下载申请表</a>'; ?></div>
 								
 								<div class="bottom">
 									<div class="row">
