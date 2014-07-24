@@ -5,7 +5,7 @@
 // ----------------------------------------
 function iedu_ed() {
   $default = array(
-		'name' => '清迈游学',
+		'name' => '泰国游学',
 		'slug' => 'iedu_ed'
 	);
 
