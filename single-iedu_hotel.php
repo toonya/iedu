@@ -133,10 +133,14 @@
 					  <div class="panel-body">
 					    <div class="sidebar-items">
 					    	<?php   $sidebar_list = array(
-					    	    		'edu_sys' => '教学系统',
-					    	    		'student_num' => '学生人数',
-					    	    		'teacher_num' => '老师人数',
-					    	    		'grade_area' => '教学年级'
+					    	    		'hotel_sight' => '景观',
+					    	    		'hotel_theme' => '主题',
+					    	    		'hotem_style' => '风格',
+					    	    		'hotel_check-in-time' => '入住时间',
+					    	    		'hotel_check-out-time' => '退房时间',
+					    	    		'hotel_bathroom' => '浴室',
+					    	    		'hotel_bedroom' => '卧室',
+					    	    		'hotel_breakfast' => '早餐'
 					    			 					    	);
 					    
 					    			foreach ( $sidebar_list as $key => $value ) {
