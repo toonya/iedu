@@ -118,7 +118,12 @@
 							<section id="<?php echo $key; ?>">
 								<h2><?php echo $value ?></h2>
 								<div class="section-content">
-									<?php echo esc_html($meta[$key]); ?>
+									<?php 
+									if( $key != 'service_process' )
+										echo esc_html($meta[$key]); 
+									else
+										echo $meta[$key];
+									?>
 								</div>
 							</section>	
 						<?php ;}

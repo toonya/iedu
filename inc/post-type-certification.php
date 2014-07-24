@@ -110,7 +110,7 @@ $certification_meta_fields = array(
   ),
   array(
     'label' => '服务流程',
-    'desc'  => '<title>标题</title><content>内容</content>',
+    'desc'  => '标题格式:<title>标题</title> 内容格式:<content>内容</content>',
     'id'  => 'service_process',
     'type'  => 'textarea'
   ),

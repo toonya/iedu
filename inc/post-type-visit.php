@@ -138,7 +138,7 @@ $visit_meta_fields = array(
     ),
     array(
       'label' => '申请材料',
-      'desc'  => '',
+      'desc'  => '标题格式:<title>标题</title> 内容格式:<content>内容</content>',
       'id'  => 'apply_form',
       'type'  => 'textarea'
     ),
