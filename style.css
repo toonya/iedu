@@ -1339,4 +1339,8 @@ section.hotel .item a h4 {
 .iedu_visit {
   background: url(images/theme_bg_visit.jpg) no-repeat !important; 
 }
+.iedu_certification {
+  background: url(images/theme_bg_certification.jpg) no-repeat !important; 
+}
+
 
