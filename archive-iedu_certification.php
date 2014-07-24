@@ -55,7 +55,7 @@
 									<div class="row">
 										<div class="col-sm-6">
 											<?php if( !empty($service_process) ): ?>
-												<strong><?php echo $service_process; ?></strong>
+												<!-- <strong><?php echo $service_process; ?></strong> -->
 											<?php endif; ?>
 										</div>
 										<div class="col-sm-6 text-right btn-view-detail">
