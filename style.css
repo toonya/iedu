@@ -1332,3 +1332,7 @@ body.mobile.mobile-nav-open .mobile-footer {
 section.hotel .item a h4 {
   text-align: center;
 }
+
+.iedu_ed {
+  background: url(images/theme_bg_ed.jpg) no-repeat !important; }
+}
