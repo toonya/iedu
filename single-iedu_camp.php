@@ -165,6 +165,30 @@
 			</div> <!-- /. sidebar -->
 		</div>
 	</div>
+	<div class="static-navigation hide hidden-sm hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<nav class="in-page-nav">
+						<ul class="nav nav-pills nav-justified">
+						  <li><a href="#main-content">活动简介</a></li>
+						  <?php  
+						  		$content_list = array(
+									'topic_background'=>'主题&背景', 
+									'fee_agreement' => '价格&条款',
+									'service_process' => '服务流程',
+									'apply_form' => '申请表格' ); 
+						  		foreach ($content_list as $key => $value) {
+						  			echo '<li><a href="#'.$key.'">'.$value.'</a></li>';
+						  		}
+						  ?>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-3"><?php get_template_part( 'content', 'share' ); ?></div>
+			</div>
+		</div>
+	</div>
 </div> <!-- /. primary -->
 <?php endwhile; // end of the loop. ?>
 

@@ -1211,6 +1211,18 @@ body.mobile.mobile-nav-open .mobile-footer {
 #service_process title:nth-of-type(9)::before {
   content: '9';
 }
+.static-navigation {
+  padding: 12px 0 16px;
+  border-top: 6px solid #D3A871;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 8px #aaa;
+}
+.static-navigation .share .d-icon {
+  padding-top: 7px;
+}
 @media (max-width: 992px) {
   .post-showcase .item {
     height: 300px;

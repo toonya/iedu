@@ -169,6 +169,31 @@
 			</div> <!-- /. sidebar -->
 		</div>
 	</div>
+	<div class="static-navigation hide hidden-sm hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<nav class="in-page-nav">
+						<ul class="nav nav-pills nav-justified">
+						  <li><a href="#main-content">综合简介</a></li>
+						  <?php  
+						  		$content_list = array(
+									'hotel_facilities'=>'设施&服务', 
+									'hotel_price' => '价格&条款', 
+									'hotel_location' => '所在位置',
+									'hotel_peripheral' => '周边配套',
+									'hotel_house_type' => '全部房型' ); 
+						  		foreach ($content_list as $key => $value) {
+						  			echo '<li><a href="#'.$key.'">'.$value.'</a></li>';
+						  		}
+						  ?>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-3"><?php get_template_part( 'content', 'share' ); ?></div>
+			</div>
+		</div>
+	</div>
 </div> <!-- /. primary -->
 <?php endwhile; // end of the loop. ?>
 

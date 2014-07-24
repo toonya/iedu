@@ -165,6 +165,31 @@
 			</div> <!-- /. sidebar -->
 		</div>
 	</div>
+	<div class="static-navigation hide hidden-sm hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<nav class="in-page-nav">
+						<ul class="nav nav-pills nav-justified">
+						  <li><a href="#main-content">学校介绍</a></li>
+						  <?php  
+						  		$content_list = array(
+									'edu_info'=>'教学&详情', 
+									'requirement' => '入学&要求', 
+									'fee_agreement' => '费用&条款',
+									'service_process' => '服务流程',
+									'apply_form' => '申请表格' ); 
+						  		foreach ($content_list as $key => $value) {
+						  			echo '<li><a href="#'.$key.'">'.$value.'</a></li>';
+						  		}
+						  ?>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-3"><?php get_template_part( 'content', 'share' ); ?></div>
+			</div>
+		</div>
+	</div>
 </div> <!-- /. primary -->
 <?php endwhile; // end of the loop. ?>
 
