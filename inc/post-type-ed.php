@@ -95,55 +95,61 @@ $ed_meta_fields = array(
     'type'  => 'text'
   ),
   array(
-    'label' => '时间',
+    'label' => '授课语言',
     'desc'  => '',
-    'id'  => 'time',
+    'id'  => 'ed_lang',
     'type'  => 'text'
   ),
   array(
-    'label' => '语言',
+    'label' => '申请时间',
     'desc'  => '',
-    'id'  => 'language',
+    'id'  => 'ed_application-time',
     'type'  => 'text'
   ),
   array(
-    'label' => '价格',
+    'label' => '课程介绍',
+    'desc'  => '',
+    'id'  => 'course_intro',
+    'type'  => 'textarea'
+  ),
+  array(
+    'label' => '学费',
     'desc'  => '',
     'id'  => 'fee',
     'type'  => 'text'
   ),
   array(
-    'label' => '主办方',
+    'label' => '学生人数',
     'desc'  => '',
-    'id'  => 'host',
+    'id'  => 'student_num',
     'type'  => 'text'
   ),
   array(
-    'label' => '主题',
+    'label' => '教师人数',
     'desc'  => '',
-    'id'  => 'topic',
+    'id'  => 'teacher_num',
     'type'  => 'text'
   ),
   array(
-    'label' => '参加人数',
+    'label' => '授课课时',
     'desc'  => '',
-    'id'  => 'number',
+    'id'  => 'ed_class-hour',
     'type'  => 'text'
   ),
   array(
-    'label' => '截止日期',
+    'label' => '教学&详情',
     'desc'  => '',
-    'id'  => 'deadline',
-    'type'  => 'text'
-  ),
-  array(
-    'label' => '主题&背景',
-    'desc'  => '',
-    'id'  => 'topic_background',
+    'id'  => 'edu_info',
     'type'  => 'textarea'
   ),
   array(
-    'label' => '价格&条款',
+    'label' => '入学&要求',
+    'desc'  => '',
+    'id'  => 'requirement',
+    'type'  => 'textarea'
+  ),
+  array(
+    'label' => '费用&条款',
     'desc'  => '',
     'id'  => 'fee_agreement',
     'type'  => 'textarea'
@@ -155,7 +161,7 @@ $ed_meta_fields = array(
     'type'  => 'textarea'
   ),
   array(
-    'label' => '申请材料',
+    'label' => '申请表格',
     'desc'  => '',
     'id'  => 'apply_form',
     'type'  => 'textarea'
