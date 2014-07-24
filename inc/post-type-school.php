@@ -182,24 +182,7 @@ function school_meta_box_callback( $post ) {
 
   echo '<div class="form-horizontal" role="form">';
   foreach ($school_meta_fields as $field) {
-    $value = get_post_meta( $post->ID, $field['id'], true );
-
-    echo '<div class="form-group" role="form">';
-    switch ($field['type']) {
-      case 'text':
-        echo '<label class="col-sm-2 control-label" for="'.$field['id'].'">'.$field['label'].'</label>';
-        echo '<div class="col-sm-8"><input class="form-control" type="text" id="'.$field['id'].'" name="'.$field['id'].'" value="' . esc_attr( $value ) . '" /></div>';
-        break;
-
-      case 'textarea':
-        echo '<label class="col-sm-2 control-label" for="'.$field['id'].'">'.$field['label'].'</label>';
-        echo '<div class="col-sm-8"><textarea rows="5" class="form-control" type="text" id="'.$field['id'].'" name="'.$field['id'].'">' . esc_attr( $value ) . '</textarea></div>';
-        break;
-      
-      default:
-        break;
-    }
-    echo '</div>';
+      echo get_toonya_metabox_html($post->ID, $field,true);
   }
   echo '</div>';
 }

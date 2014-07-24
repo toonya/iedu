@@ -1,54 +1,52 @@
 <?php
 
-function get_horizontal_metabox_html($post_id, $field) {
+// finish it later
+function get_toonya_metabox_html($post_id, $field, $horizontal){
 	$value = get_post_meta( $post_id, $field['id'], true );
 	$html = '';
 
 	switch ($field['type']) {
 		case 'text':
-		$html.= '<div class="form-group">';
-		$html .= '<label class="control-label" for="'.$field['id'].'">'.$field['label'].'</label>';
-		$html .= '<input class="form-control" type="text" id="'.$field['id'].'" name="'.$field['id'].'" value="' . esc_attr( $value ) . '" />';
-		break;
-
+			$html .= sprintf( 
+				"<div class='form-group'>
+					<label class='%s control-label' for='%s'>%s</label>
+					%s<input class='form-control' type='text' id='%s' name='%s' value='%s' />%s",
+				( $horizontal == 'true' ) ? "col-sm-2" : "",
+				$field['id'],
+				esc_html($field['label']),
+				( $horizontal == 'true' ) ? "<div class=\"col-sm-8\">" : "",
+				$field['id'],
+				$field['id'],
+				esc_attr( $value ),
+				( $horizontal == 'true' ) ? "</div>" : ""
+		    );
+			break;
 		case 'textarea':
-		$html.= '<div class="form-group">';
-		$html .= '<label class="control-label" for="'.$field['id'].'">'.$field['label'].'</label>';
-		$html .= '<textarea rows="5" class="form-control" type="text" id="'.$field['id'].'" name="'.$field['id'].'">' . esc_attr( $value ) . '</textarea>';
-		break;
-
+			$html .= sprintf( 
+				"<div class='form-group'>
+					<label class='%s control-label' for='%s'>%s</label>
+					%s<textarea rows='5' class='form-control' type='text' id='%s' name='%s' />%s</textarea>%s",
+				( $horizontal == 'true' ) ? "col-sm-2" : "",
+				$field['id'],
+				esc_html($field['label']),
+				( $horizontal == 'true' ) ? "<div class=\"col-sm-8\">" : "",
+				$field['id'],
+				$field['id'],
+				esc_attr( $value ),
+				( $horizontal == 'true' ) ? "</div>" : ""
+		    );
+			break;
 		case 'checkbox':
-		$html.= '<div class="checkbox">';
-		$html .= '<label><input value=1 '.checked( $value, '1', false ).' id="'.$field['id'].'" name="'.$field['id'].'" type="checkbox"> '.$field['label'].'</label>';
-		break;
+			$html.= '<div class="checkbox">';
+			$html .= '<label><input value=1 '.checked( $value, '1', false ).' id="'.$field['id'].'" name="'.$field['id'].'" type="checkbox"> '.$field['label'].'</label>';
+			break;
 
+		
 		default:
-		break;
+			# code...
+			break;
 	}
-	$html.= '</div>';
 
-	return $html;
-}
-
-function get_vertical_metabox_html($post_id, $field) {
-	$value = get_post_meta( $post_id, $field['id'], true );
-	$html = '';
-
-	$html.= '<div class="form-group" role="form">';
-	switch ($field['type']) {
-		case 'text':
-		$html .= '<label class="col-sm-2 control-label" for="'.$field['id'].'">'.$field['label'].'</label>';
-		$html .= '<div class="col-sm-8"><input class="form-control" type="text" id="'.$field['id'].'" name="'.$field['id'].'" value="' . esc_attr( $value ) . '" /></div>';
-		break;
-
-		case 'textarea':
-		$html .= '<label class="col-sm-2 control-label" for="'.$field['id'].'">'.$field['label'].'</label>';
-		$html .= '<div class="col-sm-8"><textarea rows="5" class="form-control" type="text" id="'.$field['id'].'" name="'.$field['id'].'">' . esc_attr( $value ) . '</textarea></div>';
-		break;
-
-		default:
-		break;
-	}
 	$html.= '</div>';
 
 	return $html;

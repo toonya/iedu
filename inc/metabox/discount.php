@@ -72,7 +72,7 @@ function render_metabox_discount($post) {
   echo '时间格式: yyyymmdd, 如20110802';
   echo '<div class="side-form" role="form">';
   foreach ($discount_meta_fields as $field) {
-    echo get_horizontal_metabox_html($post->ID, $field);
+    echo get_toonya_metabox_html($post->ID, $field, false);
   }
   echo '</div>';
 }
