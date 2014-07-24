@@ -118,7 +118,21 @@
 							<section id="<?php echo $key; ?>">
 								<h2><?php echo $value ?></h2>
 								<div class="section-content">
-									<?php echo esc_html($meta[$key]); ?>
+									<?php 
+									switch ($key) {
+											case 'service_process':
+												echo $meta[$key];
+												break;
+
+											case 'apply_form':
+												echo '<a href="'.$meta[$key].'"><span style="top: 2px;" class="glyphicon glyphicon-download"></span> 下载</a>';
+												break;
+											
+											default:
+												echo esc_html($meta[$key]);
+												break;
+										}	
+									?>
 								</div>
 							</section>	
 						<?php ;}
