@@ -23,7 +23,7 @@
 		<?php  
 			$meta = get_post_meta( get_the_ID() );
 
-			$meta_name = array('location', 'edu_sys', 'course_intro', 'fee', 'edu_info', 'requirement', 'fee_agreement', 'service_process', 'apply_form', 'student_num', 'teacher_num', 'grade_area');
+			$meta_name = array('hotel_sight', 'hotel_theme', 'hotel_style', 'hotel_check-in-time', 'hotel_check-out-time', 'hotel_bathroom', 'hotel_bedroom', 'hotel_breakfast', 'hotel_facilities', 'hotel_price', 'hotel_location', 'hotel_peripheral', 'hotel_house_type');
 
 			foreach ($meta_name as $name) {
 				$meta[$name] = ( isset($meta[$name]) ) ? $meta[$name][0] : '' ;
@@ -135,7 +135,7 @@
 					    	<?php   $sidebar_list = array(
 					    	    		'hotel_sight' => '景观',
 					    	    		'hotel_theme' => '主题',
-					    	    		'hotem_style' => '风格',
+					    	    		'hotel_style' => '风格',
 					    	    		'hotel_check-in-time' => '入住时间',
 					    	    		'hotel_check-out-time' => '退房时间',
 					    	    		'hotel_bathroom' => '浴室',
