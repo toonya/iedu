@@ -48,7 +48,7 @@
 						<p class="sec-title"><?php echo $meta['location'] ?></p>
 					</div>
 					<div class="col-xs-4 text-right price">
-						<strong><?php echo $meta['fee']; ?></strong>/人
+						<strong><?php echo $meta['hotel_fee']; ?></strong>/人
 					</div>
 				</div>
 			</div>
