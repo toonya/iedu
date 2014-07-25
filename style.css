@@ -1360,7 +1360,6 @@ body.mobile.mobile-nav-open .mobile-footer {
 section.hotel .item a h4 {
   text-align: center;
 }
-<<<<<<< HEAD
 .iedu_ed {
   background: url(images/theme_bg_ed.jpg) no-repeat !important;
 }
@@ -1375,7 +1374,7 @@ section.hotel .item a h4 {
 }
 .iedu_camp {
   background: url(images/theme_bg_camp.jpg) no-repeat !important;
-=======
+}
 .archive_iedu_ed {
   background: url(images/theme_bg_ed.png) center top no-repeat !important;
 }
@@ -1390,8 +1389,4 @@ section.hotel .item a h4 {
 }
 .archive_iedu_camp {
   background: url(images/theme_bg_camp.png) center top no-repeat !important;
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
 }
