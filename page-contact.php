@@ -53,6 +53,17 @@ if ( have_posts() ) :
                     <div class="contact-item"><i class="icon icon3"></i><i>泰国，清迈，某某区某某路某号，某大厦</i></div>
                 </div>
 			</div>
+			<div class="mail-state">
+				<div class="text-success hide" data-sending>
+					<span class="glyphicon glyphicon-refresh"></span> 正在发送
+				</div>
+				<div class="text-success hide" data-done>
+					<span class="glyphicon glyphicon-ok"></span> 正在发送
+				</div>
+				<div class="text-danger hide" data-error>
+					<span class="glyphicon glyphicon-remove"></span> 发送失败, 请稍候再试。
+				</div>
+			</div>
 			<button class="contact-submit" type="submit" disabled>提 交</button>
 		</form>
 		<div class="white-block"></div>

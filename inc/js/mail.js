@@ -33,7 +33,8 @@
 		data = $.extend({}, data);
 
 		// begin mailing
-		$('body').addClass('mailing');
+		//$('body').addClass('mailing');
+		$('.mail-state [data-sending]').removeClass('hide');
 
 		// post to server
 
@@ -52,19 +53,39 @@
 				if(mail.state) {
 					$('form')[0].reset();
 
-					alert('发送成功');
+					$('.mail-state').children().addClass('hide');
+
+					$('.mail-state [data-done]').removeClass('hide');
+
+					setTimeout(function(){
+						$('.mail-state [data-done]').addClass('hide');
+					}, 1000);
 				}
 
 				//fail
 				else {
-					alert('发送失败，请稍候再试，或联系管理员。');
+					$('.mail-state').children().addClass('hide');
+
+					$('.mail-state [data-error]').removeClass('hide');
+
+					setTimeout(function(){
+						$('.mail-state [data-error]').addClass('hide');
+					}, 1000);
+
 					console.log(data);
 					console.log(mail_options);
 				}
 
 			}
 		}).fail(function(){
-			alert('无法连接服务器。');
+			$('.mail-state').children().addClass('hide');
+
+			$('.mail-state [data-error]').removeClass('hide');
+
+			setTimeout(function(){
+				$('.mail-state [data-error]').addClass('hide');
+			}, 1000);
+			
 			console.log(data);
 			console.log(mail_options);
 		});

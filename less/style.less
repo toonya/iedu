@@ -1182,6 +1182,34 @@ body.mobile {
 	}
 }
 
+// ----------------------------------------
+// ! page of contact
+// ----------------------------------------
+.mail-state {
+	>* {
+		padding-bottom: 12px;
+	}
+
+	.glyphicon-refresh {
+		animation: loading 1s linear infinite;
+	}
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+// ----------------------------------------
+// ! responsive design
+// ----------------------------------------
+
+
 @media (max-width: 992px) {
 	.post-showcase .item {
 		height: 300px;
