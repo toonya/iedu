@@ -59,7 +59,7 @@ function ajax_mail_handle() {
 		    case 'contact' :
 
 				$subject       = sprintf( '[%s]. New contact request.', get_bloginfo('name'));
-				$message       = sprintf( 'Name : %s <br /> <a href="mailto:%s">%s</a> <br /><br /> Subject : %s <br /> Message <br /> : %s ',
+				$message       = sprintf( 'Name : %s <br /> <a href="mailto:%s">%s</a> <br /><br /> Subject : %s <br /> Message : %s ',
 									$_POST['name'],
 									$_POST['email'],
 									$_POST['email'],
