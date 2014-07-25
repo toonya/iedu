@@ -123,12 +123,16 @@
 												echo $meta[$key];
 												break;
 
+											case 'fee_agreement':
+												echo $meta[$key];
+												break;
+
 											case 'apply_form':
 												echo '<a href="'.$meta[$key].'"><span style="top: 2px;" class="glyphicon glyphicon-download"></span> 下载</a>';
 												break;
 											
 											default:
-												echo esc_html($meta[$key]);
+												echo wpautop($meta[$key]);
 												break;
 										}	
 									?>

@@ -674,10 +674,18 @@ footer .copyright p {
   font-size: 20px;
   line-height: 72px;
 }
-.custom-single section .section-content {
+.custom-single section#service_process .section-content,
+.custom-single section#apply_form .section-content,
+.custom-single section#fee_agreement .section-content {
   padding: 18px;
+}
+.custom-single section .section-content {
+  padding: 18px 18px 6px;
   background: #fff;
   border: 1px solid #cfcfcf;
+}
+.custom-single section p {
+  margin-bottom: 12px;
 }
 .custom-single .in-page-nav.affix {
   left: 0;
@@ -705,6 +713,65 @@ footer .copyright p {
 .custom-single .in-page-nav ul li.active a {
   background: #D4A96D;
   color: #fff;
+}
+.custom-single .section-content title,
+.custom-single .section-content content {
+  display: block;
+  padding-left: 48px;
+  position: relative;
+}
+.custom-single .section-content title {
+  color: #D3A871;
+  font-size: 16px;
+}
+.custom-single .section-content title::before {
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  content: '1';
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  color: #fff;
+  background: #D3A871;
+  font-family: 'Arial';
+  text-align: center;
+  line-height: 22px;
+}
+.custom-single .section-content content {
+  padding-bottom: 12px;
+}
+.custom-single .section-content content::before {
+  position: absolute;
+  left: 16px;
+  content: ' ';
+  width: 2px;
+  height: 100%;
+  background: #D3A871;
+}
+.custom-single .section-content title:nth-of-type(2)::before {
+  content: '2';
+}
+.custom-single .section-content title:nth-of-type(3)::before {
+  content: '3';
+}
+.custom-single .section-content title:nth-of-type(4)::before {
+  content: '4';
+}
+.custom-single .section-content title:nth-of-type(5)::before {
+  content: '5';
+}
+.custom-single .section-content title:nth-of-type(6)::before {
+  content: '6';
+}
+.custom-single .section-content title:nth-of-type(7)::before {
+  content: '7';
+}
+.custom-single .section-content title:nth-of-type(8)::before {
+  content: '8';
+}
+.custom-single .section-content title:nth-of-type(9)::before {
+  content: '9';
 }
 .post-showcase .item {
   height: 400px;
@@ -1152,65 +1219,6 @@ body.mobile.mobile-nav-open .mobile-footer {
   background: #f3f3f3;
   color: #aaa;
 }
-#service_process title,
-#service_process content {
-  display: block;
-  padding-left: 48px;
-  position: relative;
-}
-#service_process title {
-  color: #D3A871;
-  font-size: 16px;
-}
-#service_process title::before {
-  position: absolute;
-  left: 6px;
-  top: 3px;
-  content: '1';
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  color: #fff;
-  background: #D3A871;
-  font-family: 'Arial';
-  text-align: center;
-  line-height: 22px;
-}
-#service_process content {
-  padding-bottom: 12px;
-}
-#service_process content::before {
-  position: absolute;
-  left: 16px;
-  content: ' ';
-  width: 2px;
-  height: 100%;
-  background: #D3A871;
-}
-#service_process title:nth-of-type(2)::before {
-  content: '2';
-}
-#service_process title:nth-of-type(3)::before {
-  content: '3';
-}
-#service_process title:nth-of-type(4)::before {
-  content: '4';
-}
-#service_process title:nth-of-type(5)::before {
-  content: '5';
-}
-#service_process title:nth-of-type(6)::before {
-  content: '6';
-}
-#service_process title:nth-of-type(7)::before {
-  content: '7';
-}
-#service_process title:nth-of-type(8)::before {
-  content: '8';
-}
-#service_process title:nth-of-type(9)::before {
-  content: '9';
-}
 .static-navigation {
   padding: 12px 0 16px;
   border-top: 6px solid #D3A871;
@@ -1332,20 +1340,3 @@ body.mobile.mobile-nav-open .mobile-footer {
 section.hotel .item a h4 {
   text-align: center;
 }
-
-.iedu_ed {
-  background: url(images/theme_bg_ed.jpg) no-repeat !important; 
-}
-.iedu_visit {
-  background: url(images/theme_bg_visit.jpg) no-repeat !important; 
-}
-.iedu_certification {
-  background: url(images/theme_bg_certification.jpg) no-repeat !important; 
-}
-.iedu_school {
-  background: url(images/theme_bg_school.jpg) no-repeat !important; 
-}
-.iedu_camp {
-  background: url(images/theme_bg_camp.jpg) no-repeat !important; 
-}
-
