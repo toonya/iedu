@@ -1348,17 +1348,17 @@ section.hotel .item a h4 {
   text-align: center;
 }
 .iedu_ed {
-  background: url(images/theme_bg_ed.jpg) no-repeat !important;
+  background: url(images/theme_bg_ed.jpg) center top no-repeat !important;
 }
 .iedu_visit {
-  background: url(images/theme_bg_visit.jpg) no-repeat !important;
+  background: url(images/theme_bg_visit.jpg) center top no-repeat !important;
 }
 .iedu_certification {
-  background: url(images/theme_bg_certification.jpg) no-repeat !important;
+  background: url(images/theme_bg_certification.jpg) center top no-repeat !important;
 }
 .iedu_school {
-  background: url(images/theme_bg_school.jpg) no-repeat !important;
+  background: url(images/theme_bg_school.jpg) center top no-repeat !important;
 }
 .iedu_camp {
-  background: url(images/theme_bg_camp.jpg) no-repeat !important;
+  background: url(images/theme_bg_camp.jpg) center top no-repeat !important;
 }
