@@ -1347,16 +1347,16 @@ body.mobile.mobile-nav-open .mobile-footer {
 section.hotel .item a h4 {
   text-align: center;
 }
-.iedu_ed {
+.archive_iedu_ed {
   background: url(images/theme_bg_ed.jpg) center top no-repeat !important;
 }
-.iedu_visit {
+.archive_iedu_visit {
   background: url(images/theme_bg_visit.jpg) center top no-repeat !important;
 }
-.iedu_certification {
+.archive_iedu_certification {
   background: url(images/theme_bg_certification.jpg) center top no-repeat !important;
 }
-.iedu_school {
+.archive_iedu_school {
   background: url(images/theme_bg_school.jpg) center top no-repeat !important;
 }
 .archive_iedu_camp {
