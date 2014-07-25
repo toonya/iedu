@@ -21,8 +21,9 @@
 					$qq_server = preg_split ("/\s+/", $qq_server);
 
 					foreach ($qq_server as $key => $value) {
-						echo '<a href="tencent://message/?uin='.esc_attr( $value ).'&Site=qq&Menu=yes">QQ客服'.($key+1).'</a>';
+						//echo '<a href="tencent://message/?uin='.esc_attr( $value ).'&Site=qq&Menu=yes">QQ客服'.($key+1).'</a>';
 						//echo '<a href="http://wpa.qq.com/msgrd?v=3&uin='.esc_attr( $value ).'&site=qq&menu=yes">QQ客服'.($key+1).'</a>';
+						echo '<a href="http://wpa.qq.com/msgrd?v=3&uin=330792203&site=qq&menu=yes">QQ客服'.($key+1).'</a>';
 					}
 				}
 
