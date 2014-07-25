@@ -573,7 +573,16 @@ footer {
 		height: 400px;
 		overflow: hidden;
 
+		.img-wrapper {
+			position: relative;
+			height: 400px;
+			width: 100%;
+		}
+
 		.img-responsive {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
 			width: 100%;
 			display: block;
 		}

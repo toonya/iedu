@@ -775,7 +775,17 @@ footer .copyright p {
   height: 400px;
   overflow: hidden;
 }
+.post-showcase .item .img-wrapper {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
 .post-showcase .item .img-responsive {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
   display: block;
 }

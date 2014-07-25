@@ -75,7 +75,7 @@
 				    </div><?php
 					    for($i=1;$i<$img_counter;$i++){
 					    	$index = $i-1;
-						    echo '<div class="item"><img class="img-responsive" src="'.$meta_showcase[$index].'?imageView/0/w/1400/h/800/q/20" alt="o"></div>';
+					    	echo '<div class="item"><div class="img-wrapper"><img class="img-responsive" src="'.$meta_showcase[$index].'?imageView/0/w/1400/h/800/q/20" alt="o"></div></div>';
 					    }
 				    ?>
 				  </div>
