@@ -674,6 +674,11 @@ footer .copyright p {
   font-size: 20px;
   line-height: 72px;
 }
+.custom-single section#service_process .section-content,
+.custom-single section#apply_form .section-content,
+.custom-single section#fee_agreement .section-content {
+  padding: 18px;
+}
 .custom-single section .section-content {
   padding: 18px 18px 6px;
   background: #fff;
