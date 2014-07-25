@@ -1090,9 +1090,24 @@ body.mobile {
 		border-radius: 3px;
 	}
 
-	.d-icon .bds_more.share {
+	.d-icon .bds_more {
 		text-indent: 0;
 		background-image: none !important;
+		display: block;
+		margin: 0;
+		color: #fff;
+		height: 37px;
+		width: 37px;
+		padding: 0;
+
+		position: relative;
+
+		&::after {
+			content: "\e095";
+			font-family: 'Glyphicons Halflings';
+			font-size: 20px;
+			line-height: 38px;
+		}
 	}
 
 	.d-icon {

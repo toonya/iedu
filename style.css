@@ -1179,9 +1179,22 @@ body.mobile.mobile-nav-open .mobile-footer {
   line-height: 38px;
   border-radius: 3px;
 }
-.share .d-icon .bds_more.share {
+.share .d-icon .bds_more {
   text-indent: 0;
   background-image: none !important;
+  display: block;
+  margin: 0;
+  color: #fff;
+  height: 37px;
+  width: 37px;
+  padding: 0;
+  position: relative;
+}
+.share .d-icon .bds_more::after {
+  content: "\e095";
+  font-family: 'Glyphicons Halflings';
+  font-size: 20px;
+  line-height: 38px;
 }
 .share .d-icon {
   float: right;

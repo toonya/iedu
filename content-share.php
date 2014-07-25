@@ -7,11 +7,18 @@
 	    <a href="#" data-ride="mark-like" data-id="<?php the_id(); ?>" title="喜欢">
 			<span class="glyphicon glyphicon-heart"></span>
 	    </a>
-	    <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
-	    	<a href="javascript:void(0);" class="bds_more share" title="共享">
-	    		<span class="glyphicon glyphicon-share-alt"></span>
+	    <div class="bdsharebuttonbox" data-tag="share_1">
+	    	<a class="bds_more" data-cmd="more">
 	    	</a>
 	    </div>
-	    <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=388336"></script>
 	</div>
 </div>
+
+<script>
+	window._bd_share_config = {
+		"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16","bdPopupOffsetLeft":"-220"},"share":{"bdSize":16}
+	}
+
+	//以下为js加载部分
+	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
