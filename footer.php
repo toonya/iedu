@@ -81,7 +81,7 @@
 					</div> <!-- /. row -->
 				</div>
 				<div class="copyright"><div class="container">
-					<p>Copyright © 2014 Sense Luxury 沪ICP备14011210号</p>
+					<p>Copyright © 2014 Lukasila.</p>
 				</div></div>
 			</footer>
 			<?php get_sidebar('contact'); ?>
