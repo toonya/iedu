@@ -329,5 +329,22 @@
 			$('.static-navigation').addClass('hide');
 	})
 
+	// ----------------------------------------
+	// ! clear wpautop br
+	// ----------------------------------------
+	var clear_br = function(e){
+		var next = e.next();
+
+		if(next.is('br'))
+			next.remove();
+	}
+
+	$('.custom-single title').each(function(i,e){
+		clear_br($(e));
+	});
+
+	$('.custom-single content').each(function(i,e){
+		clear_br($(e));
+	});
 
 })(jQuery)

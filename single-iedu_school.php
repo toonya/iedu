@@ -120,14 +120,6 @@
 								<div class="section-content">
 									<?php 
 									switch ($key) {
-											case 'service_process':
-												echo $meta[$key];
-												break;
-
-											case 'fee_agreement':
-												echo $meta[$key];
-												break;
-
 											case 'apply_form':
 												echo '<a href="'.$meta[$key].'"><span style="top: 2px;" class="glyphicon glyphicon-download"></span> 下载</a>';
 												break;
