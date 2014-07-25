@@ -17,7 +17,7 @@
 	</div>
 </div>
 
-<div class="primary custom-post-type <?php echo get_post_type(); ?>">
+<div class="primary custom-post-type archive-<?php echo get_post_type(); ?>">
 	<div class="container">
     	<div class="archive-title"><img src="<?php echo get_template_directory_uri(); ?>/images/title-iedu-summer-camp.png"></div>
 		<div class="row">
