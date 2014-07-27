@@ -22,7 +22,8 @@
 
 					foreach ($qq_server as $key => $value) {
 						//echo '<a href="tencent://message/?uin='.esc_attr( $value ).'&Site=qq&Menu=yes">QQ客服'.($key+1).'</a>';
-						echo '<a href="http://wpa.qq.com/msgrd?v=3&uin='.esc_attr( $value ).'&site=qq&menu=yes">QQ客服'.($key+1).'</a>';
+						//echo '<a href="http://wpa.qq.com/msgrd?v=3&uin='.esc_attr( $value ).'&site=qq&menu=yes">QQ客服'.($key+1).'</a>';
+						echo '<a href="tencent://message/?Menu=yes&uin='.esc_attr( $value ).'&Site=uedcss&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45">QQ客服'.($key+1).'</a>';
 						//echo '<a href="http://wpa.qq.com/msgrd?v=3&uin=330792203&site=qq&menu=yes">QQ客服'.($key+1).'</a>';
 					}
 				}
