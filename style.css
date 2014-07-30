@@ -734,14 +734,15 @@ footer .copyright p {
   background: #D3A871;
   font-family: 'Arial';
   text-align: center;
-  line-height: 22px;
+  line-height: 20px;
+  font-size: 12px;
 }
 .custom-single .section-content content {
   padding-bottom: 12px;
 }
 .custom-single .section-content content::before {
   position: absolute;
-  left: 16px;
+  left: 15px;
   content: ' ';
   width: 2px;
   height: 100%;
@@ -770,6 +771,63 @@ footer .copyright p {
 }
 .custom-single .section-content title:nth-of-type(9)::before {
   content: '9';
+}
+.custom-single .section-content title:nth-of-type(10)::before {
+  content: '10';
+}
+.custom-single .section-content title:nth-of-type(11)::before {
+  content: '11';
+}
+.custom-single .section-content title:nth-of-type(12)::before {
+  content: '12';
+}
+.custom-single .section-content title:nth-of-type(13)::before {
+  content: '13';
+}
+.custom-single .section-content title:nth-of-type(14)::before {
+  content: '14';
+}
+.custom-single .section-content title:nth-of-type(15)::before {
+  content: '15';
+}
+.custom-single .section-content title:nth-of-type(16)::before {
+  content: '16';
+}
+.custom-single .section-content title:nth-of-type(17)::before {
+  content: '17';
+}
+.custom-single .section-content title:nth-of-type(18)::before {
+  content: '18';
+}
+.custom-single .section-content title:nth-of-type(20)::before {
+  content: '20';
+}
+.custom-single .section-content title:nth-of-type(21)::before {
+  content: '21';
+}
+.custom-single .section-content title:nth-of-type(22)::before {
+  content: '22';
+}
+.custom-single .section-content title:nth-of-type(23)::before {
+  content: '23';
+}
+.custom-single .section-content title:nth-of-type(24)::before {
+  content: '24';
+}
+.custom-single .section-content title:nth-of-type(25)::before {
+  content: '25';
+}
+.custom-single .section-content title:nth-of-type(26)::before {
+  content: '26';
+}
+.custom-single .section-content title:nth-of-type(27)::before {
+  content: '27';
+}
+.custom-single .section-content title:nth-of-type(28)::before {
+  content: '28';
+}
+.custom-single .section-content title:nth-of-type(29)::before {
+  content: '29';
 }
 .post-showcase .item {
   height: 400px;

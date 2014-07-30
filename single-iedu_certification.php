@@ -43,11 +43,11 @@
 		<div class="row">
 			<div class="col-sm-9">
 				<div class="row">
-					<div class="col-xs-8">
+					<div class="col-xs-6">
 						<h1><?php the_title(); ?></h1>
 						<p class="sec-title"><?php echo $meta['location'] ?></p>
 					</div>
-					<div class="col-xs-4 text-right price">
+					<div class="col-xs-6 text-right price">
 						<strong><?php echo $meta['fee']; ?></strong>/人
 					</div>
 				</div>
