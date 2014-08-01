@@ -1480,12 +1480,9 @@ section.hotel .item a h4 {
 #main-content {
   line-height: 25px !important;
 }
-#main-content strong {
-  line-height: 20px !important;
-}
 #main-content h1, #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6 {
-  line-height: 30px !important;
+  line-height: 20px;
 }
 #main-content .text-danger {
-  color: #E10000 !important;
+  color: #E10000;
 }
