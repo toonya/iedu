@@ -1478,14 +1478,14 @@ section.hotel .item a h4 {
   background: url(images/theme_bg_camp.png) center top no-repeat !important;
 }
 .main-content {
-  line-height: 25px;
+  line-height: 25px !important;
 }
 .main-content strong {
-  line-height: 20px;
+  line-height: 20px !important;
 }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
-  line-height: 30px;
+  line-height: 30px !important;
 }
 .main-content .text-danger {
-  color: #E10000;
+  color: #E10000 !important;
 }
