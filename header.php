@@ -48,7 +48,7 @@
             </nav>
             <header class="mobile-header">
                 <a class="mobile-nav-trigger" href="#" data-mobile-trigger><span class="glyphicon glyphicon-th"></span></a>
-                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-lg.jpg" alt=""></div>
+                <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-lg.png" class="img-responsive" alt=""></div>
             </header>
         <?php endif; ?>
         <div class="page">
@@ -71,7 +71,7 @@
                             <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
                                 <a class="navbar-brand" href="<?php echo bloginfo('url' ); ?>">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-lg.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-lg.png" class="img-responsive" alt="">
                                 </a>
                             </div>
                     
