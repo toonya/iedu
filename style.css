@@ -1487,3 +1487,12 @@ section.hotel .item a h4 {
 #main-content .text-danger {
   color: #E10000;
 }
+nav.simple-flat .container-fluid .navbar-header a {
+  max-width: 320px !important;
+}
+nav.simple-flat .container-fluid {
+  height: 120px !important;
+}
+nav.simple-flat {
+  height: 120px !important;
+}
