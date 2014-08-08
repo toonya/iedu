@@ -1369,9 +1369,7 @@ body.mobile.mobile-nav-open .mobile-footer {
     height: 200px;
   }
 }
-/*added by Mansy added by Mansy added by Mansy added by Mansy added by Mansy added by Mansy*/
-/*added by Mansy added by Mansy added by Mansy added by Mansy added by Mansy added by Mansy*/
-/*added by Mansy added by Mansy added by Mansy added by Mansy added by Mansy added by Mansy*/
+/*added by Mansy*/
 #contact {
   width: 70%;
   margin: 40px auto;
@@ -1477,13 +1475,4 @@ section.hotel .item a h4 {
 }
 .archive_iedu_camp {
   background: url(images/theme_bg_camp.png) center top no-repeat !important;
-}
-#main-content {
-  line-height: 25px !important;
-}
-#main-content h1, #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6 {
-  line-height: 20px;
-}
-#main-content .text-danger {
-  color: #E10000;
 }
