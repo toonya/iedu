@@ -25,16 +25,17 @@
 				<?php get_sidebar( 'archive' ); ?>
 			</div> <!-- /. sidebar -->
 			<div class="col-sm-9">
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php  
-						$meta = get_post_meta( get_the_ID() );
+				<div class="archive-item-list">
 
-						$location = ( isset($meta['location']) ) ? $meta['location'][0]:'';
-						$edu_sys = ( isset($meta['edu_sys']) ) ? $meta['edu_sys'][0]:'';
-						$course_intro = ( isset($meta['course_intro']) ) ? $meta['course_intro'][0]:'';
-						$fee = ( isset($meta['fee']) ) ? $meta['fee'][0]:'';
-					?>
-					<div class="archive-item-list">
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php  
+							$meta = get_post_meta( get_the_ID() );
+
+							$location = ( isset($meta['location']) ) ? $meta['location'][0]:'';
+							$edu_sys = ( isset($meta['edu_sys']) ) ? $meta['edu_sys'][0]:'';
+							$course_intro = ( isset($meta['course_intro']) ) ? $meta['course_intro'][0]:'';
+							$fee = ( isset($meta['fee']) ) ? $meta['fee'][0]:'';
+						?>
 						<div class="item">
 							<div class="left">
 								<img style="height:100%;" class="img-responsive" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large')[0]; ?>" alt="">
@@ -65,8 +66,10 @@
 								</div>
 							</div> <!-- /.right -->
 						</div>
-					</div>
-				<?php endwhile; // end of the loop. ?>
+					<?php endwhile; // end of the loop. ?>
+					
+				</div>  <!-- /. end archive-item-list -->
+
 				<?php
 				global $wp_query;
 

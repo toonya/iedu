@@ -25,16 +25,17 @@
 				<?php get_sidebar( 'archive' ); ?>
 			</div> <!-- /. sidebar -->
 			<div class="col-sm-9">
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php  
-						$meta = get_post_meta( get_the_ID() );
+				<div class="archive-item-list">
 
-						$exam_info = ( isset($meta['exam_info']) ) ? $meta['exam_info'][0]:'';
-						$teacher_info = ( isset($meta['teacher_info']) ) ? $meta['teacher_info'][0]:'';
-						$apply_form = ( isset($meta['apply_form']) ) ? $meta['apply_form'][0]:'';
-						$service_process = ( isset($meta['service_process']) ) ? $meta['service_process'][0]:'';
-					?>
-					<div class="archive-item-list">
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php  
+							$meta = get_post_meta( get_the_ID() );
+
+							$exam_info = ( isset($meta['exam_info']) ) ? $meta['exam_info'][0]:'';
+							$teacher_info = ( isset($meta['teacher_info']) ) ? $meta['teacher_info'][0]:'';
+							$apply_form = ( isset($meta['apply_form']) ) ? $meta['apply_form'][0]:'';
+							$service_process = ( isset($meta['service_process']) ) ? $meta['service_process'][0]:'';
+						?>
 						<div class="item">
 							<div class="left">
 								<img style="height:100%;" class="img-responsive" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large')[0]; ?>" alt="">
@@ -65,8 +66,10 @@
 								</div>
 							</div> <!-- /.right -->
 						</div>
-					</div>
-				<?php endwhile; // end of the loop. ?>
+					<?php endwhile; // end of the loop. ?>
+					
+				</div>  <!-- /. end archive-item-list -->
+
 				<?php
 				global $wp_query;
 

@@ -25,32 +25,32 @@
 				<?php get_sidebar( 'archive' ); ?>
 			</div> <!-- /. sidebar -->
 			<div class="col-sm-9">
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php  
-						$meta = get_post_meta( get_the_ID() );
+				<div class="archive-item-list">
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php  
+							$meta = get_post_meta( get_the_ID() );
 
-						$location = ( isset($meta['location']) ) ? $meta['location'][0]:'';
-						$num_of_people = ( isset($meta['num_of_people']) ) ? $meta['num_of_people'][0]:'';
-						$language = ( isset($meta['language']) ) ? $meta['language'][0]:'';
-						$fee = ( isset($meta['fee']) ) ? $meta['fee'][0]:'';
-					?>
-					<div class="archive-item-list">
+							$location = ( isset($meta['location']) ) ? $meta['location'][0]:'';
+							$num_of_people = ( isset($meta['num_of_people']) ) ? $meta['num_of_people'][0]:'';
+							$language = ( isset($meta['language']) ) ? $meta['language'][0]:'';
+							$fee = ( isset($meta['fee']) ) ? $meta['fee'][0]:'';
+						?>
 						<div class="item">
 							<div class="left">
 								<img style="height:100%;" class="img-responsive" src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large')[0]; ?>" alt="">
 							</div> <!-- /.left -->
 							<div class="right">
 								<h3 class="page-title"><?php the_title();?> </h3>
-
+						
 								<?php if( !empty($location) || !empty($num_of_people) ): ?>
 									<div class="well">
 										<div class="">目的地：<?php echo $location; ?></div>
 										<div class="">参团人数：<?php echo $num_of_people; ?></div>
 									</div>
 								<?php endif; ?>
-
+						
 								<div class="intro"><?php echo $language; ?></div>
-
+						
 								<div class="bottom">
 									<div class="row">
 										<div class="col-sm-6">
@@ -65,8 +65,10 @@
 								</div>
 							</div> <!-- /.right -->
 						</div>
-					</div>
-				<?php endwhile; // end of the loop. ?>
+					<?php endwhile; // end of the loop. ?>
+
+				</div>  <!-- /. end archive-item-list -->
+					
 				<?php
 				global $wp_query;
 
