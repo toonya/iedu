@@ -1383,15 +1383,11 @@ body.mobile .custom-single .price strong {
   .archive-item-list .right,
   .archive-item-list .left {
     width: 100%;
-    height: 50%;
-  }
-  .archive-item-list .right {
-    top: 50%;
-  }
-  .archive-item-list .item {
-    height: 480px;
   }
   .post-showcase .item {
+    height: 240px;
+  }
+  .post-showcase .item .img-wrapper {
     height: 240px;
   }
   .post-showcase .item .img-responsive {
@@ -1400,6 +1396,9 @@ body.mobile .custom-single .price strong {
 }
 @media (max-width: 480px) {
   .post-showcase .item {
+    height: 200px;
+  }
+  .post-showcase .item .img-wrapper {
     height: 200px;
   }
 }
