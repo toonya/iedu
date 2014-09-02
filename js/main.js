@@ -320,14 +320,16 @@
 	// ----------------------------------------
 	// !  comment here
 	// ----------------------------------------
-	var static_navigation_trigger_y = $('.in-page-nav').first().offset().top;
-	console.log(static_navigation_trigger_y);
-	$(window).scroll(function(){
-		if( $(this).scrollTop() >= static_navigation_trigger_y)
-			$('.static-navigation').removeClass('hide');
-		else
-			$('.static-navigation').addClass('hide');
-	})
+	if( $('.in-page-nav').size() >= 1 ) {
+		var static_navigation_trigger_y = $('.in-page-nav').first().offset().top;
+		console.log(static_navigation_trigger_y);
+		$(window).scroll(function(){
+			if( $(this).scrollTop() >= static_navigation_trigger_y)
+				$('.static-navigation').removeClass('hide');
+			else
+				$('.static-navigation').addClass('hide');
+		})
+	}
 
 	// ----------------------------------------
 	// ! clear wpautop br

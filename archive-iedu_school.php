@@ -19,7 +19,7 @@
 
 <div class="primary custom-post-type archive_<?php echo get_post_type(); ?>">
 	<div class="container">
-    	<div class="archive-title"><img src="<?php echo get_template_directory_uri(); ?>/images/title_iedu_school.png"></div>
+    	<div class="archive-title"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/title_iedu_school.png"></div>
 		<div class="row">
 			<div class="col-sm-3">
 				<?php get_sidebar( 'archive' ); ?>
@@ -50,7 +50,10 @@
 									</div>
 								<?php endif; ?>
 
-								<div class="intro"><?php echo $course_intro; ?></div>
+								<div class="intro">
+									<?php //echo $course_intro; ?>
+									<?php echo wp_trim_words($course_intro, 100, ' ...'); ?>
+								</div>
 
 								<div class="bottom">
 									<div class="row">
@@ -67,7 +70,7 @@
 							</div> <!-- /.right -->
 						</div>
 					<?php endwhile; // end of the loop. ?>
-					
+
 				</div>  <!-- /. end archive-item-list -->
 
 				<?php

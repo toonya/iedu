@@ -1186,6 +1186,37 @@ body.mobile.mobile-nav-open .mobile-footer {
   -ms-transform: translateX(240px);
   transform: translateX(240px);
 }
+body.mobile .archive-item-list .item {
+  height: auto;
+}
+body.mobile .archive-item-list .item .left {
+  position: relative;
+  padding-top: 60%;
+  overflow: hidden;
+}
+body.mobile .archive-item-list .item .left img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+body.mobile .archive-item-list .item .right {
+  position: relative;
+}
+body.mobile .archive-item-list .item .right .bottom {
+  position: relative;
+  bottom: auto;
+  padding: 0;
+  margin-top: 24px;
+}
+body.mobile .primary {
+  background: #ddd;
+}
+body.mobile .archive-title {
+  display: none;
+}
 .mobile-nav {
   position: absolute;
   padding: 24px 0;
@@ -1446,35 +1477,35 @@ body.mobile.mobile-nav-open .mobile-footer {
 section.hotel .item a h4 {
   text-align: center;
 }
-.iedu_ed {
-  background: url(images/theme_bg_ed.jpg) no-repeat !important;
+.primary.iedu_ed {
+  background: url(images/theme_bg_ed.png) no-repeat;
 }
-.iedu_visit {
-  background: url(images/theme_bg_visit.jpg) no-repeat !important;
+.primary.iedu_visit {
+  background: url(images/theme_bg_visit.png) no-repeat;
 }
-.iedu_certification {
-  background: url(images/theme_bg_certification.jpg) no-repeat !important;
+.primary.iedu_certification {
+  background: url(images/theme_bg_certification.png) no-repeat;
 }
-.iedu_school {
-  background: url(images/theme_bg_school.jpg) no-repeat !important;
+.primary.iedu_school {
+  background: url(images/theme_bg_school.png) no-repeat;
 }
-.iedu_camp {
-  background: url(images/theme_bg_camp.jpg) no-repeat !important;
+.primary.iedu_camp {
+  background: url(images/theme_bg_camp.png) no-repeat;
 }
 .archive_iedu_ed {
-  background: url(images/theme_bg_ed.png) center top no-repeat !important;
+  background: url(images/theme_bg_ed.png) center top no-repeat;
 }
 .archive_iedu_visit {
-  background: url(images/theme_bg_visit.png) center top no-repeat !important;
+  background: url(images/theme_bg_visit.png) center top no-repeat;
 }
 .archive_iedu_certification {
-  background: url(images/theme_bg_certification.png) center top no-repeat !important;
+  background: url(images/theme_bg_certification.png) center top no-repeat;
 }
 .archive_iedu_school {
-  background: url(images/theme_bg_school.png) center top no-repeat !important;
+  background: url(images/theme_bg_school.png) center top no-repeat;
 }
 .archive_iedu_camp {
-  background: url(images/theme_bg_camp.png) center top no-repeat !important;
+  background: url(images/theme_bg_camp.png) center top no-repeat;
 }
 #main-content {
   line-height: 25px !important;

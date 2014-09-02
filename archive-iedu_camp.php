@@ -19,14 +19,14 @@
 
 <div class="primary custom-post-type archive_<?php echo get_post_type(); ?>">
 	<div class="container">
-    	<div class="archive-title"><img src="<?php echo get_template_directory_uri(); ?>/images/title-iedu-summer-camp.png"></div>
+    	<div class="archive-title"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/title-iedu-summer-camp.png"></div>
 		<div class="row">
 			<div class="col-sm-3">
 				<?php get_sidebar( 'archive' ); ?>
 			</div> <!-- /. sidebar -->
 			<div class="col-sm-9">
 				<div class="archive-item-list">
-				
+
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php  
 							$meta = get_post_meta( get_the_ID() );
