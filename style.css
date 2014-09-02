@@ -1217,6 +1217,9 @@ body.mobile .primary {
 body.mobile .archive-title {
   display: none;
 }
+body.mobile .custom-single .price strong {
+  font-size: 18px;
+}
 .mobile-nav {
   position: absolute;
   padding: 24px 0;

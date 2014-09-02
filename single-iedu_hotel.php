@@ -43,11 +43,11 @@
 		<div class="row">
 			<div class="col-sm-9">
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-sm-6 col-xs-12">
 						<h1><?php the_title(); ?></h1>
 						<p class="sec-title"><?php echo $meta['hotel_location'] ?></p>
 					</div>
-					<div class="col-xs-6 text-right price">
+					<div class="col-sm-6 col-xs-12 text-right price">
 						<strong><?php echo $meta['hotel_fee']; ?></strong>/人
 					</div>
 				</div>
@@ -137,7 +137,7 @@
 
 			</div>
 			<div class="col-sm-3">
-
+				<div class="visible-xs white-block"></div>
 				<div class="sidebar">
 					<div class="panel panel-default">
 					  <div class="panel-body">
