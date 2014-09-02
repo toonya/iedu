@@ -1220,6 +1220,13 @@ body.mobile .archive-title {
 body.mobile .custom-single .price strong {
   font-size: 18px;
 }
+body.mobile .breadcrumb {
+  margin: 0;
+}
+body.mobile .archive-item-list .right,
+body.mobile .archive-item-list .left {
+  width: 100%;
+}
 .mobile-nav {
   position: absolute;
   padding: 24px 0;
@@ -1379,10 +1386,6 @@ body.mobile .custom-single .price strong {
 @media (max-width: 720px) {
   footer {
     text-align: center;
-  }
-  .archive-item-list .right,
-  .archive-item-list .left {
-    width: 100%;
   }
   .post-showcase .item {
     height: 240px;

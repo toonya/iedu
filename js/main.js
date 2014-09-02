@@ -322,7 +322,7 @@
 	// ----------------------------------------
 	if( $('.in-page-nav').size() >= 1 ) {
 		var static_navigation_trigger_y = $('.in-page-nav').first().offset().top;
-		console.log(static_navigation_trigger_y);
+		//console.log(static_navigation_trigger_y);
 		$(window).scroll(function(){
 			if( $(this).scrollTop() >= static_navigation_trigger_y)
 				$('.static-navigation').removeClass('hide');
@@ -348,5 +348,6 @@
 	$('.custom-single content').each(function(i,e){
 		clear_br($(e));
 	});
+
 
 })(jQuery)

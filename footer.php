@@ -37,10 +37,10 @@
 									<h3>联系我们</h3>
 									<div class="item">
 										<span class="glyphicon glyphicon-earphone"></span>
-										<span class="content"><span class="pd-l-xs">（66）088-113-1130</span></span>
+										<span class="content"><span class="pd-l-xs">（+66）088-113-1130</span></span>
 									</div>
 									<div class="item">
-										<span class="content" style="padding-left:16px;"><span class="pd-l-xs">（86）139 5800 1556</span></span>
+										<span class="content" style="padding-left:16px;"><span class="pd-l-xs">（+86）139 5800 1556</span></span>
 									</div>
 									<div class="item">
 										<span class="fa fa-qq"></span>
