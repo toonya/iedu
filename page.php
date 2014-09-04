@@ -18,6 +18,7 @@
 			<div class="col-sm-8">
 				<h1><?php the_title(); ?></h1>
 			</div>
+			<div class="col-sm-1"></div>
 			<div class="col-sm-3">
 				<?php get_template_part( 'content', 'share' ); ?>
 			</div>
