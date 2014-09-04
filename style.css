@@ -1443,6 +1443,12 @@ body.mobile .post-type-title:first-child {
   display: block;
   width: 100%;
 }
+.mobile #contact .contact-item {
+  margin-bottom: 15px;
+}
+.mobile #contact .col-xs-6 {
+  width: 50%;
+}
 #contact .left {
   padding-right: 70px;
 }
@@ -1484,13 +1490,13 @@ body.mobile .post-type-title:first-child {
   background-repeat: no-repeat;
 }
 #contact .icon1 {
-  background-position: 0 -320px;
+  background-position: 7px -315px;
 }
 #contact .icon2 {
-  background-position: 0 -400px;
+  background-position: 7px -395px;
 }
 #contact .icon3 {
-  background-position: 0 -240px;
+  background-position: 7px -235px;
 }
 .archive-title {
   padding-bottom: 50px;
