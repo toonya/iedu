@@ -24,8 +24,12 @@
                     <li><a href="tel:<?php echo esc_attr( get_option( 'phone-number' ) ); ?>"><span class="glyphicon glyphicon-earphone"></span><span class="pd-l-sm"><?php echo esc_attr( get_option( 'phone-number' ) ); ?></span></a></li>
                 </ul>
                 <?php
+                $locatioin = '';
+                if(wp_is_mobile()) $locatioin = 'mobile-menu';
+                else $locatioin = 'header-menu';
+                
                 $head_navigation = array(
-                    'theme_location'  => 'header-menu',
+                    'theme_location'  => $locatioin,
                     'menu'            => '',
                     'container'       => false,
                     'container_class' => '',
