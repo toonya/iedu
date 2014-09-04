@@ -247,8 +247,10 @@
 			countDown = moment().twix(finish, 'YYYYMMDD').count('days');
 		//console.log(finish);
 		//console.log(countDown);
-		if( moment(finish,'YYYYMMDD',true).isValid() )
+		if( moment(finish,'YYYYMMDD',true).isValid() && countDown>0 )
 			$(this).text('倒计时 '+countDown+' 天');
+		else if (moment(finish,'YYYYMMDD',true).isValid() && countDown<0)
+			$(this).text('优惠活动已结束')
 		else
 			$(this).text('优惠活动进行中')
 	})
