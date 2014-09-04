@@ -127,7 +127,7 @@
 	// ----------------------------------------
 
 	$('body').scrollspy({
-		target: '.in-page-nav'
+		target: '.in-page-nav:eq(1)'
 	});
 
 	// var affix_top = $('.in-page-nav').offset().top;
@@ -324,7 +324,7 @@
 	// ----------------------------------------
 	// !  in-page-nav scrollspy
 	// ----------------------------------------
-	if( $('.in-page-nav').size() >= 1 & $('.mobile').size() <=0 ) {
+	if( $('.in-page-nav').size() >= 1 && $('.mobile').size() <=0 ) {
 		var static_navigation_trigger_y = $('.in-page-nav').first().offset().top;
 		//console.log(static_navigation_trigger_y);
 		$(window).scroll(function(){
