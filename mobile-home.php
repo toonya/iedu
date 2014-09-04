@@ -1,10 +1,10 @@
 <?php
 
 // The Query
-$discount_args = array(
-	'post_type' => 'iedu_school',
+$mobile_home_post_type = array(
+	'post_type' => array('iedu_school', 'iedu_certification', 'iedu_camp', 'iedu_ed', 'iedu_visit'),
 );
-$the_query = new WP_Query($discount_args);
+$the_query = new WP_Query($mobile_home_post_type);
 $if_empty = '';
 $discount_html = [];
 $html_temp = '';
