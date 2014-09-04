@@ -322,9 +322,9 @@
 	init_like();
 
 	// ----------------------------------------
-	// !  comment here
+	// !  in-page-nav scrollspy
 	// ----------------------------------------
-	if( $('.in-page-nav').size() >= 1 ) {
+	if( $('.in-page-nav').size() >= 1 & $('.mobile').size() <=0 ) {
 		var static_navigation_trigger_y = $('.in-page-nav').first().offset().top;
 		//console.log(static_navigation_trigger_y);
 		$(window).scroll(function(){
