@@ -250,7 +250,8 @@
 		if( moment(finish,'YYYYMMDD',true).isValid() && countDown>0 )
 			$(this).text('倒计时 '+countDown+' 天').addClass('text-warning');
 		else if (moment(finish,'YYYYMMDD',true).isValid() && countDown<0)
-			$(this).text('优惠活动已结束').addClass('text-muted')
+			//$(this).text('优惠活动已结束').addClass('text-muted')
+			$(this).text('').addClass('hide');
 		else
 			$(this).text('优惠活动进行中').addClass('text-success')
 	})
