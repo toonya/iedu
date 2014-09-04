@@ -1152,6 +1152,29 @@ body.mobile {
 	.archive-item-list .right, .archive-item-list .left {
 		width: 100%;
 	}
+
+	.post-type-title {
+		margin: 45px 0 15px;
+		font-size: 14px;
+		line-height: 36px;
+		border-radius: 2px;
+		text-align: center;
+		position: relative;
+
+		&::before {
+			content: ' ';
+			position: absolute;
+			top: -30px;
+			left: -15px;
+			right: -15px;
+			height: 1px;
+			border-bottom: dotted 1px #ddd;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
 }
 
 .mobile-nav {

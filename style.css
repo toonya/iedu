@@ -1227,6 +1227,26 @@ body.mobile .archive-item-list .right,
 body.mobile .archive-item-list .left {
   width: 100%;
 }
+body.mobile .post-type-title {
+  margin: 45px 0 15px;
+  font-size: 14px;
+  line-height: 36px;
+  border-radius: 2px;
+  text-align: center;
+  position: relative;
+}
+body.mobile .post-type-title::before {
+  content: ' ';
+  position: absolute;
+  top: -30px;
+  left: -15px;
+  right: -15px;
+  height: 1px;
+  border-bottom: dotted 1px #ddd;
+}
+body.mobile .post-type-title:first-child {
+  margin-top: 0;
+}
 .mobile-nav {
   position: absolute;
   padding: 24px 0;
