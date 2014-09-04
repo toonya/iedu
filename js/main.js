@@ -353,5 +353,7 @@
 		clear_br($(e));
 	});
 
+	// add img-responsive to news.
+	$('.custom-single.post').find('img').addClass('img-responsive');
 
 })(jQuery)
