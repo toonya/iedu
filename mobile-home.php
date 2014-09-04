@@ -20,7 +20,7 @@
 
 					<div class="bg-primary post-type-title"><?php echo $the_post_object->labels->singular_name ?></div>
 
-					<?while ( $the_query->have_posts() ) {
+					<?php while ( $the_query->have_posts() ) {
 						$the_query->the_post(); ?>
 						
 						<div class="item">
@@ -41,7 +41,7 @@
 			      			</a>
 			      		</div>
 
-						<?
+			<?php
 					}
 				} 
 				
