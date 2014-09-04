@@ -18,7 +18,7 @@
 				// The Loop
 				if ( $the_query->have_posts() ) {?>
 
-					<div class="bg-primary post-type-title"><?php echo $the_post_object->labels->singular_name ?></div>
+					<div class="post-type-title"><?php echo $the_post_object->labels->singular_name ?></div>
 
 					<?php while ( $the_query->have_posts() ) {
 						$the_query->the_post(); ?>

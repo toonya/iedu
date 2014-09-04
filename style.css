@@ -1234,6 +1234,8 @@ body.mobile .post-type-title {
   border-radius: 2px;
   text-align: center;
   position: relative;
+  background: #D3A971;
+  color: #fff;
 }
 body.mobile .post-type-title::before {
   content: ' ';
