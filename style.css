@@ -1430,6 +1430,25 @@ body.mobile .post-type-title:first-child {
     height: 200px;
   }
 }
+.mobile #contact {
+  width: 100%;
+}
+.mobile #contact .left {
+  padding: 15px;
+}
+.mobile #contact .right {
+  border: none;
+}
+.mobile #contact .contact-submit {
+  display: block;
+  width: 100%;
+}
+#contact .left {
+  padding-right: 70px;
+}
+#contact .right {
+  border-left: 1px solid #f1f1f1;
+}
 /*added by Mansy*/
 #contact {
   width: 70%;

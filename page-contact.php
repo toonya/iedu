@@ -17,11 +17,16 @@ if ( have_posts() ) :
 
 		<form id="contact" class="simple" role="form">
 			<div class="row">
-				<div class="col-md-9" style="padding-right:70px;">
+				<div class="col-md-3 col-xs-12 visible-xs right">
+					<div class="contact-item"><i class="icon icon1"></i><i><?php echo esc_html( get_option( 'phone-number' ) ); ?></i></div>
+				    <div class="contact-item"><i class="icon icon2"></i><i>admin@lukasila.com</i></div>
+				    <div class="contact-item"><i class="icon icon3"></i><i>泰国清迈宁曼路（近MAYA商城）</i></div>
+				</div>
+				<div class="col-md-9 col-xs-12 left">
 					<div class="form-group" data-required>
 						<label for="name" class="control-label">姓名 <span class="text-danger v-middle">*</span></label>
 						<div class="row">
-							<div class="col-md-7">
+							<div class="col-md-7 col-xs-12">
 								<input tabindex="1" type="text" class="form-control" id="name" name="name" placeholder="Name">
 							</div>
 					    </div>
@@ -29,7 +34,7 @@ if ( have_posts() ) :
 					<div class="form-group" data-required>
 						<label for="email" class=" control-label">Email <span class="text-danger v-middle">*</span></label>
 						<div class="row">
-							<div class="col-md-7">
+							<div class="col-md-7 col-xs-12">
 								<input tabindex="2" type="email" class="form-control" id="email" name="email" placeholder="Email">
 							</div>
 					    </div>
@@ -47,10 +52,10 @@ if ( have_posts() ) :
 					    </div>
 					</div>
 				</div>
-                <div class="col-md-3" style="border-left:1px solid #f1f1f1;">
+                <div class="col-md-3 col-xs-12 hidden-xs right">
                 	<div class="contact-item"><i class="icon icon1"></i><i><?php echo esc_html( get_option( 'phone-number' ) ); ?></i></div>
                     <div class="contact-item"><i class="icon icon2"></i><i>admin@lukasila.com</i></div>
-                    <div class="contact-item"><i class="icon icon3"></i><i>泰国，清迈，某某区某某路某号，某大厦</i></div>
+                    <div class="contact-item"><i class="icon icon3"></i><i>泰国清迈宁曼路（近MAYA商城）</i></div>
                 </div>
 			</div>
 			<div class="mail-state">
