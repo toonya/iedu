@@ -1013,6 +1013,9 @@ nav.simple-flat .container-fluid .collapse form input {
 .sidebar .panel {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
+.sidebar .panel-heading a {
+  color: inherit;
+}
 .sidebar-contact {
   position: fixed;
   bottom: 100px;
