@@ -248,7 +248,8 @@
 		//console.log(finish);
 		//console.log(countDown);
 		if( moment(finish,'YYYYMMDD',true).isValid() && countDown>0 )
-			$(this).text('倒计时 '+countDown+' 天').addClass('text-warning');
+			//$(this).text('倒计时 '+countDown+' 天').addClass('text-warning');
+			$(this).text('优惠倒计时'+countDown+' 天').addClass('text-warning');
 		else if (moment(finish,'YYYYMMDD',true).isValid() && countDown<0)
 			//$(this).text('优惠活动已结束').addClass('text-muted')
 			$(this).text('').addClass('hide');
