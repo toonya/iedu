@@ -681,8 +681,15 @@ footer .copyright p {
   font-size: 20px;
   line-height: 72px;
 }
-.custom-single section#apply_form .section-content {
-  padding: 18px;
+.custom-single section#apply_form a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.custom-single section#apply_form a:hover {
+  background: #dedede;
 }
 .custom-single section .section-content {
   padding: 18px 18px 6px;
