@@ -120,7 +120,7 @@
 									<?php 
 									switch ($key) {
 											case 'apply_form':
-												echo '<a href="'.$meta[$key].'"><span style="top: 2px;" class="glyphicon glyphicon-download"></span> 下载</a>';
+												echo '<a href="'.$meta[$key].'"> <img src="'.get_template_directory_uri().'/images/download.png"> 下载</a>';
 												break;
 											
 											default:
