@@ -51,7 +51,7 @@
 									</div>
 								<?php endif; ?>
 
-								<div class="intro"><?php echo $course_intro; ?></div>
+								<div class="intro"><?php echo wp_trim_words($course_intro, 100, ' ...'); ?></div>
 
 								<div class="bottom">
 									<div class="row">

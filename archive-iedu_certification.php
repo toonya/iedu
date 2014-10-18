@@ -46,7 +46,7 @@
 								<?php if( !empty($exam_info) || !empty($teacher_info) ): ?>
                                 		<div class=""><?php echo $exam_info; ?></div>
 									<div class="well">			
-										<div class=""><?php echo $teacher_info; ?></div>
+										<div class=""><?php echo wp_trim_words($teacher_info, 100, ' ...'); ?></div>
 									</div>
 								<?php endif; ?>
 
