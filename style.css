@@ -1209,6 +1209,10 @@ body.mobile .archive-item-list .item .left img {
 body.mobile .archive-item-list .item .right {
   position: relative;
 }
+body.mobile .archive-item-list .item .right .intro a {
+  position: relative;
+  z-index: 99;
+}
 body.mobile .archive-item-list .item .right .bottom {
   position: relative;
   bottom: auto;
